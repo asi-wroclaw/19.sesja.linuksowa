@@ -44,7 +44,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>18. Sesja Linuksowa</title>
+        <title>19. Sesja Linuksowa</title>
         <meta name="description" content="18. Sesja Linuksowa" />
         <meta content="18. Sesja Linuksowa" property="og:site_name"></meta>
         <meta content="pl_PL" property="og:locale"></meta>
