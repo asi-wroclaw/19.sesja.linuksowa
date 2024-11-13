@@ -20,7 +20,7 @@ import {
 import { useTranslation } from 'next-export-i18n';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-import logo from '../assets/logo-duze-pl.webp';
+import logo from '../assets/sesja_logo_jasne_biale.webp';
 import config from '../config';
 import DefaultButton from './DefaultButton';
 

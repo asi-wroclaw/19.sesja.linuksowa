@@ -45,11 +45,11 @@ export default function Home() {
     <>
       <Head>
         <title>19. Sesja Linuksowa</title>
-        <meta name="description" content="18. Sesja Linuksowa" />
-        <meta content="18. Sesja Linuksowa" property="og:site_name"></meta>
+        <meta name="description" content="19. Sesja Linuksowa" />
+        <meta content="19. Sesja Linuksowa" property="og:site_name"></meta>
         <meta content="pl_PL" property="og:locale"></meta>
         <meta
-          content="18. Sesja Linuksowa | Wrocław, Polska"
+          content="19. Sesja Linuksowa | Wrocław, Polska"
           property="og:title"
         ></meta>
         <meta content="http://sesja.linuksowa.pl/" property="og:url"></meta>

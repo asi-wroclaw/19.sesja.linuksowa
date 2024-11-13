@@ -42,19 +42,18 @@ const Sponsorship = () => {
   const [isSmallerThan800] = useMediaQuery('(max-width: 800px)');
 
   const sponsorsAndOrganizations = [
-    {
-      title: t('sponsors'),
-      logos: [
-        { image: antmicro, href: 'https://antmicro.com/', width: '1200' },
-        { image: ovh, href: 'https://www.ovhcloud.com/pl/', width: '1200' },
-      ],
-    },
-    {
+     {
       title: t('organizers'),
       logos: [
         { image: asi, href: 'https://www.asi.wroclaw.pl/', width: '1000' },
       ],
     },
+    {
+      title: t('sponsors'),
+      logos: [
+      ],
+    },
+   
     {
       title: t('patrons'),
       logos: [
@@ -66,18 +65,18 @@ const Sponsorship = () => {
         },
         { image: plug, href: 'https://linux.org.pl/', width: '300' },
         { image: pwr, href: 'https://pwr.edu.pl/', width: '800'},
-        { image: programmers, href: 'https://4programmers.net/', width: '300' },
+        /*{ image: programmers, href: 'https://4programmers.net/', width: '300' },
       {
           image: programistamag,
           href: 'https://programistamag.pl/',
           width: '300',
-        },
+        },*/
         {
         image: manus,
         href: 'https://manus.pl/',
         width: '300',
         },
-        {
+      /*  {
         image: slido,
         href: 'https://www.slido.com',
         width: '200',
@@ -86,7 +85,7 @@ const Sponsorship = () => {
         image: mikrus,
         href: 'https://mikr.us',
         width: '400'
-        }
+        }*/
        /* {
           image: linuxMagazine,
           href: 'https://linux-magazine.pl/',
@@ -144,7 +143,7 @@ const Sponsorship = () => {
           </Heading>
           <Link
             _hover={{ textDecorationLine: 'none' }}
-            href="/18-sesja-linuksowa-oferta-sponsorska.pdf"
+            href="/oferta.pdf"
             target="_blank"
           >
             <DefaultButton

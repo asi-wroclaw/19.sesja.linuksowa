@@ -25,9 +25,9 @@ export const ORGANIZERS: OrganizerProps[] = [
     role: 'tomek',
   },
   {
-    image: Jakub,
-    name: 'Jakub Śliwka',
-    role: 'jakub',
+    image: blankAvatar,
+    name: 'Szymon Cichy',
+    role: 'szymon',
   },
   {
     image: Jacek,
@@ -35,19 +35,14 @@ export const ORGANIZERS: OrganizerProps[] = [
     role: 'jacek',
   },
   {
+    image: blankAvatar,
+    name: 'Natalia Konopka',
+    role: 'natalia',
+  },
+  {
     image: Kamil,
     name: 'Kamil Tomasikiewicz',  
     role: 'kamil',
-  },
-  {
-    image: Ola,
-    name: 'Aleksandra Mokrzan',  
-    role: 'ola',
-  },
-  {
-    image: Wiktor,
-    name: 'Wiktor Rojecki',
-    role: 'wiktor',
   },
   {
     image: Felix,
