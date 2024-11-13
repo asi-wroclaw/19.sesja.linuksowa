@@ -3,7 +3,7 @@ import { SpeechItem } from '@/slices/agenda/Speech';
 export const SATURDAY_AGENDA: SpeechItem[] = [
   {
     start: 'TBA',
-  //  end: 'TBA',
+    end: 'TBA',
     title: '',
     author: '',
    // lang: [''],
@@ -15,7 +15,7 @@ export const SATURDAY_AGENDA: SpeechItem[] = [
 export const SUNDAY_AGENDA: SpeechItem[] = [
   {
     start: 'TBA',
-   // end: 'TBA',
+    end: 'TBA',
     title: '',
     author: '',
     //lang: [''],
