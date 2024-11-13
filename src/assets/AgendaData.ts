@@ -24,7 +24,7 @@ export const SUNDAY_AGENDA: SpeechItem[] = [
   }, 
   {
     start: 'TBA',
-  //  end: 'TBA',
+    end: 'TBA',
     title: 'Lightning talks',
     lang: ['en', 'pl'],
     description: [
