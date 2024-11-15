@@ -32,7 +32,6 @@ const PreviousEdition = () => {
       minHeight="70vh"
       alignItems="center"
       justifyContent="center"
-      mb="50"
     >
       <Flex
         width="95%"
