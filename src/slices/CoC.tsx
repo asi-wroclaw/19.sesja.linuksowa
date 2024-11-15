@@ -20,7 +20,6 @@ const CoC = () => {
       width="100%"
       bg={theme.colors.primary}
       minHeight="10vh"
-      opacity="90%"
       position="relative"
       zIndex="2"
       color="whiteAlpha.900"

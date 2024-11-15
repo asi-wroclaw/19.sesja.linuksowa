@@ -41,7 +41,12 @@ const MapSlice = () => {
     [],
   );
   return (
-    <Box as="section">
+    <Box
+      as="section"
+      bg="primary"
+      position="relative"
+      zIndex={2} // why this page is so broken from the start
+    >
       <Space text={t('eventLocation')} />
       <Box position="relative" zIndex="2">
         <Map />

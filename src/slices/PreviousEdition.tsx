@@ -6,7 +6,7 @@ import {
   Flex,
   Heading,
   Link,
-  VStack
+  VStack,
 } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 
@@ -28,9 +28,8 @@ const PreviousEdition = () => {
       zIndex="2"
       display="flex"
       width="100%"
-      bg="whiteAlpha.900"
+      bg="white"
       minHeight="70vh"
-      opacity="90%"
       alignItems="center"
       justifyContent="center"
       mb="50"

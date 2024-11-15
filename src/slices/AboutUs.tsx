@@ -36,7 +36,6 @@ const AboutUs = () => {
       width="100%"
       bg={theme.colors.primary}
       minHeight="70vh"
-      opacity="90%"
       position="relative"
       zIndex="2"
     >

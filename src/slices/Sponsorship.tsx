@@ -49,8 +49,7 @@ const Sponsorship = () => {
     },
     {
       title: t('sponsors'),
-      logos: [
-      ],
+      logos: [],
     },
 
     {
@@ -98,6 +97,7 @@ const Sponsorship = () => {
     <Box
       id="sponsors"
       as="section"
+      backgroundColor="white"
       position="relative"
       width="100%"
       minHeight={['max(50vh,300px)', 'max(40vh,300px)']}
@@ -156,8 +156,8 @@ const Sponsorship = () => {
         <React.Fragment key={title}>
           {logos.length !== 0 && (
             <Box
-              marginTop="100px"
-              marginBottom="100px"
+              paddingTop="100px"
+              paddingBottom="100px"
               key={title}
               width="100%"
               minHeight="30vh"
