@@ -20,6 +20,8 @@
     "@chakra-ui/react": "^2.8.1",
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
+    "@tsparticles/preset-links": "^3.1.0",
+    "@tsparticles/react": "^3.0.0",
     "framer-motion": "^10.16.4",
     "next": "^14.2.18",
     "next-export-i18n": "^2.1.0",
@@ -32,12 +34,12 @@
     "react-tsparticles": "^2.12.2",
     "sharp": "^0.33.5",
     "slick-carousel": "^1.8.1",
-    "tsparticles": "^2.12.0",
     "typescript": "^5.6.3",
     "zod": "^3.23.8"
   },
   "devDependencies": {
     "@omikorin/prettier-config": "^1.0.0",
+    "@tsparticles/engine": "^3.5.0",
     "@types/node": "^22.9.0",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",

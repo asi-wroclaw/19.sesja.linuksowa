@@ -1,93 +1,85 @@
-import { useCallback } from 'react';
-import Particles from 'react-tsparticles';
-import { loadFull } from 'tsparticles';
-import { Engine, IOptions, RecursivePartial } from 'tsparticles-engine';
+import { Container, ISourceOptions } from '@tsparticles/engine';
+import { loadLinksPreset } from '@tsparticles/preset-links';
+import Particles, { initParticlesEngine } from '@tsparticles/react';
+import { useEffect, useState } from 'react';
 
-const particlesOptions: RecursivePartial<IOptions> = {
-  particles: {
-    number: {
-      value: 80,
-      density: {
-        enable: true,
-        value_area: 800,
-      },
-    },
-    color: {
-      value: '#ffffff',
-    },
-    shape: {
-      type: 'circle',
-      stroke: {
-        width: 0,
-        color: '#000000',
-      },
-      polygon: {
-        nb_sides: 5,
-      },
-    },
-    opacity: {
-      value: 0.5,
-      random: false,
-      anim: {
-        enable: false,
-        speed: 1,
-        opacity_min: 0.1,
-        sync: false,
-      },
-    },
-    size: {
-      value: 1,
-      random: true,
-      anim: {
-        enable: false,
-        speed: 40,
-        size_min: 0.1,
-        sync: false,
-      },
-    },
-    line_linked: {
-      enable: true,
-      distance: 150,
-      color: '#ffffff',
-      opacity: 0.4,
-      width: 1,
-    },
-    move: {
-      enable: true,
-      speed: 0.5,
-      direction: 'none',
-      random: false,
-      straight: false,
-      out_mode: 'out',
-      bounce: false,
-      attract: {
-        enable: false,
-        rotateX: 600,
-        rotateY: 1200,
-      },
-    },
+const particlesOptions: ISourceOptions = {
+  background: {
+    opacity: 0,
   },
   interactivity: {
     detect_on: 'canvas',
     events: {
-      onhover: {
-        enable: false,
+      resize: {
+        enable: true,
       },
-      onclick: {
-        enable: false,
-      },
-      resize: true,
     },
   },
+  particles: {
+    color: {
+      value: '#ffffff',
+    },
+    links: {
+      color: '#ffffff',
+      enable: true,
+      distance: 150,
+      opacity: 0.4,
+      width: 1,
+    },
+    move: {
+      direction: 'none',
+      enable: true,
+      outModes: 'out',
+      speed: 0.5,
+      random: false,
+      straight: false,
+    },
+    number: {
+      density: {
+        enable: true,
+      },
+      value: 200,
+    },
+    opacity: {
+      value: 0.5,
+    },
+    shape: {
+      type: 'circle',
+    },
+    size: {
+      value: 1,
+    },
+  },
+  preset: 'links',
   retina_detect: true,
 };
 
 const ParticlesBackground = () => {
-  const particlesInit = useCallback(
-    async (engine: Engine) => loadFull(engine),
-    [],
-  );
-  return <Particles init={particlesInit} options={particlesOptions} />;
+  const [init, setInit] = useState(false);
+
+  useEffect(() => {
+    initParticlesEngine(async (engine) => {
+      await loadLinksPreset(engine);
+    }).then(() => {
+      setInit(true);
+    });
+  }, []);
+
+  const particlesLoaded = async (container?: Container): Promise<void> => {
+    console.log(container);
+  };
+
+  if (init) {
+    return (
+      <Particles
+        id="tsparticles"
+        particlesLoaded={particlesLoaded}
+        options={particlesOptions}
+      />
+    );
+  }
+
+  return <></>;
 };
 
 export default ParticlesBackground;
