@@ -1,8 +1,0 @@
-Chcieliśmy was zaprosić na [18 Sesję Linuksową](https://sesja.linuksowa.pl) - Konferencja dedykowana Oprogramowaniu Open Source mająca na celu zbliżenie Developerów, zwykłych użytkowników jak i Firmy zaangażowane w oprogramowanie Open Source oraz promowanie najnowszych trendów i rozwiązań w branży.
-
-Wydarzenie planowane jest na 20-21 kwietnia, i odbywać się będzie we Wrocławskim Centrum Kongresowym Politechniki Wrocławskiej. Wstęp jest wolny dla wszystkich zainteresowanych FOSS,  programistów, zagorzałych sysadminów jak i dopiero rozpoczynających swoją przygodę z Open Source i Linuksem.
-
-Czego można się spodziewać?
-Przez dwa dni odbędą się prelekcje programistów i kontrybutorów FOSS, na których każdy może uczestniczyć osobiście we Wrocławiu lub online. Prelegenci będą prezentować po polsku lub angielsku, w zależności od tematu związanego z Linuksem i FOSS, obejmującym zagadnienia związane z wbudowanymi systemami, rozwojem jądra i systemów operacyjnych, aż po DevOps i administrację Linuksa.
-
-Nagrania z poprzednich edycji można obejrzeć na naszym kanale [YouTube](https://www.youtube.com/@asi-wroclaw/playlists) lub stronie internetowej z poprzedniej, [16. edycji](https://16.sesja.linuksowa.pl).
