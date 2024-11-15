@@ -1,4 +1,4 @@
-import { HEADER_HEIGHT } from '@/components/NavBar';
+import { HEADER_HEIGHT } from '@/components/Navbar';
 
 const scrollToSection = (sectionId: string) => {
   const element = document.getElementById(`${sectionId}`);

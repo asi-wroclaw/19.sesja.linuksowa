@@ -62,15 +62,15 @@ const Live = () => {
   );
 };
 
-const NavBar = () => {
+const Navbar = () => {
   const theme = useTheme();
   const [bg, setBg] = useState<string>('rgba(0,0,0,0)');
   const [isSmallerThanLg] = useMediaQuery('(max-width: 62em)');
   const [isBiggerThanLg] = useMediaQuery('(min-width: 62em)');
   const { t }: { t: (key: string) => string } = useTranslation('common');
- // const showLive = ['2024-04-15', '2024-04-20', '2024-04-21'].includes(
- //   new Date().toISOString().slice(0, 10),
- // );
+  // const showLive = ['2024-04-15', '2024-04-20', '2024-04-21'].includes(
+  //   new Date().toISOString().slice(0, 10),
+  // );
   const headId = 'head';
 
   const menu = [
@@ -90,7 +90,6 @@ const NavBar = () => {
 
     { text: t('menu.previous'), sectionId: 'previous' },
     { text: t('menu.sponsors'), sectionId: 'sponsors' },
-   // { text: t('menu.contact'), sectionId: 'contact' },
   ].filter(({ text }) => text);
 
   const changeBackground = () => {
@@ -124,7 +123,6 @@ const NavBar = () => {
           marginBottom="auto"
           cursor="pointer"
         >
-        
           <Image
             onClick={() => scrollToSection(headId)}
             alt="sesja linuksowa"
@@ -209,4 +207,4 @@ const DesktopNavBar = ({ menu }: { menu: Menu }) => {
   );
 };
 
-export default NavBar;
+export default Navbar;

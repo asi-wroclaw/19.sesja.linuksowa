@@ -1,5 +1,5 @@
 import { SPEAKERS } from '@/data/speakers';
-import NavBar from '@/components/NavBar';
+import Navbar from '@/components/Navbar';
 import ParticlesBackground from '@/components/ParticlesBackground';
 import config from '@/config';
 import AboutUs from '@/slices/AboutUs';
@@ -20,7 +20,7 @@ import { ORGANIZERS } from '@/data/organizers';
 const Main = () => {
   return (
     <main>
-      <NavBar />
+      <Navbar />
       <HeadSlice />
       <AboutUs />
       {config.SHOW_CALL_FOR_PAPERS && <C4p />}
