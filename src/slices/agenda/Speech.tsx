@@ -1,4 +1,5 @@
 import DefaultButton from '@/components/DefaultButton';
+import type { SpeechItem } from '@/data/agenda';
 import {
   Box,
   Collapse,
@@ -10,16 +11,6 @@ import {
   useTheme,
 } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
-
-export type SpeechItem = {
-  start: string;
-  end: string;
-  title: string;
-  author?: string;
-  description?: string[];
-  lang?: ('en' | 'pl')[];
-  recording?: string;
-};
 
 const Speech = ({ speech }: { speech: SpeechItem }) => {
   const { isOpen, onToggle } = useDisclosure();
@@ -44,9 +35,13 @@ const Speech = ({ speech }: { speech: SpeechItem }) => {
       paddingTop={3}
       borderBottom={`0.25rem ${theme.colors.primary} solid`}
     >
-      <GridItem area="time" onClick={() => description && onToggle()} textAlign='center'>
+      <GridItem
+        area="time"
+        onClick={() => description && onToggle()}
+        textAlign="center"
+      >
         <Text fontSize={['sm', 'md', 'xl', '2xl']} color="whiteAlpha.900">
-         {start}-{end} 
+          {start}-{end}
         </Text>
       </GridItem>
       <GridItem

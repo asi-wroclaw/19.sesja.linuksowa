@@ -1,4 +1,12 @@
-import { SpeechItem } from '@/slices/agenda/Speech';
+export type SpeechItem = {
+  start: string;
+  end: string;
+  title: string;
+  author?: string;
+  description?: string[];
+  lang?: ('en' | 'pl')[];
+  recording?: string;
+};
 
 export const SATURDAY_AGENDA: SpeechItem[] = [
   {
@@ -6,7 +14,7 @@ export const SATURDAY_AGENDA: SpeechItem[] = [
     end: 'TBA',
     title: '',
     author: '',
-   // lang: [''],
+    // lang: [''],
     description: [''],
     recording: '',
   },
@@ -21,7 +29,7 @@ export const SUNDAY_AGENDA: SpeechItem[] = [
     //lang: [''],
     description: [''],
     recording: '',
-  }, 
+  },
   {
     start: 'TBA',
     end: 'TBA',
