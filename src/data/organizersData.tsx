@@ -1,19 +1,13 @@
-import blankAvatar from './blank-avatar.jpg';
 import { OrganizerProps } from '@/slices/Organizers';
-import Michal from "./michal.jpg";
-import Tomek from "./rikardo.png";
-import Jakub from "./sylwek.png";
-import Jacek from "./jackek.png";
-import Kamil from "./kamil.jpg";
-import Felix from "./felix.png";
-import Ola from "./ola.jpeg";
-import Wiktor from "./wiktor.png";
-import Przemek from "./przemek.jpg"
-
+import blankAvatar from '../assets/organizers/blank-avatar.jpg';
+import Felix from '../assets/organizers/felix.png';
+import Jacek from '../assets/organizers/jackek.png';
+import Kamil from '../assets/organizers/kamil.jpg';
+import Michal from '../assets/organizers/michal.jpg';
+import Przemek from '../assets/organizers/przemek.jpg';
+import Tomek from '../assets/organizers/rikardo.png';
 
 export const ORGANIZERS: OrganizerProps[] = [
-
-
   {
     image: Michal,
     name: 'Michał Korczak',
@@ -31,7 +25,7 @@ export const ORGANIZERS: OrganizerProps[] = [
   },
   {
     image: Jacek,
-    name: 'Jacek Poziemski',  
+    name: 'Jacek Poziemski',
     role: 'jacek',
   },
   {
@@ -41,12 +35,12 @@ export const ORGANIZERS: OrganizerProps[] = [
   },
   {
     image: Kamil,
-    name: 'Kamil Tomasikiewicz',  
+    name: 'Kamil Tomasikiewicz',
     role: 'kamil',
   },
   {
     image: Felix,
-    name: 'Felix Zieliński',  
+    name: 'Felix Zieliński',
     role: 'felix',
   },
   {

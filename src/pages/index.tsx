@@ -15,7 +15,7 @@ import Agenda from '@/slices/agenda/Index';
 import CoC from '@/slices/CoC';
 import Head from 'next/head';
 import Organizers from '@/slices/Organizers';
-import { ORGANIZERS } from '@/assets/organizers/organizersData';
+import { ORGANIZERS } from '@/data/organizersData';
 
 const Main = () => {
   return (
