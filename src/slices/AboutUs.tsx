@@ -1,9 +1,9 @@
 import ImageItem from '@/components/ImageItem';
 import { Box, Stack, useTheme } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
-import cel from '../assets/about-us/cel.png';
-import coTo from '../assets/about-us/coTo.png';
-import lupa from '../assets/about-us/lupa.svg';
+import magnifyingGlass from '../assets/about-us/magnifying-glass.svg';
+import ourGoal from '../assets/about-us/our-goal.png';
+import questionMarks from '../assets/about-us/question-marks.png';
 
 const AboutUs = () => {
   const theme = useTheme();
@@ -11,21 +11,22 @@ const AboutUs = () => {
 
   const content = [
     {
-      image: coTo,
+      image: questionMarks,
       text: t('aboutUsWhatIsText'),
       title: t('aboutUsWhatIsTitle'),
     },
     {
-      image: lupa,
+      image: magnifyingGlass,
       text: t('howItLooksLiketext'),
       title: t('howItLooksLikeTitle'),
     },
     {
-      image: cel,
+      image: ourGoal,
       text: t('ourGoalText'),
       title: t('ourGoalTitle'),
     },
   ];
+
   return (
     <Box
       id="about"
