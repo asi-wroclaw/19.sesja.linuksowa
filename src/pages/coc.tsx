@@ -3,7 +3,7 @@ import { Box, Center, Heading, HStack, VStack } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 import Link from 'next/link';
 
-export default function Coc() {
+export default function CodeOfConduct() {
   const { t } = useTranslation('common');
 
   return (
