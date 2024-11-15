@@ -44,8 +44,7 @@
     "@types/react-slick": "^0.23.13",
     "eslint": "^8.52.0",
     "eslint-config-next": "^14.0.0",
-    "husky": "^8.0.3",
-    "prettier": "^3.0.3"
+    "prettier": "^3.3.3"
   },
   "prettier": "@omikorin/prettier-config"
 }
