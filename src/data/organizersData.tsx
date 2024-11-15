@@ -1,7 +1,7 @@
 import { OrganizerProps } from '@/slices/Organizers';
 import blankAvatar from '../assets/organizers/blank-avatar.jpg';
 import Felix from '../assets/organizers/felix.png';
-import Jacek from '../assets/organizers/jackek.png';
+import Jacek from '../assets/organizers/jacek.png';
 import Kamil from '../assets/organizers/kamil.jpg';
 import Michal from '../assets/organizers/michal.jpg';
 import Przemek from '../assets/organizers/przemek.jpg';
