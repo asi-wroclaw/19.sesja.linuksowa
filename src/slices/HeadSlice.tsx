@@ -2,6 +2,7 @@ import DefaultButton from '@/components/DefaultButton';
 import scrollToSection from '@/utils/scrollToSection';
 import {
   Box,
+  HStack,
   Heading,
   Stack,
   StyleProps,
@@ -89,18 +90,20 @@ const HeadDescription = () => {
     >
       <Title />
       <SpotDescription />
-      {config.SHOW_AGENDA && (
+      <HStack gap={16}>
+        {config.SHOW_AGENDA && (
+          <DefaultButton
+            onClick={() => scrollToSection('agenda')}
+            text={t('seeAgenda')}
+            _hover={{ color: 'black' }}
+          />
+        )}
         <DefaultButton
-          onClick={() => scrollToSection('agenda')}
-          text={t('seeAgenda')}
+          onClick={() => scrollToSection('tickets')}
+          text={t('getTicketsCaps')}
           _hover={{ color: 'black' }}
         />
-      )}
-      <DefaultButton
-        onClick={() => scrollToSection('tickets')}
-        text={t('getTicketsCaps')}
-        _hover={{ color: 'black' }}
-      />
+      </HStack>
     </VStack>
   );
 };
