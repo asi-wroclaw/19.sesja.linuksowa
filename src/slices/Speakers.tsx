@@ -1,6 +1,5 @@
 import {
   Box,
-  Button,
   DarkMode,
   Flex,
   HStack,
@@ -9,14 +8,13 @@ import {
   ModalBody,
   ModalCloseButton,
   ModalContent,
-  ModalFooter,
   ModalHeader,
   ModalOverlay,
   Text,
   VStack,
   useDisclosure,
   useMediaQuery,
-  useTheme,
+  useTheme
 } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 import Image, { StaticImageData } from 'next/image';

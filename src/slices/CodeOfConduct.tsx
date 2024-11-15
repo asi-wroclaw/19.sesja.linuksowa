@@ -1,4 +1,4 @@
-import { useTheme, Center, Link, Text } from '@chakra-ui/react';
+import { Center, Link, Text, useTheme } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 
 const CodeOfConduct = () => {
@@ -28,13 +28,8 @@ const CodeOfConduct = () => {
       paddingLeft={4}
     >
       {content.cocText}
-      <Link
-        href={content.cocLink}
-        target="_blank"
-        padding={2}
-      ><Text
-      as='u'>
-        {content.cocButtonText}</Text>
+      <Link href={content.cocLink} target="_blank" padding={2}>
+        <Text as="u">{content.cocButtonText}</Text>
       </Link>
     </Center>
   );

@@ -1,6 +1,6 @@
 import DefaultButton from '@/components/DefaultButton';
 import { ArrowForwardIcon } from '@chakra-ui/icons';
-import { Box, Link, Flex, Heading, Center } from '@chakra-ui/react';
+import { Box, Center, Flex, Heading, Link } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 
 const CallForPapers = () => {

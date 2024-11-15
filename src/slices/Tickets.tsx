@@ -1,11 +1,9 @@
-import DefaultButton from '@/components/DefaultButton';
 import {
   AspectRatio,
   Box,
   Center,
   Flex,
   Heading,
-  Link,
   VStack,
 } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
@@ -53,7 +51,7 @@ const Tickets = () => {
               src="https://app.evenea.pl/event/19-sesja-linuksowa/?out=1&source=event_iframe"
               width="100%"
               style={{ border: '0' }}
-              height={50} 
+              height={50}
             ></iframe>
           </AspectRatio>
         </Center>

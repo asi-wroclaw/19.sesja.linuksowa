@@ -2,19 +2,18 @@ import {
   Box,
   Flex,
   Heading,
-  Text,
-  VStack,
-  useTheme,
   IconButton,
+  VStack,
   useBreakpointValue,
+  useTheme,
 } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 import Image, { StaticImageData } from 'next/image';
 import React from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick-theme.css';
+import 'slick-carousel/slick/slick.css';
 
 export type OrganizerProps = {
   image: string | StaticImageData;
