@@ -53,7 +53,6 @@ const Organizer = ({ image, name, role }: OrganizerProps) => {
             />
           </Box>
           <Heading
-            margin="auto"
             textAlign="center"
             fontSize="3xl"
             as="h3"
@@ -62,7 +61,7 @@ const Organizer = ({ image, name, role }: OrganizerProps) => {
             {name}
           </Heading>
           <Heading
-            margin="auto"
+            marginTop={'1rem'}
             textAlign="center"
             fontSize="3xl"
             as="h3"
@@ -115,12 +114,7 @@ const Organizers = ({
 
   if (!organizersData.length) return null;
   return (
-    <Box
-      id="organizers"
-      bg="blackAlpha.900"
-      minH="40vh"
-      overflow="hidden"
-    >
+    <Box id="organizers" bg="blackAlpha.900" minH="40vh" overflow="hidden">
       <Box
         display="flex"
         justifyContent="center"
@@ -134,8 +128,8 @@ const Organizers = ({
         padding="5vh 0vh 0vh 0vh"
       >
         <IconButton
-          fontSize='40px'
-          size='lg'
+          fontSize="40px"
+          size="lg"
           aria-label="left-arrow"
           background={theme.colors.primary}
           color="white"
@@ -154,10 +148,10 @@ const Organizers = ({
           fontSize={['3xl', '5xl', '7xl']}
         >
           {t('our-team')}
-        </Heading> 
+        </Heading>
         <IconButton
-          fontSize='40px'
-          size='lg'
+          fontSize="40px"
+          size="lg"
           aria-label="right-arrow"
           background={theme.colors.primary}
           color="white"
@@ -200,7 +194,6 @@ const Organizers = ({
               ))}
           </Slider>
         </Box>
-       
       </Box>
     </Box>
   );
