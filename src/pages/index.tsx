@@ -1,29 +1,28 @@
-import { SPEAKERS } from '@/data/speakers';
 import Navbar from '@/components/Navbar';
 import ParticlesBackground from '@/components/ParticlesBackground';
 import config from '@/config';
+import { ORGANIZERS } from '@/data/organizers';
+import { SPEAKERS } from '@/data/speakers';
 import AboutUs from '@/slices/AboutUs';
-import C4p from '@/slices/C4p';
-import Contact from '@/slices/Contact';
-import HeadSlice from '@/slices/HeadSlice';
+import Agenda from '@/slices/agenda/Index';
+import CallForPapers from '@/slices/CallForPapers';
+import CodeOfConduct from '@/slices/CodeOfConduct';
+import Hero from '@/slices/Hero';
 import Map from '@/slices/Map';
+import Organizers from '@/slices/Organizers';
 import PreviousEdition from '@/slices/PreviousEdition';
 import Speakers from '@/slices/Speakers';
 import Sponsorship from '@/slices/Sponsorship';
 import Tickets from '@/slices/Tickets';
-import Agenda from '@/slices/agenda/Index';
-import CoC from '@/slices/CoC';
 import Head from 'next/head';
-import Organizers from '@/slices/Organizers';
-import { ORGANIZERS } from '@/data/organizers';
 
 const Main = () => {
   return (
     <main>
       <Navbar />
-      <HeadSlice />
+      <Hero />
       <AboutUs />
-      {config.SHOW_CALL_FOR_PAPERS && <C4p />}
+      {config.SHOW_CALL_FOR_PAPERS && <CallForPapers />}
       {config.SHOW_SPEAKERS && <Speakers speakersData={SPEAKERS} />}
       {config.SHOW_AGENDA && <Agenda />}
       <PreviousEdition />
@@ -31,10 +30,7 @@ const Main = () => {
       <Map />
       <Organizers organizersData={ORGANIZERS} />
       <Sponsorship />
-      {config.SEND_MESSAGE_URL && (
-        <Contact sendMessageUrl={config.SEND_MESSAGE_URL} />
-      )}
-      <CoC />
+      <CodeOfConduct />
       <ParticlesBackground />
     </main>
   );

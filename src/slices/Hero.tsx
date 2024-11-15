@@ -108,7 +108,7 @@ const HeadDescription = () => {
   );
 };
 
-const HeadSlice = () => {
+const Hero = () => {
   return (
     <Box as="section" id="head" {...HeadContainerStyle} m={0}>
       <Stack
@@ -137,4 +137,4 @@ const HeadSlice = () => {
   );
 };
 
-export default HeadSlice;
+export default Hero;

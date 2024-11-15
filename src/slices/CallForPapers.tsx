@@ -3,7 +3,7 @@ import { ArrowForwardIcon } from '@chakra-ui/icons';
 import { Box, Link, Flex, Heading, Center } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 
-const C4p = () => {
+const CallForPapers = () => {
   const { t } = useTranslation('common');
 
   const content = {
@@ -57,4 +57,4 @@ const C4p = () => {
   </Box>
 }
 
-export default C4p;
+export default CallForPapers;

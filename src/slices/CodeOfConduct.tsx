@@ -1,7 +1,7 @@
 import { useTheme, Center, Link, Text } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 
-const CoC = () => {
+const CodeOfConduct = () => {
   const theme = useTheme();
   const { t } = useTranslation('common');
 
@@ -40,4 +40,4 @@ const CoC = () => {
   );
 };
 
-export default CoC;
+export default CodeOfConduct;
