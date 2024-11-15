@@ -11,20 +11,19 @@ import {
 import { useTranslation } from 'next-export-i18n';
 import NextImage, { StaticImageData } from 'next/image';
 import React from 'react';
-import programmers from '../assets/loga/4programmers.svg';
-import asi from '../assets/loga/asi-logo-trans.svg';
-import hswro from '../assets/loga/logo-hs.svg';
-import linuxMagazine from '../assets/loga/logo-linux-mg.png';
-import mb from '../assets/loga/logo-mb.svg';
-import programistamag from '../assets/loga/logo-programistamag.jpg';
-import pwr from '../assets/loga/logo-pwr.png';
-import antmicro from '../assets/loga/logo_antmicro.svg';
-import plug from '../assets/loga/plug.png';
-import clug from '../assets/loga/CLUG.png';
-import ovh from '../assets/loga/OVHcloud_master_logo_fullcolor_RGB.png';
-import manus from '../assets/loga/logo-manus.png';
-import slido from '../assets/loga/slido_logo_green.svg';
-import mikrus from '../assets/loga/logo-mikrus.png';
+import programmers from '../assets/logo/4programmers.svg';
+import antmicro from '../assets/logo/antmicro.svg';
+import asi from '../assets/logo/asi-logo-trans.svg';
+import clug from '../assets/logo/clug.png';
+import hswro from '../assets/logo/hswro.svg';
+import linuxMagazine from '../assets/logo/linux-magazine.png';
+import manus from '../assets/logo/manus.png';
+import mikrus from '../assets/logo/mikrus.png';
+import ovh from '../assets/logo/ovhcloud.png';
+import plug from '../assets/logo/plug.png';
+import programistamag from '../assets/logo/programistamag.jpg';
+import pwr from '../assets/logo/pwr.png';
+import slido from '../assets/logo/slido.svg';
 
 type SponsorshipEntity = {
   title: string;
@@ -42,7 +41,7 @@ const Sponsorship = () => {
   const [isSmallerThan800] = useMediaQuery('(max-width: 800px)');
 
   const sponsorsAndOrganizations = [
-     {
+    {
       title: t('organizers'),
       logos: [
         { image: asi, href: 'https://www.asi.wroclaw.pl/', width: '1000' },
@@ -53,7 +52,7 @@ const Sponsorship = () => {
       logos: [
       ],
     },
-   
+
     {
       title: t('patrons'),
       logos: [
@@ -64,7 +63,7 @@ const Sponsorship = () => {
           width: 200,
         },
         { image: plug, href: 'https://linux.org.pl/', width: '300' },
-        { image: pwr, href: 'https://pwr.edu.pl/', width: '800'},
+        { image: pwr, href: 'https://pwr.edu.pl/', width: '800' },
         /*{ image: programmers, href: 'https://4programmers.net/', width: '300' },
       {
           image: programistamag,
@@ -72,25 +71,25 @@ const Sponsorship = () => {
           width: '300',
         },*/
         {
-        image: manus,
-        href: 'https://manus.pl/',
-        width: '300',
+          image: manus,
+          href: 'https://manus.pl/',
+          width: '300',
         },
-      /*  {
-        image: slido,
-        href: 'https://www.slido.com',
-        width: '200',
-        },
-        {
-        image: mikrus,
-        href: 'https://mikr.us',
-        width: '400'
-        }*/
-       /* {
-          image: linuxMagazine,
-          href: 'https://linux-magazine.pl/',
+        /*  {
+          image: slido,
+          href: 'https://www.slido.com',
           width: '200',
-        },*/
+          },
+          {
+          image: mikrus,
+          href: 'https://mikr.us',
+          width: '400'
+          }*/
+        /* {
+           image: linuxMagazine,
+           href: 'https://linux-magazine.pl/',
+           width: '200',
+         },*/
       ],
     },
   ] as SponsorshipEntity[];
