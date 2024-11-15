@@ -1,4 +1,4 @@
-import { SPEAKERS } from '@/assets/speakers/speakersData';
+import { SPEAKERS } from '@/data/speakers';
 import NavBar from '@/components/NavBar';
 import ParticlesBackground from '@/components/ParticlesBackground';
 import config from '@/config';
@@ -15,7 +15,7 @@ import Agenda from '@/slices/agenda/Index';
 import CoC from '@/slices/CoC';
 import Head from 'next/head';
 import Organizers from '@/slices/Organizers';
-import { ORGANIZERS } from '@/data/organizersData';
+import { ORGANIZERS } from '@/data/organizers';
 
 const Main = () => {
   return (
