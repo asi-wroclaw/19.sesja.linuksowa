@@ -153,7 +153,7 @@ const Organizers = ({
           color="whiteAlpha.900"
           fontSize={['3xl', '5xl', '7xl']}
         >
-          {t('team')}
+          {t('our-team')}
         </Heading> 
         <IconButton
           fontSize='40px'

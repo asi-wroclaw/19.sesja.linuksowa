@@ -11,41 +11,41 @@ export const ORGANIZERS: OrganizerProps[] = [
   {
     image: Michal,
     name: 'Michał Korczak',
-    role: 'michal',
+    role: 'team.michal',
   },
   {
     image: Tomek,
     name: 'Tomasz Świątek',
-    role: 'tomek',
+    role: 'team.tomek',
   },
   {
     image: blankAvatar,
     name: 'Szymon Cichy',
-    role: 'szymon',
+    role: 'team.szymon',
   },
   {
     image: Jacek,
     name: 'Jacek Poziemski',
-    role: 'jacek',
+    role: 'team.jacek',
   },
   {
     image: blankAvatar,
     name: 'Natalia Konopka',
-    role: 'natalia',
+    role: 'team.natalia',
   },
   {
     image: Kamil,
     name: 'Kamil Tomasikiewicz',
-    role: 'kamil',
+    role: 'team.kamil',
   },
   {
     image: Felix,
     name: 'Felix Zieliński',
-    role: 'felix',
+    role: 'team.felix',
   },
   {
     image: Przemek,
     name: 'Przemysław Jamontt',
-    role: 'przemek',
+    role: 'team.przemek',
   },
 ];
