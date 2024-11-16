@@ -95,7 +95,7 @@ export default function Home() {
           name="google-site-verification"
           content="_XX2o2FKgUfRENSsUKxtqytQmXUjiPSlIVqFgmlXdts"
         />
-        <link rel="me" href="https://fosstodon.org/@ASI">
+        <link rel="me" href="https://fosstodon.org/@ASI"></link>
       </Head>
       <Main />
     </>
