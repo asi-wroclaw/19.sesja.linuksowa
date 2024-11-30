@@ -44,7 +44,7 @@ const Sponsorship = () => {
     {
       title: t('organizers'),
       logos: [
-        { image: asi, href: 'https://www.asi.wroclaw.pl/', width: '1000' },
+        { image: asi, href: 'https://www.asi.wroclaw.pl/', width: '800' },
       ],
     },
     {
@@ -61,8 +61,8 @@ const Sponsorship = () => {
           href: 'https://www.hswro.org/',
           width: 200,
         },
-        { image: plug, href: 'https://linux.org.pl/', width: '300' },
-        { image: pwr, href: 'https://pwr.edu.pl/', width: '800' },
+        { image: plug, href: 'https://linux.org.pl/', width: '220' },
+        { image: pwr, href: 'https://pwr.edu.pl/', width: '400' },
         /*{ image: programmers, href: 'https://4programmers.net/', width: '300' },
       {
           image: programistamag,
@@ -156,13 +156,13 @@ const Sponsorship = () => {
         <React.Fragment key={title}>
           {logos.length !== 0 && (
             <Box
-              paddingTop="100px"
-              paddingBottom="100px"
+              paddingTop="50px"
+              paddingBottom="50px"
               key={title}
               width="100%"
               minHeight="30vh"
             >
-              <VStack gap="60px" display="flex">
+              <VStack gap="50px" display="flex">
                 <Heading
                   zIndex="0"
                   fontWeight="bold"
@@ -177,15 +177,15 @@ const Sponsorship = () => {
                   flexWrap="wrap"
                   justifyContent="center"
                   alignItems="center"
-                  marginLeft="10%"
-                  rowGap={{ base: '60px' }}
-                  marginRight="10%"
+                  marginLeft="20%"
+                  rowGap={{ base: '30px' }}
+                  marginRight="20%"
                 >
                   {logos.map(({ image, href, width }) => (
                     <Box
                       key={href}
                       flexWrap="wrap"
-                      flexBasis={{ base: '100%', md: '45%', xl: '30%' }}
+                      flexBasis={{ base: '100%', md: '45%', xl: '40%' }}
                       margin="auto"
                     >
                       <Link
