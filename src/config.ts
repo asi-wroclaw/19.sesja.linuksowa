@@ -14,7 +14,7 @@ const appConfig = z.object({
   SHOW_CALL_FOR_PAPERS: z.preprocess(
     (value) => (value === 'true' ? true : false),
     z.boolean(),
-  )
+  ),
 });
 
 const config = appConfig.parse(getConfig().publicRuntimeConfig || {});

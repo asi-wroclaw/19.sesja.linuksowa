@@ -14,7 +14,7 @@ import {
   VStack,
   useDisclosure,
   useMediaQuery,
-  useTheme
+  useTheme,
 } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 import Image, { StaticImageData } from 'next/image';
@@ -103,11 +103,13 @@ const SpeakerModal = ({
       >
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader color="whiteAlpha.900" textAlign="center" fontSize="2xl">{name}</ModalHeader>
+          <ModalHeader color="whiteAlpha.900" textAlign="center" fontSize="2xl">
+            {name}
+          </ModalHeader>
           <ModalCloseButton color="whiteAlpha.900" />
           <ModalBody color="whiteAlpha.900">
-            <VStack gap='3vh'>
-              <Box w={300} h={300} position="relative" >
+            <VStack gap="3vh">
+              <Box w={300} h={300} position="relative">
                 <Image
                   fill
                   alt={`${name} image`}
@@ -117,7 +119,12 @@ const SpeakerModal = ({
                 />
               </Box>
               {(description || [])?.map((descriptionText, index) => (
-                <Text textAlign="center" key={`${descriptionText}-${index}`} minH="15px" padding='0vh 0vh 2vh 0vh'>
+                <Text
+                  textAlign="center"
+                  key={`${descriptionText}-${index}`}
+                  minH="15px"
+                  padding="0vh 0vh 2vh 0vh"
+                >
                   {descriptionText}
                 </Text>
               ))}
