@@ -1,15 +1,10 @@
 import config from '@/config';
 import { Box, Button, Flex, Input } from '@chakra-ui/react';
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 
 const Home: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const [image, setImage] = useState<string | null>(null);
-
-  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
-  useEffect(() => {
-    drawCanvas();
-  }, [image]);
 
   const handleImageUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
@@ -24,7 +19,7 @@ const Home: React.FC = () => {
     reader.readAsDataURL(file);
   };
 
-  const drawCanvas = () => {
+  const drawCanvas = useCallback(() => {
     if (!canvasRef.current) return;
 
     const canvas = canvasRef.current;
@@ -46,7 +41,7 @@ const Home: React.FC = () => {
         };
       }
     };
-  };
+  }, [image]);
 
   const handleDownload = () => {
     if (!canvasRef.current) return;
@@ -59,6 +54,10 @@ const Home: React.FC = () => {
   };
 
   if (!config.ENABLE_CREATOR) return null;
+
+  useEffect(() => {
+    drawCanvas();
+  }, [drawCanvas]);
 
   return (
     <Flex direction="column" align="center" p={4} height="100vh">
