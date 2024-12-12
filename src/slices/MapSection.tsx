@@ -48,7 +48,12 @@ const MapSection = () => {
       zIndex={2} // why this page is so broken from the start
     >
       <Space text={t('eventLocation')} />
-      <Box position="relative" zIndex="2">
+      <Box
+        position="relative"
+        zIndex="2"
+        display="flex"
+        justifyContent="center"
+      >
         <LeafletMap />
       </Box>
       <Space />
