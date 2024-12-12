@@ -1,6 +1,5 @@
 import Lang from '@/components/Lang';
 import scrollToSection from '@/utils/scrollToSection';
-import { HamburgerIcon } from '@chakra-ui/icons';
 import {
   Box,
   DarkMode,
@@ -17,6 +16,7 @@ import {
   useMediaQuery,
   useTheme,
 } from '@chakra-ui/react';
+import { MenuIcon } from 'lucide-react';
 import { useTranslation } from 'next-export-i18n';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
@@ -148,7 +148,7 @@ const MobileNavBar = ({ menu }: { menu: MenuProps }) => {
         <MenuButton
           as={IconButton}
           aria-label="Options"
-          icon={<HamburgerIcon color="#fff" />}
+          icon={<MenuIcon />}
           variant="outline"
         />
         <LightMode>

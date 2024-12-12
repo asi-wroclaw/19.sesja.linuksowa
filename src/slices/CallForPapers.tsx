@@ -1,6 +1,6 @@
 import DefaultButton from '@/components/DefaultButton';
-import { ArrowForwardIcon } from '@chakra-ui/icons';
 import { Box, Center, Flex, Heading, Link } from '@chakra-ui/react';
+import { MoveRight } from 'lucide-react';
 import { useTranslation } from 'next-export-i18n';
 
 const CallForPapers = () => {
@@ -49,7 +49,7 @@ const CallForPapers = () => {
             <DefaultButton
               fontSize={{ base: '25px', lg: '30px' }}
               padding={{ base: '5', lg: '10' }}
-              rightIcon={<ArrowForwardIcon />}
+              rightIcon={<MoveRight size={48} />}
               _hover={{ color: 'black' }}
               text={content.c4pButtonText}
             />
