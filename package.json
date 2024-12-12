@@ -7,8 +7,8 @@
     "build": "next build",
     "postbuild": "next-sitemap",
     "start": "next start",
-    "lint": "next lint",
-    "format": "prettier --write src"
+    "lint": "biome lint --write src",
+    "format": "biome format --write src"
   },
   "packageManager": "npm@10.9.2",
   "volta": {
