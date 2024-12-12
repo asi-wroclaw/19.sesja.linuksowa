@@ -53,7 +53,7 @@ const Organizer = ({ image, name, role }: OrganizerProps) => {
           </Box>
           <Heading
             textAlign="center"
-            fontSize="3xl"
+            fontSize="2xl"
             as="h3"
             color="whiteAlpha.900"
           >
@@ -62,8 +62,8 @@ const Organizer = ({ image, name, role }: OrganizerProps) => {
           <Heading
             marginTop={'1rem'}
             textAlign="center"
-            fontSize="3xl"
-            as="h3"
+            fontSize="xl"
+            as="h4"
             color={theme.colors.primary}
           >
             {t(role)}

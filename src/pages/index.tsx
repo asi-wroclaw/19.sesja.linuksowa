@@ -73,28 +73,6 @@ export default function Home() {
           href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
-        <link
-          rel="preload"
-          as="font"
-          href="/font/Montserrat-SemiBold.ttf"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          as="font"
-          href="/font/Montserrat-Light.ttf"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          as="font"
-          href="/font/Montserrat-Regular.ttf"
-          crossOrigin="anonymous"
-        />
-        <meta
-          name="google-site-verification"
-          content="_XX2o2FKgUfRENSsUKxtqytQmXUjiPSlIVqFgmlXdts"
-        />
         <link rel="me" href="https://fosstodon.org/@ASI" />
       </Head>
       <Main />

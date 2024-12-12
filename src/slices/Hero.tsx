@@ -1,5 +1,5 @@
 import DefaultButton from '@/components/DefaultButton';
-import scrollToSection from '@/utils/scrollToSection';
+import scrollToSection from '@/lib/scrollToSection';
 import {
   Box,
   HStack,

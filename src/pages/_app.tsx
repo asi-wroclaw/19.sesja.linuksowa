@@ -1,23 +1,22 @@
+import { fonts } from '@/lib/fonts';
+import { theme } from '@/lib/theme';
 import '@/styles/globals.css';
-import { ChakraProvider, extendTheme } from '@chakra-ui/react';
+import { ChakraProvider } from '@chakra-ui/react';
 import type { AppProps } from 'next/app';
-
-const theme = extendTheme({
-  colors: {
-    primary: '#429096',
-    secondary: '#6F2DBD',
-    red: '#ff0000',
-  },
-  fonts: {
-    body: 'MontserratSemiBold',
-    heading: 'MontserratSemiBold',
-  },
-});
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <ChakraProvider theme={theme}>
-      <Component {...pageProps} />
-    </ChakraProvider>
+    <>
+      <style jsx global>
+        {`
+          :root {
+            --font-montserrat: ${fonts.montserrat.style.fontFamily};
+          }
+        `}
+      </style>
+      <ChakraProvider theme={theme}>
+        <Component {...pageProps} />
+      </ChakraProvider>
+    </>
   );
 }
