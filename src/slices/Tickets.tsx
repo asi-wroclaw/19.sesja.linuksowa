@@ -1,11 +1,5 @@
-import {
-  AspectRatio,
-  Box,
-  Center,
-  Flex,
-  Heading,
-  VStack,
-} from '@chakra-ui/react';
+import { Box, Center, Flex, Heading, Link } from '@chakra-ui/react';
+import { ChevronLeftIcon, ChevronRightIcon } from 'lucide-react';
 import { useTranslation } from 'next-export-i18n';
 
 const Tickets = () => {
@@ -34,27 +28,24 @@ const Tickets = () => {
         gap="5px"
       >
         <Center flex={1}>
-          <VStack spacing="3em">
-            <Heading
-              as="h2"
-              fontSize={{ base: '4xl', md: '7xl' }}
-              textAlign="center"
-              fontWeight="semibold"
-            >
-              {content.text}
-            </Heading>
-          </VStack>
-        </Center>
-        <Center flex={2} marginTop="3em">
-          <AspectRatio width="100%" ratio={16 / 9} minH={500}>
-            <iframe
-              src="https://app.evenea.pl/event/19-sesja-linuksowa/?out=1&source=event_iframe"
-              width="100%"
-              style={{ border: '0' }}
-              height={50}
-              title="Evenea tickets"
-            />
-          </AspectRatio>
+          <Link
+            href="https://app.evenea.pl/event/19-sesja-linuksowa/?source=www-linuksowa"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Flex alignItems="center" gap="10px">
+              <ChevronRightIcon size="80" />
+              <Heading
+                as="h2"
+                fontSize={{ base: '4xl', md: '7xl' }}
+                textAlign="center"
+                fontWeight="semibold"
+              >
+                {content.text}
+              </Heading>
+              <ChevronLeftIcon size="80" />
+            </Flex>
+          </Link>
         </Center>
       </Flex>
     </Box>

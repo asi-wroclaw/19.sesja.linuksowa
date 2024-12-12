@@ -93,16 +93,22 @@ const HeadDescription = () => {
       <HStack gap={16}>
         {config.SHOW_AGENDA && (
           <DefaultButton
+            bg="#429096"
             onClick={() => scrollToSection('agenda')}
             text={t('seeAgenda')}
             _hover={{ color: 'black' }}
           />
         )}
-        <DefaultButton
-          onClick={() => scrollToSection('tickets')}
-          text={t('getTicketsCaps')}
-          _hover={{ color: 'black' }}
-        />
+        <a
+          href="https://app.evenea.pl/event/19-sesja-linuksowa/?source=www-linuksowa"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <DefaultButton
+            text={t('getTicketsCaps')}
+            _hover={{ color: 'black' }}
+          />
+        </a>
       </HStack>
     </VStack>
   );
