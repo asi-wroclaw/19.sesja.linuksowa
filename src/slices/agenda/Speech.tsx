@@ -63,7 +63,7 @@ const Speech = ({ speech }: { speech: SpeechItem }) => {
           )}
         </Text>
       </GridItem>
-      <GridItem rowSpan={2} colSpan={1}></GridItem>
+      <GridItem rowSpan={2} colSpan={1} />
       <GridItem
         area="author"
         {...style}
@@ -127,7 +127,10 @@ const Speech = ({ speech }: { speech: SpeechItem }) => {
           {description?.map((descriptionText, index) => (
             <Text
               fontSize={['sm', 'sm', 'lg', 'xl']}
-              key={`${descriptionText}-${index}`}
+              key={`${descriptionText}-${
+                // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+                index
+              }`}
               minH="15px"
             >
               {descriptionText}

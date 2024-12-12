@@ -29,12 +29,12 @@ const Space = ({ text }: { text?: string }) => {
     </Flex>
   );
 };
-const MapSlice = () => {
+const MapSection = () => {
   const { t } = useTranslation('common');
 
-  const Map = useMemo(
+  const LeafletMap = useMemo(
     () =>
-      dynamic(() => import('../components/Map'), {
+      dynamic(() => import('../components/LeafletMap'), {
         loading: () => <p>A map is loading</p>,
         ssr: false,
       }),
@@ -49,11 +49,11 @@ const MapSlice = () => {
     >
       <Space text={t('eventLocation')} />
       <Box position="relative" zIndex="2">
-        <Map />
+        <LeafletMap />
       </Box>
       <Space />
     </Box>
   );
 };
 
-export default MapSlice;
+export default MapSection;

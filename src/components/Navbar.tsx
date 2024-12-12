@@ -12,7 +12,7 @@ import {
   MenuButton,
   MenuItem,
   MenuList,
-  StyleProps,
+  type StyleProps,
   Text,
   useMediaQuery,
   useTheme,
@@ -136,12 +136,12 @@ const Navbar = () => {
   );
 };
 
-type Menu = {
+type MenuProps = {
   text?: string;
   sectionId?: string;
 }[];
 
-const MobileNavBar = ({ menu }: { menu: Menu }) => {
+const MobileNavBar = ({ menu }: { menu: MenuProps }) => {
   return (
     <DarkMode>
       <Menu>
@@ -171,7 +171,7 @@ const MobileNavBar = ({ menu }: { menu: Menu }) => {
   );
 };
 
-const DesktopNavBar = ({ menu }: { menu: Menu }) => {
+const DesktopNavBar = ({ menu }: { menu: MenuProps }) => {
   const theme = useTheme();
 
   return (

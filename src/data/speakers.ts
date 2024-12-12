@@ -1,4 +1,4 @@
-import { SpeakerProps } from '@/slices/Speakers';
+import type { SpeakerProps } from '@/slices/Speakers';
 import blankAvatar from '../assets/speakers/blank-avatar.jpg';
 
 export const SPEAKERS: SpeakerProps[] = [

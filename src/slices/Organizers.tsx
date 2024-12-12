@@ -8,7 +8,7 @@ import {
   useTheme,
 } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
-import Image, { StaticImageData } from 'next/image';
+import Image, { type StaticImageData } from 'next/image';
 import React from 'react';
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
 import Slider from 'react-slick';
@@ -79,7 +79,7 @@ const Organizers = ({
 }: {
   organizersData: OrganizerProps[];
 }) => {
-  var settings = {
+  const settings = {
     dots: false,
     infinite: true,
     arrows: false,
@@ -188,8 +188,8 @@ const Organizers = ({
                 (organizer) =>
                   organizer.image && organizer.name && organizer.role,
               )
-              .map((organizerData, index) => (
-                <Organizer key={index} {...organizerData} />
+              .map((organizer, index) => (
+                <Organizer key={organizer.name} {...organizer} />
               ))}
           </Slider>
         </Box>

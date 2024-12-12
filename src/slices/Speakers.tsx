@@ -17,7 +17,7 @@ import {
   useTheme,
 } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
-import Image, { StaticImageData } from 'next/image';
+import Image, { type StaticImageData } from 'next/image';
 import github from '../assets/socials/github.svg';
 import linkedin from '../assets/socials/linkedin.svg';
 import twitter from '../assets/socials/twitter.svg';
@@ -61,15 +61,16 @@ const getImageSize = (
   if (sizes.length !== 2) return sizes;
   const [width, height] = sizes;
   const [maxWidth, maxHeight] = maxSizes;
+
   if (width > height) {
     const imageWidth = width > maxWidth ? maxWidth : width;
     const imageHeight = (height / width) * imageWidth;
     return [imageWidth, imageHeight];
-  } else {
-    const imageHeight = height > maxHeight ? maxHeight : height;
-    const imageWidth = (width / height) * imageHeight;
-    return [imageWidth, imageHeight];
   }
+
+  const imageHeight = height > maxHeight ? maxHeight : height;
+  const imageWidth = (width / height) * imageHeight;
+  return [imageWidth, imageHeight];
 };
 const SpeakerModal = ({
   isOpen,
@@ -121,7 +122,10 @@ const SpeakerModal = ({
               {(description || [])?.map((descriptionText, index) => (
                 <Text
                   textAlign="center"
-                  key={`${descriptionText}-${index}`}
+                  key={`${descriptionText}-${
+                    // biome-ignore lint/suspicious/noArrayIndexKey: don't care
+                    index
+                  }`}
                   minH="15px"
                   padding="0vh 0vh 2vh 0vh"
                 >
@@ -222,8 +226,8 @@ const Speakers = ({ speakersData }: { speakersData: SpeakerProps[] }) => {
       >
         {speakersData
           .filter((speaker) => speaker.image && speaker.name)
-          .map((speakerData, index) => (
-            <Speaker key={index} {...speakerData} />
+          .map((speaker) => (
+            <Speaker key={speaker.name} {...speaker} />
           ))}
       </Flex>
     </Box>

@@ -9,7 +9,7 @@ import {
   useMediaQuery,
 } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
-import NextImage, { StaticImageData } from 'next/image';
+import NextImage, { type StaticImageData } from 'next/image';
 import React from 'react';
 import programmers from '../assets/logo/4programmers.svg';
 import antmicro from '../assets/logo/antmicro.svg';
@@ -148,7 +148,7 @@ const Sponsorship = () => {
             <DefaultButton
               _hover={{ color: 'black' }}
               text="sponsorshipOffer"
-            ></DefaultButton>
+            />
           </Link>
         </VStack>
       </Center>

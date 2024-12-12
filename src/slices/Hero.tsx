@@ -5,7 +5,7 @@ import {
   HStack,
   Heading,
   Stack,
-  StyleProps,
+  type StyleProps,
   VStack,
   useTheme,
 } from '@chakra-ui/react';

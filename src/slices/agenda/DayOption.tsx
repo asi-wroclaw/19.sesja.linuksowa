@@ -13,6 +13,7 @@ const DayOption = ({ selected = false, text, select }: DayOptionProps) => {
     : {};
   return (
     <Box
+      // biome-ignore lint/a11y/useSemanticElements: <explanation>
       role="group"
       cursor="pointer"
       onClick={select}

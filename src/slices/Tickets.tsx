@@ -52,7 +52,8 @@ const Tickets = () => {
               width="100%"
               style={{ border: '0' }}
               height={50}
-            ></iframe>
+              title="Evenea tickets"
+            />
           </AspectRatio>
         </Center>
       </Flex>

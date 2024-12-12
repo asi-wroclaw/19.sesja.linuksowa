@@ -1,5 +1,5 @@
 import DefaultButton from '@/components/DefaultButton';
-import { Box, Center, Heading, HStack, VStack } from '@chakra-ui/react';
+import { Box, Center, HStack, Heading, VStack } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 import Link from 'next/link';
 
@@ -31,7 +31,7 @@ export default function CodeOfConduct() {
                 width="md"
                 _hover={{ color: 'black' }}
                 text={'Check out our Code of Conduct'}
-              ></DefaultButton>
+              />
             </Link>
 
             <Link href="/">
@@ -39,7 +39,7 @@ export default function CodeOfConduct() {
                 width="md"
                 _hover={{ color: 'black' }}
                 text={'Go to main page'}
-              ></DefaultButton>
+              />
             </Link>
           </HStack>
         </VStack>

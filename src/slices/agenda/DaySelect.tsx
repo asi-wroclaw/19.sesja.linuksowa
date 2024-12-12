@@ -1,6 +1,5 @@
 import { HStack } from '@chakra-ui/react';
-
-import DayOption, { DayOptionProps } from './DayOption';
+import DayOption, { type DayOptionProps } from './DayOption';
 
 const DaySelect = ({ days }: { days: DayOptionProps[] }) => {
   return (

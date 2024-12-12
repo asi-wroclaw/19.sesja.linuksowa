@@ -1,4 +1,4 @@
-import { Button, ButtonProps, useTheme } from '@chakra-ui/react';
+import { Button, type ButtonProps, useTheme } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 
 const DefaultButton = (props: ButtonProps & { text: string }) => {

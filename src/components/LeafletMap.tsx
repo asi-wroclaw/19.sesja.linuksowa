@@ -1,7 +1,7 @@
 import 'leaflet/dist/leaflet.css';
 import { MapContainer, Marker, TileLayer } from 'react-leaflet';
 
-const Map = () => {
+const LeafletMap = () => {
   return (
     <MapContainer
       //@ts-ignore
@@ -15,9 +15,9 @@ const Map = () => {
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <Marker position={[51.110424, 17.059968]}></Marker>
+      <Marker position={[51.110424, 17.059968]} />
     </MapContainer>
   );
 };
 
-export default Map;
+export default LeafletMap;

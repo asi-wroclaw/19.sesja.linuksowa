@@ -6,6 +6,7 @@ const Home: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const [image, setImage] = useState<string | null>(null);
 
+  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
   useEffect(() => {
     drawCanvas();
   }, [image]);

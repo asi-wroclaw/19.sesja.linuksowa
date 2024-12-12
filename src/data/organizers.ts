@@ -1,4 +1,4 @@
-import { OrganizerProps } from '@/slices/Organizers';
+import type { OrganizerProps } from '@/slices/Organizers';
 import blankAvatar from '../assets/organizers/blank-avatar.jpg';
 import Felix from '../assets/organizers/felix.png';
 import Jacek from '../assets/organizers/jacek.png';
