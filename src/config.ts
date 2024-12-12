@@ -1,5 +1,5 @@
-import { z } from 'zod';
 import getConfig from 'next/config';
+import { z } from 'zod';
 
 const appConfig = z.object({
   SHOW_AGENDA: z.preprocess(
@@ -13,6 +13,10 @@ const appConfig = z.object({
   SHOW_CALL_FOR_PAPERS: z.preprocess(
     (value) => (value === 'true' ? true : false),
     z.boolean(),
+  ),
+  ENABLE_CREATOR: z.preprocess(
+    (value) => (value === 'true' ? true : false),
+    z.boolean().default(false),
   ),
 });
 
