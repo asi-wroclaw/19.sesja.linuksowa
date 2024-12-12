@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
-
-const nextConfig = {
+module.exports = {
   reactStrictMode: true,
   output: 'export',
   images: {
@@ -13,5 +12,3 @@ const nextConfig = {
     ENABLE_CREATOR: process.env.ENABLE_CREATOR,
   },
 };
-
-module.exports = nextConfig;

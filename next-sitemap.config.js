@@ -1,6 +1,6 @@
-const config = {
+/** @type {import('next-sitemap').IConfig} */
+module.exports = {
   siteUrl: 'https://sesja.linuksowa.pl/',
   generateRobotsTxt: true,
+  exclude: ['/creator'],
 };
-
-module.exports = config;
