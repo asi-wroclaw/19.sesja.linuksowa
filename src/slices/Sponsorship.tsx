@@ -203,6 +203,7 @@ const Sponsorship = () => {
                         display="flex"
                         alignItems="center"
                         justifyContent="center"
+                        _hover={{ transform: "scale(1.1)" }}
                      >      
                         <NextImage
                           style={{ margin: 'auto' }}
