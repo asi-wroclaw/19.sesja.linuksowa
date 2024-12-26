@@ -55,14 +55,14 @@ const Sponsorship = () => {
     {
       title: t('patrons'),
       logos: [
-        { image: clug, href: 'https://clug.space/', width: '200'},
+        { image: clug, href: 'https://clug.space/', width: '300'},
         {
           image: hswro,
           href: 'https://www.hswro.org/',
-          width: 200,
+          width: 250,
         },
-        { image: plug, href: 'https://linux.org.pl/', width: '200' },
-        { image: pwr, href: 'https://pwr.edu.pl/', width: '200' },
+        { image: plug, href: 'https://linux.org.pl/', width: '250' },
+        { image: pwr, href: 'https://pwr.edu.pl/', width: '300' },
         /*{ image: programmers, href: 'https://4programmers.net/', width: '300' },
       {
           image: programistamag,
@@ -72,7 +72,7 @@ const Sponsorship = () => {
         {
           image: manus,
           href: 'https://manus.pl/',
-          width: '200',
+          width: '300',
         },
         /*  {
           image: slido,
@@ -192,8 +192,7 @@ const Sponsorship = () => {
                     <Box
                         key={href}
                         flexWrap="wrap"
-                     // flexBasis={{ base: '100%', md: '45%', xl: '40%' }}
-                     // margin="auto"
+                        flexBasis={{ base: '100%', md: '45%', xl: '40%' }}
                         borderWidth="3px"
                         borderRadius="10px"
                         borderColor="black" 
