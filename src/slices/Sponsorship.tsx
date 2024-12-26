@@ -182,6 +182,13 @@ const Sponsorship = () => {
                   marginRight="20%"
                 >
                   {logos.map(({ image, href, width }) => (
+                    <Link
+                        margin="auto"
+                        display="block"
+                        isExternal
+                        href={href}
+                        target="_blank"
+                    >
                     <Box
                         key={href}
                         flexWrap="wrap"
@@ -190,28 +197,22 @@ const Sponsorship = () => {
                         borderWidth="3px"
                         borderRadius="10px"
                         borderColor="black" 
-                        width={{ base: "150px", md: "200px", lg: "250px" }}
-                        height={{ base: "150px", md: "200px", lg: "250px" }}
+                        width={{ base: "250px", md: "300px", lg: "350px" }}
+                        height={{ base: "250px", md: "300px", lg: "350px" }}
                         p="5"
+                        margin="auto"
                         display="flex"
                         alignItems="center"
                         justifyContent="center"
-                     >
-                      <Link
-                        margin="auto"
-                        display="block"
-                        isExternal
-                        href={href}
-                        target="_blank"
-                      >
+                     >      
                         <NextImage
                           style={{ margin: 'auto' }}
                           alt={`${title} image`}
                           width={width || undefined}
                           src={image}
                         />
-                      </Link>
                     </Box>
+                    </Link>
                   ))}
                 </Stack>
               </VStack>
