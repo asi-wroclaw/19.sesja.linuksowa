@@ -44,7 +44,7 @@ const Sponsorship = () => {
     {
       title: t('organizers'),
       logos: [
-        { image: asi, href: 'https://www.asi.wroclaw.pl/', width: '800' },
+        { image: asi, href: 'https://www.asi.wroclaw.pl/', width: '400' },
       ],
     },
     {
@@ -55,14 +55,14 @@ const Sponsorship = () => {
     {
       title: t('patrons'),
       logos: [
-        { image: clug, href: 'https://clug.space/', width: '220' },
+        { image: clug, href: 'https://clug.space/', width: '200'},
         {
           image: hswro,
           href: 'https://www.hswro.org/',
           width: 200,
         },
-        { image: plug, href: 'https://linux.org.pl/', width: '220' },
-        { image: pwr, href: 'https://pwr.edu.pl/', width: '400' },
+        { image: plug, href: 'https://linux.org.pl/', width: '200' },
+        { image: pwr, href: 'https://pwr.edu.pl/', width: '200' },
         /*{ image: programmers, href: 'https://4programmers.net/', width: '300' },
       {
           image: programistamag,
@@ -72,7 +72,7 @@ const Sponsorship = () => {
         {
           image: manus,
           href: 'https://manus.pl/',
-          width: '300',
+          width: '200',
         },
         /*  {
           image: slido,
@@ -183,11 +183,20 @@ const Sponsorship = () => {
                 >
                   {logos.map(({ image, href, width }) => (
                     <Box
-                      key={href}
-                      flexWrap="wrap"
-                      flexBasis={{ base: '100%', md: '45%', xl: '40%' }}
-                      margin="auto"
-                    >
+                        key={href}
+                        flexWrap="wrap"
+                     // flexBasis={{ base: '100%', md: '45%', xl: '40%' }}
+                     // margin="auto"
+                        borderWidth="3px"
+                        borderRadius="10px"
+                        borderColor="black" 
+                        width={{ base: "150px", md: "200px", lg: "250px" }}
+                        height={{ base: "150px", md: "200px", lg: "250px" }}
+                        p="5"
+                        display="flex"
+                        alignItems="center"
+                        justifyContent="center"
+                     >
                       <Link
                         margin="auto"
                         display="block"
