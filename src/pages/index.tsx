@@ -14,6 +14,7 @@ import Speakers from '@/slices/Speakers';
 import Sponsorship from '@/slices/Sponsorship';
 import Tickets from '@/slices/Tickets';
 import Agenda from '@/slices/agenda/Index';
+import { Html } from 'next/document';
 import Head from 'next/head';
 
 const Main = () => {
@@ -38,7 +39,7 @@ const Main = () => {
 
 export default function Home() {
   return (
-    <>
+    <Html suppressHydrationWarning>
       <Head>
         <title>19. Sesja Linuksowa</title>
         <meta name="description" content="19. Sesja Linuksowa" />
@@ -76,6 +77,6 @@ export default function Home() {
         <link rel="me" href="https://fosstodon.org/@ASI" />
       </Head>
       <Main />
-    </>
+    </Html>
   );
 }
