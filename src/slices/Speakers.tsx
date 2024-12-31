@@ -1,6 +1,5 @@
 import {
   Box,
-  DarkMode,
   Flex,
   HStack,
   Heading,
@@ -95,48 +94,47 @@ const SpeakerModal = ({
     isALotOfContent ? [200, 200] : [500, 400],
   );
   return (
-    <DarkMode>
-      <Modal
-        isCentered
-        size={{ sm: 'full', md: 'xl' }}
-        isOpen={isOpen}
-        onClose={onClose}
-      >
-        <ModalOverlay />
-        <ModalContent>
-          <ModalHeader color="whiteAlpha.900" textAlign="center" fontSize="2xl">
-            {name}
-          </ModalHeader>
-          <ModalCloseButton color="whiteAlpha.900" />
-          <ModalBody color="whiteAlpha.900">
-            <VStack gap="3vh">
-              <Box w={300} h={300} position="relative">
-                <Image
-                  fill
-                  alt={`${name} image`}
-                  sizes="300px"
-                  style={{ objectFit: 'cover', objectPosition: 'top' }}
-                  src={image}
-                />
-              </Box>
-              {(description || [])?.map((descriptionText, index) => (
-                <Text
-                  textAlign="center"
-                  key={`${descriptionText}-${
-                    // biome-ignore lint/suspicious/noArrayIndexKey: don't care
-                    index
-                  }`}
-                  minH="15px"
-                  padding="0vh 0vh 2vh 0vh"
-                >
-                  {descriptionText}
-                </Text>
-              ))}
-            </VStack>
-          </ModalBody>
-        </ModalContent>
-      </Modal>
-    </DarkMode>
+    <Modal
+      isCentered
+      size={{ sm: 'full', md: 'xl' }}
+      isOpen={isOpen}
+      onClose={onClose}
+      className="dark"
+    >
+      <ModalOverlay />
+      <ModalContent>
+        <ModalHeader color="whiteAlpha.900" textAlign="center" fontSize="2xl">
+          {name}
+        </ModalHeader>
+        <ModalCloseButton color="whiteAlpha.900" />
+        <ModalBody color="whiteAlpha.900">
+          <VStack gap="3vh">
+            <Box w={300} h={300} position="relative">
+              <Image
+                fill
+                alt={`${name} image`}
+                sizes="300px"
+                style={{ objectFit: 'cover', objectPosition: 'top' }}
+                src={image}
+              />
+            </Box>
+            {(description || [])?.map((descriptionText, index) => (
+              <Text
+                textAlign="center"
+                key={`${descriptionText}-${
+                  // biome-ignore lint/suspicious/noArrayIndexKey: don't care
+                  index
+                }`}
+                minH="15px"
+                padding="0vh 0vh 2vh 0vh"
+              >
+                {descriptionText}
+              </Text>
+            ))}
+          </VStack>
+        </ModalBody>
+      </ModalContent>
+    </Modal>
   );
 };
 

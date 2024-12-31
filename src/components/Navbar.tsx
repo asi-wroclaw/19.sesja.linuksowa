@@ -2,10 +2,8 @@ import Lang from '@/components/Lang';
 import scrollToSection from '@/lib/scrollToSection';
 import {
   Box,
-  DarkMode,
   Flex,
   IconButton,
-  LightMode,
   Link,
   Menu,
   MenuButton,
@@ -143,31 +141,27 @@ type MenuProps = {
 
 const MobileNavBar = ({ menu }: { menu: MenuProps }) => {
   return (
-    <DarkMode>
-      <Menu>
-        <MenuButton
-          as={IconButton}
-          aria-label="Options"
-          icon={<MenuIcon />}
-          variant="outline"
-        />
-        <LightMode>
-          <MenuList>
-            {menu.map(({ text, sectionId }) => (
-              <MenuItem
-                key={text}
-                onClick={() => sectionId && scrollToSection(sectionId)}
-              >
-                {text}
-              </MenuItem>
-            ))}
-            <MenuItem>
-              <Lang textColor="#000" />
-            </MenuItem>
-          </MenuList>
-        </LightMode>
-      </Menu>
-    </DarkMode>
+    <Menu className="dark">
+      <MenuButton
+        as={IconButton}
+        aria-label="Options"
+        icon={<MenuIcon />}
+        variant="outline"
+      />
+      <MenuList className="light">
+        {menu.map(({ text, sectionId }) => (
+          <MenuItem
+            key={text}
+            onClick={() => sectionId && scrollToSection(sectionId)}
+          >
+            {text}
+          </MenuItem>
+        ))}
+        <MenuItem>
+          <Lang textColor="#000" />
+        </MenuItem>
+      </MenuList>
+    </Menu>
   );
 };
 
