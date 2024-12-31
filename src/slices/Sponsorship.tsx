@@ -55,7 +55,7 @@ const Sponsorship = () => {
     {
       title: t('patrons'),
       logos: [
-        { image: clug, href: 'https://clug.space/', width: '300'},
+        { image: clug, href: 'https://clug.space/', width: '300' },
         {
           image: hswro,
           href: 'https://www.hswro.org/',
@@ -183,35 +183,35 @@ const Sponsorship = () => {
                 >
                   {logos.map(({ image, href, width }) => (
                     <Link
-                    key={href}
-                        margin="auto"
-                        display="block"
-                        isExternal
-                        href={href}
-                        target="_blank"
+                      key={href}
+                      margin="auto"
+                      display="block"
+                      isExternal
+                      href={href}
+                      target="_blank"
                     >
-                    <Box
+                      <Box
                         flexWrap="wrap"
                         flexBasis={{ base: '100%', md: '45%', xl: '40%' }}
                         borderWidth="3px"
                         borderRadius="10px"
-                        borderColor="black" 
-                        width={{ base: "250px", md: "300px", lg: "350px" }}
-                        height={{ base: "250px", md: "300px", lg: "350px" }}
+                        borderColor="black"
+                        width={{ base: '250px', md: '300px', lg: '350px' }}
+                        height={{ base: '250px', md: '300px', lg: '350px' }}
                         p="5"
                         margin="auto"
                         display="flex"
                         alignItems="center"
                         justifyContent="center"
-                        _hover={{ transform: "scale(1.1)" }}
-                     >      
+                        _hover={{ transform: 'scale(1.1)' }}
+                      >
                         <NextImage
                           style={{ margin: 'auto' }}
                           alt={`${title} image`}
                           width={width || undefined}
                           src={image}
                         />
-                    </Box>
+                      </Box>
                     </Link>
                   ))}
                 </Stack>
