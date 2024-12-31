@@ -183,6 +183,7 @@ const Sponsorship = () => {
                 >
                   {logos.map(({ image, href, width }) => (
                     <Link
+                    key={href}
                         margin="auto"
                         display="block"
                         isExternal
@@ -190,7 +191,6 @@ const Sponsorship = () => {
                         target="_blank"
                     >
                     <Box
-                        key={href}
                         flexWrap="wrap"
                         flexBasis={{ base: '100%', md: '45%', xl: '40%' }}
                         borderWidth="3px"
