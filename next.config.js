@@ -5,6 +5,9 @@ module.exports = {
   images: {
     unoptimized: true,
   },
+  experimental: {
+    optimizePackageImports: ['@chakra-ui/react'],
+  },
   publicRuntimeConfig: {
     SHOW_AGENDA: process.env.SHOW_AGENDA,
     SHOW_SPEAKERS: process.env.SHOW_SPEAKERS,
