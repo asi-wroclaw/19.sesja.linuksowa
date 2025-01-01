@@ -142,12 +142,11 @@ type MenuProps = {
 const MobileNavBar = ({ menu }: { menu: MenuProps }) => {
   return (
     <Menu className="dark">
-      <MenuButton
-        as={IconButton}
-        aria-label="Options"
-        icon={<MenuIcon />}
-        variant="outline"
-      />
+      <MenuButton asChild aria-label="Options" variant="outline">
+        <IconButton>
+          <MenuIcon />
+        </IconButton>
+      </MenuButton>
       <MenuList className="light">
         {menu.map(({ text, sectionId }) => (
           <MenuItem
