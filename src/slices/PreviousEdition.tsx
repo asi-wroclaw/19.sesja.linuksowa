@@ -36,7 +36,7 @@ const PreviousEdition = () => {
         gap="5px"
       >
         <Center flex={1}>
-          <VStack spacing="3em">
+          <VStack gap="3em">
             <Heading
               as="h2"
               fontSize={{ base: '4xl', md: '7xl' }}
