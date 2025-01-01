@@ -1,17 +1,11 @@
-import { Box, Flex, Heading, useTheme } from '@chakra-ui/react';
+import { Box, Flex, Heading } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 import dynamic from 'next/dynamic';
 import { useMemo } from 'react';
 
 const Space = ({ text }: { text?: string }) => {
-  const theme = useTheme();
   return (
-    <Flex
-      justifyContent="center"
-      width="100%"
-      height="150px"
-      bg={theme.colors.primary}
-    >
+    <Flex justifyContent="center" width="100%" height="150px" bg={'primary'}>
       {text && (
         <Heading
           as="h2"

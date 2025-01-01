@@ -38,7 +38,7 @@ const Sponsorship = () => {
   const { t } = useTranslation('common');
   const title = t('sponsorshipTitle');
   const description = t('sponsorshipDescription');
-  const [isSmallerThan800] = useMediaQuery('(max-width: 800px)');
+  const [isSmallerThan800] = useMediaQuery(['(max-width: 800px)'], {});
 
   const sponsorsAndOrganizations = [
     {

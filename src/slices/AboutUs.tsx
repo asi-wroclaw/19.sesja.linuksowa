@@ -1,12 +1,11 @@
 import ImageItem from '@/components/ImageItem';
-import { Box, Stack, useTheme } from '@chakra-ui/react';
+import { Box, Stack } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 import magnifyingGlass from '../assets/about-us/magnifying-glass.svg';
 import ourGoal from '../assets/about-us/our-goal.png';
 import questionMarks from '../assets/about-us/question-marks.png';
 
 const AboutUs = () => {
-  const theme = useTheme();
   const { t } = useTranslation('common');
 
   const content = [
@@ -34,7 +33,7 @@ const AboutUs = () => {
       display="flex"
       justifyContent="center"
       width="100%"
-      bg={theme.colors.primary}
+      bg={'primary'}
       minHeight="70vh"
       position="relative"
       zIndex="2"

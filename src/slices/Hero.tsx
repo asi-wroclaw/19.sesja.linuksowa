@@ -4,24 +4,22 @@ import {
   Box,
   HStack,
   Heading,
+  type JsxStyleProps,
   Stack,
-  type StyleProps,
   VStack,
-  useTheme,
 } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 import Image from 'next/image';
 import pinguin from '../assets/pinguin.svg';
 import config from '../config';
 
-const HeadContainerStyle: StyleProps = {
+const HeadContainerStyle: JsxStyleProps = {
   height: 'max(100vh,700px)',
   width: '100%',
   bg: 'blackAlpha.900',
 };
 
 const Title = () => {
-  const theme = useTheme();
   const { t } = useTranslation('common');
 
   return (
@@ -46,7 +44,7 @@ const Title = () => {
         fontSize={{ base: 'xl', md: '4xl' }}
         textAlign="center"
         fontWeight="semibold"
-        bgColor={theme.colors.primary}
+        bgColor={'primary'}
         color="white"
       >
         &nbsp;{t('eventDate')}&nbsp;

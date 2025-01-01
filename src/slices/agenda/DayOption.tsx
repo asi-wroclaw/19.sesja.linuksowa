@@ -1,4 +1,4 @@
-import { Box, Text, useTheme } from '@chakra-ui/react';
+import { Box, Text } from '@chakra-ui/react';
 
 export interface DayOptionProps {
   selected?: boolean;
@@ -7,9 +7,8 @@ export interface DayOptionProps {
 }
 
 const DayOption = ({ selected = false, text, select }: DayOptionProps) => {
-  const theme = useTheme();
   const borderBottom = selected
-    ? { borderBottom: `0.25rem ${theme.colors.primary} solid` }
+    ? { borderBottom: `0.25rem 'primary' solid` }
     : {};
   return (
     <Box
@@ -24,7 +23,7 @@ const DayOption = ({ selected = false, text, select }: DayOptionProps) => {
       {...borderBottom}
     >
       <Text
-        _groupHover={{ color: !selected && theme.colors.primary }}
+        _groupHover={{ color: 'primary' }}
         fontSize={['xl', '2xl', '2xl', '2xl']}
         color="whiteAlpha.900"
         textAlign="center"
