@@ -186,9 +186,9 @@ const Sponsorship = () => {
                       key={href}
                       margin="auto"
                       display="block"
-                      isExternal
                       href={href}
                       target="_blank"
+                      rel="noreferrer noopener"
                     >
                       <Box
                         flexWrap="wrap"
