@@ -2,22 +2,20 @@ import DefaultButton from '@/components/DefaultButton';
 import type { SpeechItem } from '@/data/agenda';
 import {
   Box,
-  Collapse,
+  Collapsible,
   Grid,
   GridItem,
   Link,
   Text,
   useDisclosure,
-  useTheme,
 } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 
 const Speech = ({ speech }: { speech: SpeechItem }) => {
-  const { isOpen, onToggle } = useDisclosure();
+  const { open, onToggle } = useDisclosure();
   const { t } = useTranslation('common');
   const { start, end, title, author, description, lang, recording } = speech;
   const style = description ? { cursor: 'pointer' } : {};
-  const theme = useTheme();
   return (
     <Grid
       templateAreas={`"time title b"
@@ -33,7 +31,8 @@ const Speech = ({ speech }: { speech: SpeechItem }) => {
       //bg={isOpen ? 'blackAlpha.900' : 'blackAlpha.700'}
       paddingBottom={3}
       paddingTop={3}
-      borderBottom={`0.25rem ${theme.colors.primary} solid`}
+      borderBottom={'0.25rem solid'}
+      borderColor={'primary'}
     >
       <GridItem
         area="time"
@@ -85,7 +84,7 @@ const Speech = ({ speech }: { speech: SpeechItem }) => {
             textTransform="uppercase"
             size={['xs', 'xs', 'xs', 'sm']}
             _hover={{ color: 'black' }}
-            text={isOpen ? 'less' : 'more'}
+            text={open ? 'less' : 'more'}
             marginBottom="2px"
           />
         </GridItem>
@@ -97,16 +96,16 @@ const Speech = ({ speech }: { speech: SpeechItem }) => {
           display="flex"
         >
           <Link
-            isExternal
             href={recording}
             target="_blank"
+            rel="noopener noreferrer"
             margin="auto"
             _hover={{ textDecorationLine: 'none' }}
           >
             <DefaultButton
               marginTop="2px"
               marginLeft="auto"
-              bg={theme.colors.red}
+              bg={'red'}
               textTransform="uppercase"
               size={['xs', 'xs', 'xs', 'sm']}
               _hover={{ color: 'black' }}
@@ -115,29 +114,35 @@ const Speech = ({ speech }: { speech: SpeechItem }) => {
           </Link>
         </GridItem>
       )}
-      <Collapse in={isOpen} animateOpacity style={{ gridColumn: '2/span 3' }}>
-        <Box
-          gridColumn="2"
-          p="4px"
-          color="white"
-          mt="4"
-          rounded="md"
-          shadow="md"
-        >
-          {description?.map((descriptionText, index) => (
-            <Text
-              fontSize={['sm', 'sm', 'lg', 'xl']}
-              key={`${descriptionText}-${
-                // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-                index
-              }`}
-              minH="15px"
-            >
-              {descriptionText}
-            </Text>
-          ))}
-        </Box>
-      </Collapse>
+      <Collapsible.Root
+        open={open}
+        // animateOpacity
+        style={{ gridColumn: '2/span 3' }}
+      >
+        <Collapsible.Content>
+          <Box
+            gridColumn="2"
+            p="4px"
+            color="white"
+            mt="4"
+            rounded="md"
+            shadow="md"
+          >
+            {description?.map((descriptionText, index) => (
+              <Text
+                fontSize={['sm', 'sm', 'lg', 'xl']}
+                key={`${descriptionText}-${
+                  // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+                  index
+                }`}
+                minH="15px"
+              >
+                {descriptionText}
+              </Text>
+            ))}
+          </Box>
+        </Collapsible.Content>
+      </Collapsible.Root>
     </Grid>
   );
 };
