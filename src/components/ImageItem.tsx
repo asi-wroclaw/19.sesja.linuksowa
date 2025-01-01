@@ -23,7 +23,7 @@ const ImageItem = ({ imageSrc, title, text }: ImageItemProps) => {
         fontWeight="bold"
         as="h4"
         textAlign="center"
-        noOfLines={[1, 2]}
+        lineClamp={[1, 2]}
       >
         {title}
       </Heading>
