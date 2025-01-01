@@ -1,18 +1,19 @@
 import Lang from '@/components/Lang';
+import {
+  MenuContent,
+  MenuItem,
+  MenuRoot,
+  MenuTrigger,
+} from '@/components/ui/menu';
 import scrollToSection from '@/lib/scrollToSection';
 import {
   Box,
   Flex,
   IconButton,
+  type JsxStyleProps,
   Link,
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuList,
-  type StyleProps,
   Text,
   useMediaQuery,
-  useTheme,
 } from '@chakra-ui/react';
 import { MenuIcon } from 'lucide-react';
 import { useTranslation } from 'next-export-i18n';
@@ -24,7 +25,7 @@ import DefaultButton from './DefaultButton';
 
 export const HEADER_HEIGHT = 70;
 
-const NavBarStyle: StyleProps = {
+const NavBarStyle: JsxStyleProps = {
   height: `${HEADER_HEIGHT}px`,
   position: 'fixed',
   top: '0',
@@ -33,8 +34,6 @@ const NavBarStyle: StyleProps = {
 };
 
 const Live = () => {
-  const theme = useTheme();
-
   return (
     <Link
       href={'https://www.youtube.com/live/0GtdxGl5CUs'}
@@ -50,7 +49,7 @@ const Live = () => {
         _hover={{ color: 'black' }}
         size="md"
         text="LIVE"
-        bg={theme.colors.red}
+        bg={'red'}
         paddingLeft={{ base: '12px', md: '24px' }}
         paddingRight={{ base: '12px', md: '24px' }}
         color="whiteAlpha.900"
@@ -61,17 +60,16 @@ const Live = () => {
 };
 
 const Navbar = () => {
-  const theme = useTheme();
   const [bg, setBg] = useState<string>('rgba(0,0,0,0)');
-  const [isSmallerThanLg] = useMediaQuery('(max-width: 62em)');
-  const [isBiggerThanLg] = useMediaQuery('(min-width: 62em)');
+  const [isSmallerThanLg] = useMediaQuery(['(max-width: 62em)'], {});
+  const [isBiggerThanLg] = useMediaQuery(['(min-width: 62em)'], {});
   const { t }: { t: (key: string) => string } = useTranslation('common');
   // const showLive = ['2024-04-15', '2024-04-20', '2024-04-21'].includes(
   //   new Date().toISOString().slice(0, 10),
   // );
   const headId = 'head';
 
-  const menu = [
+  const menu: MenuProps = [
     { text: t('menu.about'), sectionId: 'about' },
     {
       ...(config.SHOW_SPEAKERS && {
@@ -88,7 +86,7 @@ const Navbar = () => {
 
     { text: t('menu.previous'), sectionId: 'previous' },
     { text: t('menu.sponsors'), sectionId: 'sponsors' },
-  ].filter(({ text }) => text);
+  ].filter(({ text }) => text) as MenuProps;
 
   const changeBackground = () => {
     if (window.scrollY >= 60) {
@@ -135,38 +133,37 @@ const Navbar = () => {
 };
 
 type MenuProps = {
-  text?: string;
-  sectionId?: string;
+  text: string;
+  sectionId: string;
 }[];
 
 const MobileNavBar = ({ menu }: { menu: MenuProps }) => {
   return (
-    <Menu className="dark">
-      <MenuButton asChild aria-label="Options" variant="outline">
-        <IconButton>
+    <MenuRoot>
+      <MenuTrigger asChild>
+        <IconButton aria-label="Options" variant="outline">
           <MenuIcon />
         </IconButton>
-      </MenuButton>
-      <MenuList className="light">
+      </MenuTrigger>
+      <MenuContent className="light">
         {menu.map(({ text, sectionId }) => (
           <MenuItem
             key={text}
+            value={text}
             onClick={() => sectionId && scrollToSection(sectionId)}
           >
             {text}
           </MenuItem>
         ))}
-        <MenuItem>
+        <MenuItem value="lang">
           <Lang textColor="#000" />
         </MenuItem>
-      </MenuList>
-    </Menu>
+      </MenuContent>
+    </MenuRoot>
   );
 };
 
 const DesktopNavBar = ({ menu }: { menu: MenuProps }) => {
-  const theme = useTheme();
-
   return (
     <>
       <Flex
@@ -187,7 +184,7 @@ const DesktopNavBar = ({ menu }: { menu: MenuProps }) => {
             color="whiteAlpha.900"
             fontSize={['sm', 'sm', 'lg', 'xl']}
             cursor="pointer"
-            _hover={{ color: theme.colors.primary }}
+            _hover={{ color: 'primary' }}
             height="30px"
             onClick={() => sectionId && scrollToSection(sectionId)}
           >
