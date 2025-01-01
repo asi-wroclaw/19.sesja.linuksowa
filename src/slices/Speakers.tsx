@@ -87,7 +87,9 @@ const SpeakerModal = ({
   description?: string[];
 }) => {
   const { t } = useTranslation('common');
-  const [isSmallerThan800] = useMediaQuery(['(max-width: 800px)'], {});
+  const [isSmallerThan800] = useMediaQuery(['(max-width: 800px)'], {
+    fallback: [false],
+  });
   const { height, width } = image as { height: number; width: number };
   const isLongDescription = (description ?? []).join('').length > 500;
   const isALotOfContent = isLongDescription && isSmallerThan800;

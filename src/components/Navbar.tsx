@@ -61,8 +61,12 @@ const Live = () => {
 
 const Navbar = () => {
   const [bg, setBg] = useState<string>('rgba(0,0,0,0)');
-  const [isSmallerThanLg] = useMediaQuery(['(max-width: 62em)'], {});
-  const [isBiggerThanLg] = useMediaQuery(['(min-width: 62em)'], {});
+  const [isSmallerThanLg] = useMediaQuery(['(max-width: 62em)'], {
+    fallback: [false],
+  });
+  const [isBiggerThanLg] = useMediaQuery(['(min-width: 62em)'], {
+    fallback: [true],
+  });
   const { t }: { t: (key: string) => string } = useTranslation('common');
   // const showLive = ['2024-04-15', '2024-04-20', '2024-04-21'].includes(
   //   new Date().toISOString().slice(0, 10),
