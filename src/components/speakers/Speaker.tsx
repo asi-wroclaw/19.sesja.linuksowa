@@ -34,7 +34,7 @@ export const Speaker = ({ image, urls, name, description }: SpeakerProps) => {
             />
           ) : (
             <Avatar
-              src=""
+              src="intentional-fail"
               variant="solid"
               colorPalette="blue"
               width={200}
