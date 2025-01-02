@@ -19,6 +19,7 @@ export const Speaker = ({ image, urls, name, description }: SpeakerProps) => {
         <Box
           w={300}
           h={330}
+          position={'relative'}
           backgroundColor={'white'}
           display={'flex'}
           justifyContent="center"

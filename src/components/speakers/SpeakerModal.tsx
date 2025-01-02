@@ -39,7 +39,7 @@ export const SpeakerModal = ({
   return (
     <DialogRoot
       placement={'center'}
-      size={{ sm: 'full', md: 'xl' }}
+      size={{ sm: 'lg' }}
       open={open}
       onOpenChange={onClose}
     >
@@ -63,6 +63,8 @@ export const SpeakerModal = ({
             {(description || [])?.map((descriptionText, index) => (
               <Text
                 textAlign="center"
+                lineHeight={'24px'}
+                fontSize={'16px'}
                 key={`${descriptionText}-${
                   // biome-ignore lint/suspicious/noArrayIndexKey: don't care
                   index
