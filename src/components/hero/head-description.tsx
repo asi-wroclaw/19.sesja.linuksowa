@@ -1,8 +1,8 @@
 import DefaultButton from '@/components/common/DefaultButton';
 import { Button } from '@/components/ui/button';
-import { HStack, VStack } from '@chakra-ui/react';
-import { useTranslation } from 'next-export-i18n';
 import config from '@/config';
+import { Stack, VStack } from '@chakra-ui/react';
+import { useTranslation } from 'next-export-i18n';
 import { SpotDescription } from './spot-description';
 import { Title } from './title';
 
@@ -17,7 +17,11 @@ export const HeadDescription = () => {
     >
       <Title />
       <SpotDescription />
-      <HStack gap={16}>
+      <Stack
+        gap={{ base: 8, lg: 16 }}
+        flexDir={{ base: 'column', lg: 'row' }}
+        alignItems={'center'}
+      >
         {config.SHOW_AGENDA && (
           <a href="#agenda">
             <Button
@@ -46,7 +50,7 @@ export const HeadDescription = () => {
             _hover={{ color: 'black' }}
           />
         </a>
-      </HStack>
+      </Stack>
     </VStack>
   );
 };
