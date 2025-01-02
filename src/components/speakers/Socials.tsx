@@ -1,9 +1,9 @@
+import github from '@/assets/socials/github.svg';
+import linkedin from '@/assets/socials/linkedin.svg';
+import twitter from '@/assets/socials/twitter.svg';
+import website from '@/assets/socials/website.svg';
 import { HStack } from '@chakra-ui/react';
 import Image from 'next/image';
-import github from '../assets/socials/github.svg';
-import linkedin from '../assets/socials/linkedin.svg';
-import twitter from '../assets/socials/twitter.svg';
-import website from '../assets/socials/website.svg';
 import type { SocialUrls } from './types';
 
 export const Socials = ({ name, urls }: { name: string; urls: SocialUrls }) => (

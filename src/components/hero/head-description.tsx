@@ -2,7 +2,7 @@ import DefaultButton from '@/components/common/DefaultButton';
 import { Button } from '@/components/ui/button';
 import { HStack, VStack } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
-import config from '../../config';
+import config from '@/config';
 import { SpotDescription } from './spot-description';
 import { Title } from './title';
 

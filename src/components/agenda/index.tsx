@@ -1,7 +1,7 @@
 import { Box, Heading, VStack } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 import { useState } from 'react';
-import { SATURDAY_AGENDA, SUNDAY_AGENDA } from '../../data/agenda';
+import { SATURDAY_AGENDA, SUNDAY_AGENDA } from '@/data/agenda';
 import DaySelect from './DaySelect';
 import Speech from './Speech';
 

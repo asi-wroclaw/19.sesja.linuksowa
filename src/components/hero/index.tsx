@@ -1,10 +1,6 @@
-import DefaultButton from '@/components/common/DefaultButton';
-import { Button } from '@/components/ui/button';
-import { Box, HStack, Heading, Stack, VStack } from '@chakra-ui/react';
-import { useTranslation } from 'next-export-i18n';
+import pinguin from '@/assets/pinguin.svg';
+import { Box, Stack, VStack } from '@chakra-ui/react';
 import Image from 'next/image';
-import pinguin from '../assets/pinguin.svg';
-import config from '../../config';
 import { HeadDescription } from './head-description';
 
 const Hero = () => {

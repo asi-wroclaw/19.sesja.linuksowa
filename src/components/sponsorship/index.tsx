@@ -11,19 +11,19 @@ import {
 import { useTranslation } from 'next-export-i18n';
 import NextImage, { type StaticImageData } from 'next/image';
 import React from 'react';
-import programmers from '../assets/logo/4programmers.svg';
-import antmicro from '../assets/logo/antmicro.svg';
-import asi from '../assets/logo/asi-logo-trans.svg';
-import clug from '../assets/logo/clug.png';
-import hswro from '../assets/logo/hswro.svg';
-import linuxMagazine from '../assets/logo/linux-magazine.png';
-import manus from '../assets/logo/manus.png';
-import mikrus from '../assets/logo/mikrus.png';
-import ovh from '../assets/logo/ovhcloud.png';
-import plug from '../assets/logo/plug.png';
-import programistamag from '../assets/logo/programistamag.jpg';
-import pwr from '../assets/logo/pwr.png';
-import slido from '../assets/logo/slido.svg';
+import programmers from '@/assets/logo/4programmers.svg';
+import antmicro from '@/assets/logo/antmicro.svg';
+import asi from '@/assets/logo/asi-logo-trans.svg';
+import clug from '@/assets/logo/clug.png';
+import hswro from '@/assets/logo/hswro.svg';
+import linuxMagazine from '@/assets/logo/linux-magazine.png';
+import manus from '@/assets/logo/manus.png';
+import mikrus from '@/assets/logo/mikrus.png';
+import ovh from '@/assets/logo/ovhcloud.png';
+import plug from '@/assets/logo/plug.png';
+import programistamag from '@/assets/logo/programistamag.jpg';
+import pwr from '@/assets/logo/pwr.png';
+import slido from '@/assets/logo/slido.svg';
 
 type SponsorshipEntity = {
   title: string;
