@@ -1,3 +1,4 @@
+import { Avatar } from '@/components/ui/avatar';
 import { Box, Flex, Heading, VStack, useDisclosure } from '@chakra-ui/react';
 import Image from 'next/image';
 import { Socials } from './Socials';
@@ -15,14 +16,34 @@ export const Speaker = ({ image, urls, name, description }: SpeakerProps) => {
       onClick={() => description.length && onOpen()}
     >
       <Box>
-        <Box w={300} h={330} position="relative">
-          <Image
-            alt={`${name} image`}
-            fill
-            sizes="300px"
-            style={{ objectFit: 'cover', objectPosition: 'top' }}
-            src={image}
-          />
+        <Box
+          w={300}
+          h={330}
+          backgroundColor={'white'}
+          display={'flex'}
+          justifyContent="center"
+          alignItems="center"
+        >
+          {image ? (
+            <Image
+              alt={`${name} image`}
+              fill
+              sizes="300px"
+              style={{ objectFit: 'cover', objectPosition: 'top' }}
+              src={image}
+            />
+          ) : (
+            <Avatar
+              src=""
+              variant="solid"
+              colorPalette="blue"
+              width={200}
+              height={200}
+              css={{
+                '& > span': { fontSize: '100px' },
+              }}
+            />
+          )}
         </Box>
         <VStack height="90px" width="300px" padding="2" background={'primary'}>
           <Heading

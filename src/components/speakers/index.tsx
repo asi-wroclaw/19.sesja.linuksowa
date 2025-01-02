@@ -36,7 +36,7 @@ const Speakers = () => {
         justifyContent="center"
         gap="30px 30px"
       >
-        {SPEAKERS.filter((speaker) => speaker.image && speaker.name).map(
+        {SPEAKERS.filter((speaker) => speaker.name).map(
           (speaker) => (
             <Speaker key={speaker.name} {...speaker} />
           ),
