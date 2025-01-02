@@ -37,19 +37,21 @@ export const HeadDescription = () => {
             </Button>
           </a>
         )}
-        <a
-          href="https://app.evenea.pl/event/19-sesja-linuksowa/?source=www-linuksowa"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <DefaultButton
-            text={t('getTicketsCaps')}
-            fontSize={'18px'}
-            lineHeight="1.2"
-            size={'xl'}
-            _hover={{ color: 'black' }}
-          />
-        </a>
+        {config.SHOW_TICKETS && (
+          <a
+            href="https://app.evenea.pl/event/19-sesja-linuksowa/?source=www-linuksowa"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <DefaultButton
+              text={t('getTicketsCaps')}
+              fontSize={'18px'}
+              lineHeight="1.2"
+              size={'xl'}
+              _hover={{ color: 'black' }}
+            />
+          </a>
+        )}
       </Stack>
     </VStack>
   );

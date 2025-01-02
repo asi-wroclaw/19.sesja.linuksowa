@@ -13,6 +13,7 @@ module.exports = {
   },
   publicRuntimeConfig: {
     SHOW_AGENDA: process.env.SHOW_AGENDA,
+    SHOW_TICKETS: process.env.SHOW_TICKETS,
     SHOW_SPEAKERS: process.env.SHOW_SPEAKERS,
     SHOW_CALL_FOR_PAPERS: process.env.SHOW_CALL_FOR_PAPERS,
     ENABLE_CREATOR: process.env.ENABLE_CREATOR,

@@ -23,7 +23,7 @@ export default function Page() {
       {config.SHOW_SPEAKERS && <Speakers />}
       {config.SHOW_AGENDA && <Agenda />}
       <PreviousEdition />
-      <Tickets />
+      {config.SHOW_TICKETS && <Tickets />}
       <MapSection />
       <Organizers />
       <Sponsorship />

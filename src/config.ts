@@ -6,6 +6,10 @@ const appConfig = z.object({
     (value) => value === 'true',
     z.boolean().default(false),
   ),
+  SHOW_TICKETS: z.preprocess(
+    (value) => value === 'true',
+    z.boolean().default(false),
+  ),
   SHOW_SPEAKERS: z.preprocess(
     (value) => value === 'true',
     z.boolean().default(false),
