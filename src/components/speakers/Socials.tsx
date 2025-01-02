@@ -1,24 +1,51 @@
-import github from '@/assets/socials/github.svg';
-import linkedin from '@/assets/socials/linkedin.svg';
-import twitter from '@/assets/socials/twitter.svg';
-import website from '@/assets/socials/website.svg';
-import { HStack } from '@chakra-ui/react';
-import Image from 'next/image';
+import { HStack, Icon, Link } from '@chakra-ui/react';
+import { LuGlobe } from 'react-icons/lu';
+import {
+  SiBluesky,
+  SiFacebook,
+  SiGithub,
+  SiLinkedin,
+  SiMastodon,
+  SiX,
+} from 'react-icons/si';
 import type { SocialUrls } from './types';
 
-export const Socials = ({ name, urls }: { name: string; urls: SocialUrls }) => (
-  <HStack width="60%" justifyContent="space-around">
-    <a href={urls.website}>
-      <Image alt={`${name} website`} src={website} />
-    </a>
-    <a href={urls.twitter}>
-      <Image alt={`${name}t("menu.agenda") twitter`} src={twitter} />
-    </a>
-    <a href={urls.github}>
-      <Image alt={`${name} github`} src={github} />
-    </a>
-    <a href={urls.linkedin}>
-      <Image alt={`${name} linkedin`} src={linkedin} />
-    </a>
+const SOCIALS = [
+  { key: 'website', IconElement: LuGlobe },
+  { key: 'github', IconElement: SiGithub },
+  { key: 'bluesky', IconElement: SiBluesky },
+  { key: 'mastodon', IconElement: SiMastodon },
+  { key: 'twitter', IconElement: SiX },
+  { key: 'linkedin', IconElement: SiLinkedin },
+  { key: 'facebook', IconElement: SiFacebook },
+] as const;
+
+export const Socials = ({ urls }: { urls: SocialUrls }) => (
+  <HStack
+    justifyContent="space-between"
+    css={{
+      '& > a': {
+        color: 'white',
+        '&:hover': {
+          color: 'gray.200',
+        },
+      },
+    }}
+  >
+    {SOCIALS.map(
+      ({ key, IconElement }) =>
+        urls[key] && (
+          <Link
+            key={key}
+            href={urls[key]}
+            color="white"
+            _hover={{ color: 'gray.200' }}
+          >
+            <Icon fontSize={30}>
+              <IconElement />
+            </Icon>
+          </Link>
+        ),
+    )}
   </HStack>
 );

@@ -5,9 +5,12 @@ export const SPEAKERS: SpeakerProps[] = [
     image: '',
     urls: {
       website: '',
+      github: '',
+      bluesky: '',
+      mastodon: '',
       twitter: '',
       linkedin: '',
-      github: '',
+      facebook: '',
     },
     name: 'Może ty?',
     description: [],

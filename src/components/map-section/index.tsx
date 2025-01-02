@@ -2,7 +2,7 @@ import { Box } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 import dynamic from 'next/dynamic';
 import { useMemo } from 'react';
-import { Space } from './space';
+import { Space } from './Space';
 
 const MapSection = () => {
   const { t } = useTranslation('common');

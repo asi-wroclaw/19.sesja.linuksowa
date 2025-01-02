@@ -1,11 +1,10 @@
 import DefaultButton from '@/components/common/DefaultButton';
-import { Box, Center, Flex, Heading, Link } from '@chakra-ui/react';
-import { MoveRight } from 'lucide-react';
+import { Box, Center, Flex, Heading, Icon, Link } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
+import { LuMoveRight } from 'react-icons/lu';
 
 const CallForPapers = () => {
   const { t } = useTranslation('common');
-
   const content = {
     C4pLink: t('c4pLink'),
     c4pButtonText: t('c4pButtonText'),
@@ -50,7 +49,11 @@ const CallForPapers = () => {
             <DefaultButton
               fontSize={{ base: '25px', lg: '30px' }}
               padding={{ base: '5', lg: '10' }}
-              rightIcon={<MoveRight size={48} />}
+              rightIcon={
+                <Icon fontSize={48}>
+                  <LuMoveRight />
+                </Icon>
+              }
               _hover={{ color: 'black' }}
               text={content.c4pButtonText}
             />

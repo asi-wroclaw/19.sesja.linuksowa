@@ -1,11 +1,10 @@
-import type { OrganizerProps } from '@/components/organizers/types';
-import blankAvatar from '@/assets/organizers/blank-avatar.jpg';
 import Felix from '@/assets/organizers/felix.png';
 import Jacek from '@/assets/organizers/jacek.png';
 import Kamil from '@/assets/organizers/kamil.jpg';
 import Michal from '@/assets/organizers/michal.jpg';
 import Przemek from '@/assets/organizers/przemek.jpg';
 import Tomek from '@/assets/organizers/rikardo.png';
+import type { OrganizerProps } from '@/components/organizers/types';
 
 export const ORGANIZERS: OrganizerProps[] = [
   {
@@ -19,7 +18,7 @@ export const ORGANIZERS: OrganizerProps[] = [
     role: 'team.tomek',
   },
   {
-    image: blankAvatar,
+    image: '',
     name: 'Szymon Cichy',
     role: 'team.szymon',
   },
@@ -29,7 +28,7 @@ export const ORGANIZERS: OrganizerProps[] = [
     role: 'team.jacek',
   },
   {
-    image: blankAvatar,
+    image: '',
     name: 'Natalia Konopka',
     role: 'team.natalia',
   },

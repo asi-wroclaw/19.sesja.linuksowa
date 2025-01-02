@@ -7,8 +7,8 @@ import type { SpeakerProps } from './types';
 
 export const Speaker = ({ image, urls, name, description }: SpeakerProps) => {
   const { open, onOpen, onClose } = useDisclosure();
-  const showSocials =
-    urls.github || urls.linkedin || urls.twitter || urls.website;
+  const showSocials = Object.values(urls).some((url) => url);
+
   return (
     <Flex
       zIndex="3"
@@ -26,7 +26,7 @@ export const Speaker = ({ image, urls, name, description }: SpeakerProps) => {
         >
           {image ? (
             <Image
-              alt={`${name} image`}
+              alt={`${name} photo`}
               fill
               sizes="300px"
               style={{ objectFit: 'cover', objectPosition: 'top' }}
@@ -34,7 +34,7 @@ export const Speaker = ({ image, urls, name, description }: SpeakerProps) => {
             />
           ) : (
             <Avatar
-              src="intentional-fail"
+              src="#"
               variant="solid"
               colorPalette="blue"
               width={200}
@@ -55,7 +55,7 @@ export const Speaker = ({ image, urls, name, description }: SpeakerProps) => {
           >
             {name}
           </Heading>
-          {showSocials && <Socials name={name} urls={urls} />}
+          {showSocials && <Socials urls={urls} />}
         </VStack>
       </Box>
       <SpeakerModal

@@ -6,7 +6,7 @@ import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
-import { Organizer } from './organizer';
+import { Organizer } from './Organizer';
 
 const Organizers = () => {
   const settings = {
@@ -112,8 +112,7 @@ const Organizers = () => {
         >
           <Slider {...settings} ref={(slider) => setSlider(slider)}>
             {ORGANIZERS.filter(
-              (organizer) =>
-                organizer.image && organizer.name && organizer.role,
+              (organizer) => organizer.name && organizer.role,
             ).map((organizer) => (
               <Organizer key={organizer.name} {...organizer} />
             ))}

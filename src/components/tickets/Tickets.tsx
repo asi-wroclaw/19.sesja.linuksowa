@@ -1,6 +1,6 @@
-import { Box, Center, Flex, Heading, Link } from '@chakra-ui/react';
-import { ChevronLeftIcon, ChevronRightIcon } from 'lucide-react';
+import { Box, Center, Flex, Heading, Icon, Link } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
+import { LuChevronLeft, LuChevronRight } from 'react-icons/lu';
 
 const Tickets = () => {
   const { t } = useTranslation('common');
@@ -35,7 +35,9 @@ const Tickets = () => {
             _hover={{ textDecorationColor: 'currentColor' }}
           >
             <Flex alignItems="center" gap="10px">
-              <ChevronRightIcon size="80" />
+              <Icon fontSize={80}>
+                <LuChevronRight />
+              </Icon>
               <Heading
                 as="h2"
                 fontSize={{ base: '4xl', md: '7xl' }}
@@ -44,7 +46,9 @@ const Tickets = () => {
               >
                 {content.text}
               </Heading>
-              <ChevronLeftIcon size="80" />
+              <Icon fontSize={80}>
+                <LuChevronLeft />
+              </Icon>
             </Flex>
           </Link>
         </Center>

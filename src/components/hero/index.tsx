@@ -1,7 +1,7 @@
 import pinguin from '@/assets/pinguin.svg';
 import { Box, Stack, VStack } from '@chakra-ui/react';
 import Image from 'next/image';
-import { HeadDescription } from './head-description';
+import { HeadDescription } from './HeadDescription';
 
 const Hero = () => {
   return (

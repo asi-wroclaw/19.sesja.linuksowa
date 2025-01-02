@@ -6,7 +6,7 @@ import {
   MenuTrigger,
 } from '@/components/ui/menu';
 import { IconButton } from '@chakra-ui/react';
-import { MenuIcon } from 'lucide-react';
+import { LuMenu } from 'react-icons/lu';
 import type { MenuProps } from './types';
 
 export const MobileNavBar = ({ menu }: { menu: MenuProps }) => {
@@ -14,7 +14,7 @@ export const MobileNavBar = ({ menu }: { menu: MenuProps }) => {
     <MenuRoot>
       <MenuTrigger asChild>
         <IconButton aria-label="Options" variant="outline" color="white">
-          <MenuIcon />
+          <LuMenu />
         </IconButton>
       </MenuTrigger>
       <MenuContent className="light">

@@ -3,8 +3,8 @@ import { Button } from '@/components/ui/button';
 import config from '@/config';
 import { Stack, VStack } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
-import { SpotDescription } from './spot-description';
-import { Title } from './title';
+import { SpotDescription } from './SpotDescription';
+import { Title } from './Title';
 
 export const HeadDescription = () => {
   const { t } = useTranslation('common');
