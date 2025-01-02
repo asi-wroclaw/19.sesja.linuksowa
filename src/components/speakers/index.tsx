@@ -1,12 +1,12 @@
+import { SPEAKERS } from '@/data/speakers';
 import { Box, Flex, Heading } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 import { Speaker } from './Speaker';
-import type { SpeakerProps } from './types';
 
-const Speakers = ({ speakersData }: { speakersData: SpeakerProps[] }) => {
+const Speakers = () => {
   const { t } = useTranslation('common');
 
-  if (!speakersData.length) return null;
+  if (!SPEAKERS.length) return null;
   return (
     <Box id="speakers" bg="blackAlpha.900" minH="40vh">
       <Box
@@ -36,11 +36,11 @@ const Speakers = ({ speakersData }: { speakersData: SpeakerProps[] }) => {
         justifyContent="center"
         gap="30px 30px"
       >
-        {speakersData
-          .filter((speaker) => speaker.image && speaker.name)
-          .map((speaker) => (
+        {SPEAKERS.filter((speaker) => speaker.image && speaker.name).map(
+          (speaker) => (
             <Speaker key={speaker.name} {...speaker} />
-          ))}
+          ),
+        )}
       </Flex>
     </Box>
   );

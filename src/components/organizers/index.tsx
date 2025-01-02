@@ -1,4 +1,5 @@
-import { Box, Heading, IconButton, useBreakpointValue } from '@chakra-ui/react';
+import { ORGANIZERS } from '@/data/organizers';
+import { Box, Heading, IconButton } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 import React from 'react';
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
@@ -6,13 +7,8 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
 import { Organizer } from './organizer';
-import type { OrganizerProps } from './types';
 
-const Organizers = ({
-  organizersData,
-}: {
-  organizersData: OrganizerProps[];
-}) => {
+const Organizers = () => {
   const settings = {
     dots: false,
     infinite: true,
@@ -41,10 +37,8 @@ const Organizers = ({
   const { t } = useTranslation('common');
 
   const [slider, setSlider] = React.useState<Slider | null>(null);
-  const top = useBreakpointValue({ base: '90%', md: '50%' });
-  const side = useBreakpointValue({ base: '90%', md: '10px' });
 
-  if (!organizersData.length) return null;
+  if (!ORGANIZERS.length) return null;
   return (
     <Box id="organizers" bg="blackAlpha.900" minH="40vh" overflow="hidden">
       <Box
@@ -117,14 +111,12 @@ const Organizers = ({
           alignItems="center"
         >
           <Slider {...settings} ref={(slider) => setSlider(slider)}>
-            {organizersData
-              .filter(
-                (organizer) =>
-                  organizer.image && organizer.name && organizer.role,
-              )
-              .map((organizer) => (
-                <Organizer key={organizer.name} {...organizer} />
-              ))}
+            {ORGANIZERS.filter(
+              (organizer) =>
+                organizer.image && organizer.name && organizer.role,
+            ).map((organizer) => (
+              <Organizer key={organizer.name} {...organizer} />
+            ))}
           </Slider>
         </Box>
       </Box>
