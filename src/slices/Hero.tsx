@@ -1,23 +1,10 @@
 import DefaultButton from '@/components/DefaultButton';
 import scrollToSection from '@/lib/scrollToSection';
-import {
-  Box,
-  HStack,
-  Heading,
-  type JsxStyleProps,
-  Stack,
-  VStack,
-} from '@chakra-ui/react';
+import { Box, HStack, Heading, Stack, VStack } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 import Image from 'next/image';
 import pinguin from '../assets/pinguin.svg';
 import config from '../config';
-
-const HeadContainerStyle: JsxStyleProps = {
-  height: 'max(100vh,700px)',
-  width: '100%',
-  bg: 'blackAlpha.900',
-};
 
 const Title = () => {
   const { t } = useTranslation('common');
@@ -114,7 +101,14 @@ const HeadDescription = () => {
 
 const Hero = () => {
   return (
-    <Box as="section" id="head" {...HeadContainerStyle} m={0}>
+    <Box
+      as="section"
+      id="head"
+      height="max(100vh,700px)"
+      width="100%"
+      bg="blackAlpha.900"
+      m={0}
+    >
       <Stack
         height="inherit"
         justifyContent="space-evenly"
