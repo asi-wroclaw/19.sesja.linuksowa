@@ -22,6 +22,8 @@ const ImageItem = ({ imageSrc, title, text }: ImageItemProps) => {
         color="whiteAlpha.900"
         fontWeight="bold"
         as="h4"
+        size="4xl"
+        lineHeight="1.2"
         textAlign="center"
         lineClamp={[1, 2]}
       >

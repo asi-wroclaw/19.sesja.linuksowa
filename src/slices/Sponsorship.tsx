@@ -126,12 +126,12 @@ const Sponsorship = () => {
             as="h2"
             textAlign="center"
             fontSize={['3xl', '5xl']}
+            lineHeight={1.2}
           >
             {title}
           </Heading>
 
           <Heading
-            as="h3"
             fontSize={['md', 'xl']}
             textAlign="center"
             zIndex="0"
@@ -147,6 +147,7 @@ const Sponsorship = () => {
             <DefaultButton
               _hover={{ color: 'black' }}
               text="sponsorshipOffer"
+              size={'xl'}
             />
           </Link>
         </VStack>

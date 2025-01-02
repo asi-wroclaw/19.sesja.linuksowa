@@ -8,7 +8,7 @@ export interface DayOptionProps {
 
 const DayOption = ({ selected = false, text, select }: DayOptionProps) => {
   const borderBottom = selected
-    ? { borderBottom: `0.25rem 'primary' solid` }
+    ? { borderBottom: '0.25rem {colors.primary} solid' }
     : {};
   return (
     <Box

@@ -31,7 +31,8 @@ const Tickets = () => {
           <Link
             href="https://app.evenea.pl/event/19-sesja-linuksowa/?source=www-linuksowa"
             target="_blank"
-            rel="noreferrer"
+            rel="noreferrer noopener"
+            _hover={{ textDecorationColor: 'currentColor' }}
           >
             <Flex alignItems="center" gap="10px">
               <ChevronRightIcon size="80" />

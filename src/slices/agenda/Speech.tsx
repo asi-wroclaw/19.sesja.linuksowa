@@ -3,6 +3,7 @@ import type { SpeechItem } from '@/data/agenda';
 import {
   Box,
   Collapsible,
+  Em,
   Grid,
   GridItem,
   Link,
@@ -51,14 +52,10 @@ const Speech = ({ speech }: { speech: SpeechItem }) => {
         <Text fontSize={['sm', 'md', 'xl', '2xl']} color="whiteAlpha.900">
           {title}
           {lang && (
-            <Text
-              fontSize={['xs', 'sm', 'md', 'lg']}
-              as="i"
-              color="whiteAlpha.700"
-            >
+            <Em fontSize={['xs', 'sm', 'md', 'lg']} color="whiteAlpha.700">
               {' '}
               [{lang.join('/')}]
-            </Text>
+            </Em>
           )}
         </Text>
       </GridItem>

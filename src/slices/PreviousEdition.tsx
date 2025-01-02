@@ -40,6 +40,7 @@ const PreviousEdition = () => {
             <Heading
               as="h2"
               fontSize={{ base: '4xl', md: '7xl' }}
+              lineHeight={1.2}
               textAlign="center"
               fontWeight="semibold"
             >
@@ -53,6 +54,8 @@ const PreviousEdition = () => {
               <DefaultButton
                 _hover={{ color: 'black' }}
                 text={content.buttonText}
+                size={'xl'}
+                fontSize={'lg'}
               />
             </Link>
           </VStack>

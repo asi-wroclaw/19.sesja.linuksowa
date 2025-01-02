@@ -62,7 +62,7 @@ const Organizer = ({ image, name, role }: OrganizerProps) => {
             textAlign="center"
             fontSize="xl"
             as="h4"
-            color={'primary'}
+            color={'white'}
           >
             {t(role)}
           </Heading>
@@ -142,6 +142,7 @@ const Organizers = ({
           as="h2"
           color="whiteAlpha.900"
           fontSize={['3xl', '5xl', '7xl']}
+          lineHeight={1.2}
         >
           {t('our-team')}
         </Heading>
@@ -185,7 +186,7 @@ const Organizers = ({
                 (organizer) =>
                   organizer.image && organizer.name && organizer.role,
               )
-              .map((organizer, index) => (
+              .map((organizer) => (
                 <Organizer key={organizer.name} {...organizer} />
               ))}
           </Slider>
