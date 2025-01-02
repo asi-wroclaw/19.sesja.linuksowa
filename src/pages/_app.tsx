@@ -10,13 +10,6 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>19. Sesja Linuksowa</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <style jsx global>
-        {`
-          :root {
-            --font-montserrat: ${fonts.montserrat.style.fontFamily};
-          }
-        `}
-      </style>
       <Provider>
         <Component {...pageProps} />
       </Provider>
