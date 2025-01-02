@@ -18,7 +18,6 @@ export const system = createSystem(defaultConfig, {
       colors: {
         primary: { value: '#429096' },
         secondary: { value: '#6F2DBD' },
-        red: { value: '#ff0000' },
       },
       fonts: {
         body: { value: 'var(--font-montserrat)' },

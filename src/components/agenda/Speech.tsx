@@ -95,14 +95,14 @@ const Speech = ({ speech }: { speech: SpeechItem }) => {
             target="_blank"
             rel="noopener noreferrer"
             margin="auto"
+            marginTop="2rem"
             _hover={{ textDecorationLine: 'none' }}
           >
             <DefaultButton
-              marginTop="2px"
               marginLeft="auto"
               bg={'red'}
               textTransform="uppercase"
-              size={['xs', 'xs', 'xs', 'sm']}
+              size={['xs', 'md']}
               _hover={{ color: 'black' }}
               text="nagranie"
             />
