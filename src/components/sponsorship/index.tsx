@@ -1,8 +1,9 @@
+import OfertaBackground from '@/assets/images/bg_oferta.webp';
 import DefaultButton from '@/components/common/DefaultButton';
 import { ORGANIZATIONS } from '@/data/organizations';
 import { Box, Center, Heading, Link, Stack, VStack } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
-import NextImage from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
 import React from 'react';
 
 const Sponsorship = () => {
@@ -28,8 +29,8 @@ const Sponsorship = () => {
         height={['max(50vh,300px)', 'max(40vh,300px)']}
         position="absolute"
       >
-        <NextImage
-          src="/bg_oferta.webp"
+        <ExportedImage
+          src={OfertaBackground}
           alt="sponsorship background"
           style={{ objectFit: 'cover', objectPosition: 'center' }}
           fill
@@ -117,7 +118,7 @@ const Sponsorship = () => {
                           justifyContent="center"
                           _hover={{ transform: 'scale(1.1)' }}
                         >
-                          <NextImage
+                          <ExportedImage
                             alt={`${title} image`}
                             src={image}
                             width={200}

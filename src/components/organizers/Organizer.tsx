@@ -1,6 +1,6 @@
 import { Box, Flex, Heading, VStack } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
-import Image from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
 import type { OrganizerProps } from './types';
 import { Avatar } from '../ui/avatar';
 
@@ -19,9 +19,11 @@ export const Organizer = ({ image, name, role }: OrganizerProps) => {
             alignItems={'center'}
           >
             {image ? (
-              <Image
-                alt={`${name} photo`}
+              <ExportedImage
                 src={image}
+                alt={`${name} photo`}
+                width={300}
+                height={300}
                 style={{
                   objectFit: 'cover',
                   objectPosition: 'top',

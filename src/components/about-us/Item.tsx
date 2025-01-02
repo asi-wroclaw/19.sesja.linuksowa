@@ -1,5 +1,6 @@
 import { Heading, Text, VStack } from '@chakra-ui/react';
-import Image, { type StaticImageData } from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
+import type { StaticImageData } from 'next/image';
 
 type ImageItemProps = {
   imageSrc: string | StaticImageData;
@@ -10,7 +11,7 @@ type ImageItemProps = {
 const Item = ({ imageSrc, title, text }: ImageItemProps) => {
   return (
     <VStack flex="1">
-      <Image
+      <ExportedImage
         width={270}
         height={270}
         color="white"

@@ -1,6 +1,6 @@
 import { Avatar } from '@/components/ui/avatar';
 import { Box, Flex, Heading, VStack, useDisclosure } from '@chakra-ui/react';
-import Image from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
 import { Socials } from './Socials';
 import { SpeakerModal } from './SpeakerModal';
 import type { SpeakerProps } from './types';
@@ -25,7 +25,7 @@ export const Speaker = ({ image, urls, name, description }: SpeakerProps) => {
           alignItems="center"
         >
           {image ? (
-            <Image
+            <ExportedImage
               alt={`${name} photo`}
               fill
               sizes="300px"

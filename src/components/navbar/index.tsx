@@ -1,10 +1,10 @@
-import logo from '@/assets/sesja_logo_jasne_biale.webp';
+import Logo from '@/assets/images/sesja_logo_jasne_biale.svg';
+import DefaultButton from '@/components/common/DefaultButton';
 import config from '@/config';
 import { Box, Flex, Link } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
-import Image from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
 import { useEffect, useState } from 'react';
-import DefaultButton from '@/components/common/DefaultButton';
 import { DesktopNavBar } from './Desktop';
 import { MobileNavBar } from './Mobile';
 import type { MenuProps } from './types';
@@ -109,7 +109,13 @@ const Navbar = () => {
               marginTop="auto"
               marginBottom="auto"
             >
-              <Image alt="sesja linuksowa" src={logo} />
+              <ExportedImage
+                src={Logo}
+                alt="Logo Sesja Linuksowa"
+                width={250}
+                height={65}
+                priority
+              />
             </Box>
           </a>
         </Box>

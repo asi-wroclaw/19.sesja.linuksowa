@@ -1,9 +1,9 @@
+import magnifyingGlass from '@/assets/images/about-us/magnifying-glass.svg';
+import ourGoal from '@/assets/images/about-us/our-goal.png';
+import questionMarks from '@/assets/images/about-us/question-marks.png';
 import Item from '@/components/about-us/Item';
 import { Box, Stack } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
-import magnifyingGlass from '@/assets/about-us/magnifying-glass.svg';
-import ourGoal from '@/assets/about-us/our-goal.png';
-import questionMarks from '@/assets/about-us/question-marks.png';
 
 const AboutUs = () => {
   const { t } = useTranslation('common');

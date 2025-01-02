@@ -8,7 +8,8 @@ import {
 } from '@/components/ui/dialog';
 import { Box, Text, VStack, useMediaQuery } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
-import Image, { type StaticImageData } from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
+import type { StaticImageData } from 'next/image';
 import { getImageSize } from './utils';
 
 export const SpeakerModal = ({
@@ -51,7 +52,7 @@ export const SpeakerModal = ({
         <DialogBody color="whiteAlpha.900">
           <VStack gap="3vh">
             <Box w={300} h={300} position="relative">
-              <Image
+              <ExportedImage
                 fill
                 alt={`${name} image`}
                 sizes="300px"

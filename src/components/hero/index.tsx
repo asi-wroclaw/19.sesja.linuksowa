@@ -1,6 +1,6 @@
-import pinguin from '@/assets/pinguin.svg';
+import pinguin from '@/assets/images/pinguin.svg';
 import { Box, Stack, VStack } from '@chakra-ui/react';
-import Image from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
 import { HeadDescription } from './HeadDescription';
 
 const Hero = () => {
@@ -31,7 +31,14 @@ const Hero = () => {
           width={{ base: '30%', lg: '50%' }}
           position="relative"
         >
-          <Image priority alt="pinguin" src={pinguin} fill />
+          <ExportedImage
+            priority
+            src={pinguin}
+            alt="pinguin"
+            width={555}
+            height={917}
+            unoptimized
+          />
         </VStack>
         <HeadDescription />
       </Stack>
