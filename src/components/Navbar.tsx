@@ -10,7 +10,6 @@ import {
   Box,
   Flex,
   IconButton,
-  type JsxStyleProps,
   Link,
   Text,
   useMediaQuery,
@@ -24,14 +23,6 @@ import config from '../config';
 import DefaultButton from './DefaultButton';
 
 export const HEADER_HEIGHT = 70;
-
-const NavBarStyle: JsxStyleProps = {
-  height: `${HEADER_HEIGHT}px`,
-  position: 'fixed',
-  top: '0',
-  width: '100%',
-  zIndex: '100',
-};
 
 const Live = () => {
   return (
@@ -106,7 +97,14 @@ const Navbar = () => {
   });
 
   return (
-    <Box {...NavBarStyle} backgroundColor={bg}>
+    <Box
+      height="`${HEADER_HEIGHT}px`"
+      position="fixed"
+      top="0"
+      width="100%"
+      zIndex="100"
+      backgroundColor={bg}
+    >
       <Flex
         marginLeft={{ base: '2%', lg: '5' }}
         marginRight={{ base: '2%', lg: '0' }}
