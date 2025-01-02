@@ -1,5 +1,5 @@
 import DefaultButton from '@/components/DefaultButton';
-import scrollToSection from '@/lib/scrollToSection';
+import { Button } from '@/components/ui/button';
 import { Box, HStack, Heading, Stack, VStack } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 import Image from 'next/image';
@@ -79,19 +79,24 @@ const HeadDescription = () => {
       <SpotDescription />
       <HStack gap={16}>
         {config.SHOW_AGENDA && (
-          <DefaultButton
-            bg="#429096"
-            fontSize={'18px'}
-            lineHeight="1.2"
-            onClick={() => scrollToSection('agenda')}
-            text={t('seeAgenda')}
-            _hover={{ color: 'black' }}
-          />
+          <a href="#agenda">
+            <Button
+              size={'lg'}
+              variant={'solid'}
+              color={'white'}
+              bg="#429096"
+              fontSize={'18px'}
+              lineHeight="1.2"
+              _hover={{ color: 'black' }}
+            >
+              {t('seeAgenda')}
+            </Button>
+          </a>
         )}
         <a
           href="https://app.evenea.pl/event/19-sesja-linuksowa/?source=www-linuksowa"
           target="_blank"
-          rel="noreferrer"
+          rel="noreferrer noopener"
         >
           <DefaultButton
             text={t('getTicketsCaps')}

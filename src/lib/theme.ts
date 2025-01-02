@@ -1,3 +1,4 @@
+import { HEADER_HEIGHT } from '@/components/Navbar';
 import { createSystem, defaultConfig } from '@chakra-ui/react';
 import { fonts } from './fonts';
 
@@ -7,6 +8,8 @@ export const system = createSystem(defaultConfig, {
       '&:root': {
         '--font-montserrat': fonts.montserrat.style.fontFamily,
       },
+      scrollPaddingTop: `${HEADER_HEIGHT}px`,
+      scrollBehavior: 'smooth',
       colorPalette: 'white',
     },
   },

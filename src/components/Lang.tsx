@@ -24,9 +24,13 @@ const LangItem = ({
   );
 };
 
-const Lang = ({ textColor = 'whiteAlpha.900' }: { textColor?: string }) => (
+const Lang = ({
+  textColor = 'whiteAlpha.900',
+  display = { base: 'none', lg: 'block' },
+}: { textColor?: string; display?: object }) => (
   <Box
     color={textColor}
+    display={display}
     zIndex="4"
     fontSize="lg"
     marginTop="auto"

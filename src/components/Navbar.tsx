@@ -5,15 +5,7 @@ import {
   MenuRoot,
   MenuTrigger,
 } from '@/components/ui/menu';
-import scrollToSection from '@/lib/scrollToSection';
-import {
-  Box,
-  Flex,
-  IconButton,
-  Link,
-  Text,
-  useMediaQuery,
-} from '@chakra-ui/react';
+import { Box, Flex, IconButton, Link, Text } from '@chakra-ui/react';
 import { MenuIcon } from 'lucide-react';
 import { useTranslation } from 'next-export-i18n';
 import Image from 'next/image';
@@ -27,7 +19,7 @@ export const HEADER_HEIGHT = 70;
 const Live = () => {
   return (
     <Link
-      href={'https://www.youtube.com/live/0GtdxGl5CUs'}
+      href={'https://www.youtube.com/live/insert-link'}
       target="_blank"
       rel="noreferrer noopener"
       margin="auto"
@@ -52,17 +44,10 @@ const Live = () => {
 
 const Navbar = () => {
   const [bg, setBg] = useState<string>('rgba(0,0,0,0)');
-  const [isSmallerThanLg] = useMediaQuery(['(max-width: 62em)'], {
-    fallback: [false],
-  });
-  const [isBiggerThanLg] = useMediaQuery(['(min-width: 62em)'], {
-    fallback: [true],
-  });
   const { t }: { t: (key: string) => string } = useTranslation('common');
-  // const showLive = ['2024-04-15', '2024-04-20', '2024-04-21'].includes(
-  //   new Date().toISOString().slice(0, 10),
-  // );
-  const headId = 'head';
+  const showLive = ['2025-04-04', '2025-04-05', '2025-04-06'].includes(
+    new Date().toISOString().slice(0, 10),
+  );
 
   const menu: MenuProps = [
     { text: t('menu.about'), sectionId: 'about' },
@@ -78,7 +63,6 @@ const Navbar = () => {
         sectionId: 'agenda',
       }),
     },
-
     { text: t('menu.previous'), sectionId: 'previous' },
     { text: t('menu.sponsors'), sectionId: 'sponsors' },
   ].filter(({ text }) => text) as MenuProps;
@@ -98,6 +82,7 @@ const Navbar = () => {
 
   return (
     <Box
+      id="main-navbar"
       height={`${HEADER_HEIGHT}px`}
       position="fixed"
       top="0"
@@ -105,6 +90,13 @@ const Navbar = () => {
       zIndex="100"
       backgroundColor={bg}
     >
+      <noscript>
+        <style>{`
+          #main-navbar {
+            background-color: rgba(0,0,0,1) !important;
+          }
+        `}</style>
+      </noscript>
       <Flex
         marginLeft={{ base: '2%', lg: '5' }}
         marginRight={{ base: '2%', lg: '0' }}
@@ -114,21 +106,24 @@ const Navbar = () => {
         top="0"
         mt="0"
       >
-        <Box
-          width={{ base: '172px', lg: '230px' }}
-          height={{ base: '42px', lg: '56px' }}
-          marginTop="auto"
-          marginBottom="auto"
-          cursor="pointer"
-        >
-          <Image
-            onClick={() => scrollToSection(headId)}
-            alt="sesja linuksowa"
-            src={logo}
-          />
+        <Box asChild>
+          <a href="#head">
+            <Box
+              width={{ base: '172px', lg: '230px' }}
+              height={{ base: '42px', lg: '56px' }}
+              marginTop="auto"
+              marginBottom="auto"
+            >
+              <Image alt="sesja linuksowa" src={logo} />
+            </Box>
+          </a>
         </Box>
-        {isBiggerThanLg && <DesktopNavBar menu={menu} />}
-        {isSmallerThanLg && <MobileNavBar menu={menu} />}
+
+        <DesktopNavBar menu={menu} />
+
+        <Box display={{ base: 'block', lg: 'none' }}>
+          <MobileNavBar menu={menu} />
+        </Box>
       </Flex>
     </Box>
   );
@@ -149,16 +144,12 @@ const MobileNavBar = ({ menu }: { menu: MenuProps }) => {
       </MenuTrigger>
       <MenuContent className="light">
         {menu.map(({ text, sectionId }) => (
-          <MenuItem
-            key={text}
-            value={text}
-            onClick={() => sectionId && scrollToSection(sectionId)}
-          >
-            {text}
+          <MenuItem key={text} value={text} asChild>
+            <a href={`#${sectionId}`}>{text}</a>
           </MenuItem>
         ))}
         <MenuItem value="lang">
-          <Lang textColor="#000" />
+          <Lang textColor="#000" display={{ base: 'block', lg: 'none' }} />
         </MenuItem>
       </MenuContent>
     </MenuRoot>
@@ -169,6 +160,7 @@ const DesktopNavBar = ({ menu }: { menu: MenuProps }) => {
   return (
     <>
       <Flex
+        display={{ base: 'none', lg: 'flex' }}
         marginBottom="auto"
         marginTop="auto"
         marginLeft="5%"
@@ -180,6 +172,7 @@ const DesktopNavBar = ({ menu }: { menu: MenuProps }) => {
       >
         {menu.map(({ text, sectionId }) => (
           <Text
+            asChild
             margin="auto"
             key={text}
             textTransform="capitalize"
@@ -188,9 +181,8 @@ const DesktopNavBar = ({ menu }: { menu: MenuProps }) => {
             cursor="pointer"
             _hover={{ color: 'primary' }}
             height="30px"
-            onClick={() => sectionId && scrollToSection(sectionId)}
           >
-            {text}
+            <a href={`#${sectionId}`}>{text}</a>
           </Text>
         ))}
       </Flex>
