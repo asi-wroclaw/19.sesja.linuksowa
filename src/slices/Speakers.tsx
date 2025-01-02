@@ -1,20 +1,12 @@
 import {
   Box,
-  DarkMode,
   Flex,
   HStack,
   Heading,
-  Modal,
-  ModalBody,
-  ModalCloseButton,
-  ModalContent,
-  ModalHeader,
-  ModalOverlay,
   Text,
   VStack,
   useDisclosure,
   useMediaQuery,
-  useTheme,
 } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 import Image, { type StaticImageData } from 'next/image';
@@ -22,6 +14,15 @@ import github from '../assets/socials/github.svg';
 import linkedin from '../assets/socials/linkedin.svg';
 import twitter from '../assets/socials/twitter.svg';
 import website from '../assets/socials/website.svg';
+import {
+  DialogBackdrop,
+  DialogBody,
+  DialogCloseTrigger,
+  DialogContent,
+  DialogHeader,
+  DialogRoot,
+} from '@/components/ui/dialog';
+import { useTheme } from 'next-themes';
 
 type SocialUrls = {
   website: string;
@@ -73,20 +74,22 @@ const getImageSize = (
   return [imageWidth, imageHeight];
 };
 const SpeakerModal = ({
-  isOpen,
+  open,
   onClose,
   name,
   image,
   description,
 }: {
-  isOpen: boolean;
+  open: boolean;
   onClose: () => void;
   name: string;
   image: string | StaticImageData;
   description?: string[];
 }) => {
   const { t } = useTranslation('common');
-  const [isSmallerThan800] = useMediaQuery('(max-width: 800px)');
+  const [isSmallerThan800] = useMediaQuery(['(max-width: 800px)'], {
+    fallback: [false],
+  });
   const { height, width } = image as { height: number; width: number };
   const isLongDescription = (description ?? []).join('').length > 500;
   const isALotOfContent = isLongDescription && isSmallerThan800;
@@ -95,53 +98,51 @@ const SpeakerModal = ({
     isALotOfContent ? [200, 200] : [500, 400],
   );
   return (
-    <DarkMode>
-      <Modal
-        isCentered
-        size={{ sm: 'full', md: 'xl' }}
-        isOpen={isOpen}
-        onClose={onClose}
-      >
-        <ModalOverlay />
-        <ModalContent>
-          <ModalHeader color="whiteAlpha.900" textAlign="center" fontSize="2xl">
-            {name}
-          </ModalHeader>
-          <ModalCloseButton color="whiteAlpha.900" />
-          <ModalBody color="whiteAlpha.900">
-            <VStack gap="3vh">
-              <Box w={300} h={300} position="relative">
-                <Image
-                  fill
-                  alt={`${name} image`}
-                  sizes="300px"
-                  style={{ objectFit: 'cover', objectPosition: 'top' }}
-                  src={image}
-                />
-              </Box>
-              {(description || [])?.map((descriptionText, index) => (
-                <Text
-                  textAlign="center"
-                  key={`${descriptionText}-${
-                    // biome-ignore lint/suspicious/noArrayIndexKey: don't care
-                    index
-                  }`}
-                  minH="15px"
-                  padding="0vh 0vh 2vh 0vh"
-                >
-                  {descriptionText}
-                </Text>
-              ))}
-            </VStack>
-          </ModalBody>
-        </ModalContent>
-      </Modal>
-    </DarkMode>
+    <DialogRoot
+      placement={'center'}
+      size={{ sm: 'full', md: 'xl' }}
+      open={open}
+      onOpenChange={onClose}
+    >
+      <DialogBackdrop />
+      <DialogContent className="dark">
+        <DialogHeader color="whiteAlpha.900" textAlign="center" fontSize="2xl">
+          {name}
+        </DialogHeader>
+        <DialogCloseTrigger color="whiteAlpha.900" />
+        <DialogBody color="whiteAlpha.900">
+          <VStack gap="3vh">
+            <Box w={300} h={300} position="relative">
+              <Image
+                fill
+                alt={`${name} image`}
+                sizes="300px"
+                style={{ objectFit: 'cover', objectPosition: 'top' }}
+                src={image}
+              />
+            </Box>
+            {(description || [])?.map((descriptionText, index) => (
+              <Text
+                textAlign="center"
+                key={`${descriptionText}-${
+                  // biome-ignore lint/suspicious/noArrayIndexKey: don't care
+                  index
+                }`}
+                minH="15px"
+                padding="0vh 0vh 2vh 0vh"
+              >
+                {descriptionText}
+              </Text>
+            ))}
+          </VStack>
+        </DialogBody>
+      </DialogContent>
+    </DialogRoot>
   );
 };
 
 const Speaker = ({ image, urls, name, description }: SpeakerProps) => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const { open, onOpen, onClose } = useDisclosure();
   const theme = useTheme();
   const showSocials =
     urls.github || urls.linkedin || urls.twitter || urls.website;
@@ -161,12 +162,7 @@ const Speaker = ({ image, urls, name, description }: SpeakerProps) => {
             src={image}
           />
         </Box>
-        <VStack
-          height="90px"
-          width="300px"
-          padding="2"
-          background={theme.colors.primary}
-        >
+        <VStack height="90px" width="300px" padding="2" background={'primary'}>
           <Heading
             margin="auto"
             textAlign="center"
@@ -180,7 +176,7 @@ const Speaker = ({ image, urls, name, description }: SpeakerProps) => {
         </VStack>
       </Box>
       <SpeakerModal
-        isOpen={isOpen}
+        open={open}
         onClose={onClose}
         name={name}
         image={image}

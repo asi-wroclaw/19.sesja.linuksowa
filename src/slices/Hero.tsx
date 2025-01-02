@@ -1,27 +1,12 @@
 import DefaultButton from '@/components/DefaultButton';
 import scrollToSection from '@/lib/scrollToSection';
-import {
-  Box,
-  HStack,
-  Heading,
-  Stack,
-  type StyleProps,
-  VStack,
-  useTheme,
-} from '@chakra-ui/react';
+import { Box, HStack, Heading, Stack, VStack } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 import Image from 'next/image';
 import pinguin from '../assets/pinguin.svg';
 import config from '../config';
 
-const HeadContainerStyle: StyleProps = {
-  height: 'max(100vh,700px)',
-  width: '100%',
-  bg: 'blackAlpha.900',
-};
-
 const Title = () => {
-  const theme = useTheme();
   const { t } = useTranslation('common');
 
   return (
@@ -35,6 +20,7 @@ const Title = () => {
           xl: '6xl',
           '2xl': '7xl',
         }}
+        lineHeight="1.2"
         textAlign="center"
         fontWeight="semibold"
         color="white"
@@ -44,9 +30,10 @@ const Title = () => {
       <Heading
         as="h2"
         fontSize={{ base: 'xl', md: '4xl' }}
+        lineHeight="1.2"
         textAlign="center"
         fontWeight="semibold"
-        bgColor={theme.colors.primary}
+        bgColor={'primary'}
         color="white"
       >
         &nbsp;{t('eventDate')}&nbsp;
@@ -94,6 +81,8 @@ const HeadDescription = () => {
         {config.SHOW_AGENDA && (
           <DefaultButton
             bg="#429096"
+            fontSize={'18px'}
+            lineHeight="1.2"
             onClick={() => scrollToSection('agenda')}
             text={t('seeAgenda')}
             _hover={{ color: 'black' }}
@@ -106,6 +95,9 @@ const HeadDescription = () => {
         >
           <DefaultButton
             text={t('getTicketsCaps')}
+            fontSize={'18px'}
+            lineHeight="1.2"
+            size={'xl'}
             _hover={{ color: 'black' }}
           />
         </a>
@@ -116,7 +108,14 @@ const HeadDescription = () => {
 
 const Hero = () => {
   return (
-    <Box as="section" id="head" {...HeadContainerStyle} m={0}>
+    <Box
+      as="section"
+      id="head"
+      height="max(100vh,700px)"
+      width="100%"
+      bg="blackAlpha.900"
+      m={0}
+    >
       <Stack
         height="inherit"
         justifyContent="space-evenly"

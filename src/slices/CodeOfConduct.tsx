@@ -1,8 +1,7 @@
-import { Center, Link, Text, useTheme } from '@chakra-ui/react';
+import { Center, Link, Text } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 
 const CodeOfConduct = () => {
-  const theme = useTheme();
   const { t } = useTranslation('common');
 
   const content = {
@@ -18,7 +17,7 @@ const CodeOfConduct = () => {
       display="flex"
       justifyContent="center"
       width="100%"
-      bg={theme.colors.primary}
+      bg={'primary'}
       minHeight="10vh"
       position="relative"
       zIndex="2"

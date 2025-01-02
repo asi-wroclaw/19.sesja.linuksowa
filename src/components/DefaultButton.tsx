@@ -1,19 +1,26 @@
-import { Button, type ButtonProps, useTheme } from '@chakra-ui/react';
+import { Button, type ButtonProps } from '@/components/ui/button';
 import { useTranslation } from 'next-export-i18n';
+import type { JSX } from 'react';
 
-const DefaultButton = (props: ButtonProps & { text: string }) => {
-  const theme = useTheme();
+const DefaultButton = (
+  props: ButtonProps & { text: string; rightIcon?: JSX.Element },
+) => {
   const { t } = useTranslation('common');
-  const { text } = props;
+  const { text, rightIcon, ...rest } = props;
   const translatedText = t(text);
-  const buttonProps = {
+  const buttonProps: ButtonProps = {
     size: 'lg',
     variant: 'solid',
-    bg: theme.colors.secondary,
+    bg: 'secondary',
     color: 'white',
-    ...props,
+    ...rest,
   };
-  return <Button {...buttonProps}>{translatedText}</Button>;
+  return (
+    <Button {...buttonProps}>
+      {translatedText}
+      {rightIcon}
+    </Button>
+  );
 };
 
 export default DefaultButton;

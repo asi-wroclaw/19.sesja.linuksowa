@@ -1,5 +1,6 @@
+import { Button } from '@/components/ui/button';
 import config from '@/config';
-import { Box, Button, Flex, Input } from '@chakra-ui/react';
+import { Box, Flex, Input } from '@chakra-ui/react';
 import { useCallback, useEffect, useRef, useState } from 'react';
 
 const Home: React.FC = () => {
@@ -75,7 +76,7 @@ const Home: React.FC = () => {
         height={600}
         style={{ border: '1px solid black', marginBottom: '20px' }}
       />
-      <Button colorScheme="blue" onClick={handleDownload}>
+      <Button colorPalette="blue" onClick={handleDownload}>
         Download
       </Button>
     </Flex>

@@ -36,6 +36,7 @@ const CallForPapers = () => {
             fontSize={{ base: '4xl', md: '7xl' }}
             textAlign="center"
             fontWeight="semibold"
+            lineHeight="1.2"
           >
             {content.c4pTitle}
           </Heading>

@@ -1,4 +1,4 @@
-import { Box, Heading, VStack, useTheme } from '@chakra-ui/react';
+import { Box, Heading, VStack } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 import { useState } from 'react';
 import { SATURDAY_AGENDA, SUNDAY_AGENDA } from '../../data/agenda';
@@ -7,7 +7,6 @@ import Speech from './Speech';
 
 const Agenda = () => {
   const [isSaturday, setSaturday] = useState<boolean>(true);
-  const theme = useTheme();
   const { t } = useTranslation('common');
 
   const content = {
@@ -35,14 +34,14 @@ const Agenda = () => {
       width="100%"
       bg="blackAlpha.900"
       minHeight="100vh"
-      paddingTop="50"
-      paddingBottom="100"
+      paddingTop="50px"
+      paddingBottom="100px"
     >
       <Box
         display="flex"
         justifyContent="center"
         width="100%"
-        bg={theme.colors.primary}
+        bg={'primary'}
         minHeight="30vh"
         opacity="100%"
         position="relative"

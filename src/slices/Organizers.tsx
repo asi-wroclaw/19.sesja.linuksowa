@@ -5,7 +5,6 @@ import {
   IconButton,
   VStack,
   useBreakpointValue,
-  useTheme,
 } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 import Image, { type StaticImageData } from 'next/image';
@@ -22,7 +21,6 @@ export type OrganizerProps = {
 };
 
 const Organizer = ({ image, name, role }: OrganizerProps) => {
-  const theme = useTheme();
   const { t } = useTranslation('common');
   return (
     <Flex zIndex="3">
@@ -64,7 +62,7 @@ const Organizer = ({ image, name, role }: OrganizerProps) => {
             textAlign="center"
             fontSize="xl"
             as="h4"
-            color={theme.colors.primary}
+            color={'white'}
           >
             {t(role)}
           </Heading>
@@ -104,7 +102,6 @@ const Organizers = ({
       },
     ],
   };
-  const theme = useTheme();
   const { t } = useTranslation('common');
 
   const [slider, setSlider] = React.useState<Slider | null>(null);
@@ -130,7 +127,7 @@ const Organizers = ({
           fontSize="40px"
           size="lg"
           aria-label="left-arrow"
-          background={theme.colors.primary}
+          background={'primary'}
           color="white"
           borderRadius="full"
           position="relative"
@@ -145,6 +142,7 @@ const Organizers = ({
           as="h2"
           color="whiteAlpha.900"
           fontSize={['3xl', '5xl', '7xl']}
+          lineHeight={1.2}
         >
           {t('our-team')}
         </Heading>
@@ -152,7 +150,7 @@ const Organizers = ({
           fontSize="40px"
           size="lg"
           aria-label="right-arrow"
-          background={theme.colors.primary}
+          background={'primary'}
           color="white"
           borderRadius="full"
           position="relative"
@@ -188,7 +186,7 @@ const Organizers = ({
                 (organizer) =>
                   organizer.image && organizer.name && organizer.role,
               )
-              .map((organizer, index) => (
+              .map((organizer) => (
                 <Organizer key={organizer.name} {...organizer} />
               ))}
           </Slider>

@@ -1,21 +1,17 @@
-import { fonts } from '@/lib/fonts';
-import { theme } from '@/lib/theme';
-import { ChakraProvider } from '@chakra-ui/react';
+import { Provider } from '@/components/ui/provider';
 import type { AppProps } from 'next/app';
+import Head from 'next/head';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      <style jsx global>
-        {`
-          :root {
-            --font-montserrat: ${fonts.montserrat.style.fontFamily};
-          }
-        `}
-      </style>
-      <ChakraProvider theme={theme}>
+      <Head>
+        <title>19. Sesja Linuksowa</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
+      <Provider forcedTheme="light">
         <Component {...pageProps} />
-      </ChakraProvider>
+      </Provider>
     </>
   );
 }

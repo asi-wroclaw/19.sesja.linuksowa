@@ -1,4 +1,4 @@
-import { Box, Text, useTheme } from '@chakra-ui/react';
+import { Box, Text } from '@chakra-ui/react';
 import { LanguageSwitcher } from 'next-export-i18n';
 
 const LangItem = ({
@@ -10,14 +10,13 @@ const LangItem = ({
   text: string;
   locale: string;
 }) => {
-  const theme = useTheme();
   return (
     <LanguageSwitcher lang={locale}>
       <Text
         cursor="pointer"
         as="span"
         color={textColor}
-        _hover={{ color: theme.colors.primary }}
+        _hover={{ color: 'primary' }}
       >
         {text}
       </Text>
