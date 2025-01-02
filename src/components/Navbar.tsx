@@ -98,7 +98,7 @@ const Navbar = () => {
 
   return (
     <Box
-      height="`${HEADER_HEIGHT}px`"
+      height={`${HEADER_HEIGHT}px`}
       position="fixed"
       top="0"
       width="100%"
