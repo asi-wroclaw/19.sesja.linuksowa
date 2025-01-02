@@ -10,7 +10,7 @@ const MapSection = () => {
   const LeafletMap = useMemo(
     () =>
       dynamic(() => import('./LeafletMap'), {
-        loading: () => <p>A map is loading</p>,
+        loading: () => <p color="white">A map is loading</p>,
         ssr: false,
       }),
     [],
