@@ -20,6 +20,7 @@ const Title = () => {
           xl: '6xl',
           '2xl': '7xl',
         }}
+        lineHeight="1.2"
         textAlign="center"
         fontWeight="semibold"
         color="white"
@@ -29,6 +30,7 @@ const Title = () => {
       <Heading
         as="h2"
         fontSize={{ base: 'xl', md: '4xl' }}
+        lineHeight="1.2"
         textAlign="center"
         fontWeight="semibold"
         bgColor={'primary'}
@@ -79,6 +81,8 @@ const HeadDescription = () => {
         {config.SHOW_AGENDA && (
           <DefaultButton
             bg="#429096"
+            fontSize={'18px'}
+            lineHeight="1.2"
             onClick={() => scrollToSection('agenda')}
             text={t('seeAgenda')}
             _hover={{ color: 'black' }}
@@ -91,6 +95,9 @@ const HeadDescription = () => {
         >
           <DefaultButton
             text={t('getTicketsCaps')}
+            fontSize={'18px'}
+            lineHeight="1.2"
+            size={'xl'}
             _hover={{ color: 'black' }}
           />
         </a>

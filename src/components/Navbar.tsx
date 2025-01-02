@@ -143,7 +143,7 @@ const MobileNavBar = ({ menu }: { menu: MenuProps }) => {
   return (
     <MenuRoot>
       <MenuTrigger asChild>
-        <IconButton aria-label="Options" variant="outline">
+        <IconButton aria-label="Options" variant="outline" color="white">
           <MenuIcon />
         </IconButton>
       </MenuTrigger>
