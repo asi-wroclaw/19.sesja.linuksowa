@@ -1,4 +1,4 @@
-import ImageItem from '@/components/ImageItem';
+import Item from '@/components/about-us/Item';
 import { Box, Stack } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 import magnifyingGlass from '../assets/about-us/magnifying-glass.svg';
@@ -49,7 +49,7 @@ const AboutUs = () => {
         direction={{ base: 'column', lg: 'row' }}
       >
         {content.map(({ image, text, title }) => (
-          <ImageItem key={title} title={title} imageSrc={image} text={text} />
+          <Item key={title} title={title} imageSrc={image} text={text} />
         ))}
       </Stack>
     </Box>

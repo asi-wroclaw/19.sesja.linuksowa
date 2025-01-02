@@ -1,4 +1,4 @@
-import DefaultButton from '@/components/DefaultButton';
+import DefaultButton from '@/components/common/DefaultButton';
 import type { SpeechItem } from '@/data/agenda';
 import {
   Box,
@@ -10,11 +10,9 @@ import {
   Text,
   useDisclosure,
 } from '@chakra-ui/react';
-import { useTranslation } from 'next-export-i18n';
 
 const Speech = ({ speech }: { speech: SpeechItem }) => {
   const { open, onToggle } = useDisclosure();
-  const { t } = useTranslation('common');
   const { start, end, title, author, description, lang, recording } = speech;
   const style = description ? { cursor: 'pointer' } : {};
   return (

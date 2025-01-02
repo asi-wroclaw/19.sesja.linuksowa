@@ -1,4 +1,4 @@
-import DefaultButton from '@/components/DefaultButton';
+import DefaultButton from '@/components/common/DefaultButton';
 import { Box, Center, Flex, Heading, Link, VStack } from '@chakra-ui/react';
 import { YouTubeEmbed } from '@next/third-parties/google';
 import { useTranslation } from 'next-export-i18n';

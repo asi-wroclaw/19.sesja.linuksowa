@@ -7,7 +7,7 @@ type ImageItemProps = {
   text: string;
 };
 
-const ImageItem = ({ imageSrc, title, text }: ImageItemProps) => {
+const Item = ({ imageSrc, title, text }: ImageItemProps) => {
   return (
     <VStack flex="1">
       <Image
@@ -36,4 +36,4 @@ const ImageItem = ({ imageSrc, title, text }: ImageItemProps) => {
   );
 };
 
-export default ImageItem;
+export default Item;

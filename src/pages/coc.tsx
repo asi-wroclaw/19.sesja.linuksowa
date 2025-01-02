@@ -1,4 +1,4 @@
-import DefaultButton from '@/components/DefaultButton';
+import DefaultButton from '@/components/common/DefaultButton';
 import { Box, Center, HStack, Heading, VStack } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 import Link from 'next/link';

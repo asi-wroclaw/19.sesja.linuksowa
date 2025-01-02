@@ -1,4 +1,4 @@
-import DefaultButton from '@/components/DefaultButton';
+import DefaultButton from '@/components/common/DefaultButton';
 import {
   Box,
   Center,

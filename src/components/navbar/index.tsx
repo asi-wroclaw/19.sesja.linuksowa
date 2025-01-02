@@ -1,18 +1,13 @@
-import Lang from '@/components/Lang';
-import {
-  MenuContent,
-  MenuItem,
-  MenuRoot,
-  MenuTrigger,
-} from '@/components/ui/menu';
-import { Box, Flex, IconButton, Link, Text } from '@chakra-ui/react';
-import { MenuIcon } from 'lucide-react';
+import logo from '@/assets/sesja_logo_jasne_biale.webp';
+import config from '@/config';
+import { Box, Flex, Link } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-import logo from '../assets/sesja_logo_jasne_biale.webp';
-import config from '../config';
-import DefaultButton from './DefaultButton';
+import DefaultButton from '@/components/common/DefaultButton';
+import { DesktopNavBar } from './Desktop';
+import { MobileNavBar } from './Mobile';
+import type { MenuProps } from './types';
 
 export const HEADER_HEIGHT = 70;
 
@@ -126,68 +121,6 @@ const Navbar = () => {
         </Box>
       </Flex>
     </Box>
-  );
-};
-
-type MenuProps = {
-  text: string;
-  sectionId: string;
-}[];
-
-const MobileNavBar = ({ menu }: { menu: MenuProps }) => {
-  return (
-    <MenuRoot>
-      <MenuTrigger asChild>
-        <IconButton aria-label="Options" variant="outline" color="white">
-          <MenuIcon />
-        </IconButton>
-      </MenuTrigger>
-      <MenuContent className="light">
-        {menu.map(({ text, sectionId }) => (
-          <MenuItem key={text} value={text} asChild>
-            <a href={`#${sectionId}`}>{text}</a>
-          </MenuItem>
-        ))}
-        <MenuItem value="lang">
-          <Lang textColor="#000" display={{ base: 'block', lg: 'none' }} />
-        </MenuItem>
-      </MenuContent>
-    </MenuRoot>
-  );
-};
-
-const DesktopNavBar = ({ menu }: { menu: MenuProps }) => {
-  return (
-    <>
-      <Flex
-        display={{ base: 'none', lg: 'flex' }}
-        marginBottom="auto"
-        marginTop="auto"
-        marginLeft="5%"
-        width="50%"
-        maxWidth="90vh"
-        gap="10px"
-        minWidth="570px"
-        justifyContent="space-between"
-      >
-        {menu.map(({ text, sectionId }) => (
-          <Text
-            asChild
-            margin="auto"
-            key={text}
-            textTransform="capitalize"
-            color="whiteAlpha.900"
-            fontSize={['sm', 'sm', 'lg', 'xl']}
-            cursor="pointer"
-            _hover={{ color: 'primary' }}
-            height="30px"
-          >
-            <a href={`#${sectionId}`}>{text}</a>
-          </Text>
-        ))}
-      </Flex>
-      <Lang />
-    </>
   );
 };
 

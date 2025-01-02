@@ -1,4 +1,4 @@
-import DefaultButton from '@/components/DefaultButton';
+import DefaultButton from '@/components/common/DefaultButton';
 import { Box, Center, Flex, Heading, Link } from '@chakra-ui/react';
 import { MoveRight } from 'lucide-react';
 import { useTranslation } from 'next-export-i18n';

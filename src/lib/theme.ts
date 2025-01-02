@@ -1,4 +1,4 @@
-import { HEADER_HEIGHT } from '@/components/Navbar';
+import { HEADER_HEIGHT } from '@/components/navbar';
 import { createSystem, defaultConfig } from '@chakra-ui/react';
 import { fonts } from './fonts';
 
