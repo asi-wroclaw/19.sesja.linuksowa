@@ -14,7 +14,10 @@ const appConfig = z.object({
     (value) => value === 'true',
     z.boolean().default(false),
   ),
-  SHOW_CALL_FOR_PAPERS: z.preprocess((value) => value === 'true', z.boolean()),
+  SHOW_CALL_FOR_PAPERS: z.preprocess(
+    (value) => value === 'true',
+    z.boolean().default(false),
+  ),
   ENABLE_CREATOR: z.preprocess(
     (value) => value === 'true',
     z.boolean().default(false),
