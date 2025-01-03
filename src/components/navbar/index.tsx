@@ -115,6 +115,7 @@ const Navbar = () => {
                 width={250}
                 height={65}
                 priority
+                unoptimized
               />
             </Box>
           </a>
