@@ -1,4 +1,4 @@
-import Logo from '@/assets/images/sesja_logo_jasne_biale.svg';
+import Logo from '@/assets/images/sesja_logo_jasne_biale.webp';
 import DefaultButton from '@/components/common/DefaultButton';
 import config from '@/config';
 import { Box, Flex, Link } from '@chakra-ui/react';
