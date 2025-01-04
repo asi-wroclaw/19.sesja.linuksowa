@@ -1,6 +1,7 @@
 import { Provider } from '@/components/ui/provider';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
+import Script from 'next/script';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -12,6 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Provider forcedTheme="light">
         <Component {...pageProps} />
       </Provider>
+      <Script data-collect-dnt="true" src="https://scripts.simpleanalyticscdn.com/latest.js" />
     </>
   );
 }
