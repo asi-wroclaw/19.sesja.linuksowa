@@ -1,14 +1,15 @@
 import DefaultButton from '@/components/common/DefaultButton';
+import {
+  youtubePlaylistId,
+  youtubePlaylistUrl,
+  youtubeVideoId,
+} from '@/data/common';
 import { Box, Center, Flex, Heading, Link, VStack } from '@chakra-ui/react';
 import { YouTubeEmbed } from '@next/third-parties/google';
 import { useTranslation } from 'next-export-i18n';
 
 const PreviousEdition = () => {
   const { t } = useTranslation('common');
-  const youtubeVideo = 'J-0oZFlSpcQ';
-  const youtubePlaylist = 'PLTvZBPQxCI8EWxk9lhgOP8wSg7572N5Up';
-  const previousEditionUrl =
-    'https://www.youtube.com/watch?v=J-0oZFlSpcQ&list=PLTvZBPQxCI8EWxk9lhgOP8wSg7572N5Up';
 
   const content = {
     text: t('seeLastEdition'),
@@ -48,7 +49,7 @@ const PreviousEdition = () => {
             </Heading>
             <Link
               _hover={{ textDecorationLine: 'none' }}
-              href={previousEditionUrl}
+              href={youtubePlaylistUrl}
               target="_blank"
             >
               <DefaultButton
@@ -64,8 +65,8 @@ const PreviousEdition = () => {
           {/* the same max-width must be set for a parent div and the <lite-youtube> element */}
           <Box maxW={'1200px'} width="100%" height="100%">
             <YouTubeEmbed
-              videoid={youtubeVideo}
-              params={`list=${youtubePlaylist}`}
+              videoid={youtubeVideoId}
+              params={`list=${youtubePlaylistId}`}
               style="max-width: 1200px"
             />
           </Box>

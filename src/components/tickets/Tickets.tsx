@@ -1,3 +1,4 @@
+import { ticketsUrl } from '@/data/common';
 import { Box, Center, Flex, Heading, Icon, Link } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 import { LuChevronLeft, LuChevronRight } from 'react-icons/lu';
@@ -29,7 +30,7 @@ const Tickets = () => {
       >
         <Center flex={1}>
           <Link
-            href="https://app.evenea.pl/event/19-sesja-linuksowa/?source=www-linuksowa"
+            href={ticketsUrl}
             target="_blank"
             rel="noreferrer noopener"
             _hover={{ textDecorationColor: 'currentColor' }}

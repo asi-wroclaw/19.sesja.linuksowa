@@ -1,4 +1,5 @@
 import DefaultButton from '@/components/common/DefaultButton';
+import { callForPapersUrl } from '@/data/common';
 import { Box, Center, Flex, Heading, Icon, Link } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 import { LuMoveRight } from 'react-icons/lu';
@@ -6,7 +7,6 @@ import { LuMoveRight } from 'react-icons/lu';
 const CallForPapers = () => {
   const { t } = useTranslation('common');
   const content = {
-    C4pLink: t('c4pLink'),
     c4pButtonText: t('c4pButtonText'),
     c4pTitle: t('c4pTitle'),
   };
@@ -43,7 +43,7 @@ const CallForPapers = () => {
         <Center flex={1}>
           <Link
             _hover={{ textDecorationLine: 'none' }}
-            href={content.C4pLink}
+            href={callForPapersUrl}
             target="_blank"
           >
             <DefaultButton

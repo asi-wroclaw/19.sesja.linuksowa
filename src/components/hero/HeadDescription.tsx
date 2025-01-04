@@ -1,6 +1,7 @@
 import DefaultButton from '@/components/common/DefaultButton';
 import { Button } from '@/components/ui/button';
 import config from '@/config';
+import { ticketsUrl } from '@/data/common';
 import { Stack, VStack } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 import { SpotDescription } from './SpotDescription';
@@ -38,11 +39,7 @@ export const HeadDescription = () => {
           </a>
         )}
         {config.SHOW_TICKETS && (
-          <a
-            href="https://app.evenea.pl/event/19-sesja-linuksowa/?source=www-linuksowa"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
+          <a href={ticketsUrl} target="_blank" rel="noreferrer noopener">
             <DefaultButton
               text={t('getTicketsCaps')}
               fontSize={'18px'}
