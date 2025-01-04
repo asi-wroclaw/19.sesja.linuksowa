@@ -6,6 +6,7 @@ import Przemek from '@/assets/organizers/przemek.webp';
 import Tomek from '@/assets/organizers/rikardo.webp';
 import type { OrganizerProps } from '@/components/organizers/types';
 
+// For the best optimization import images instead of using urls
 export const ORGANIZERS: OrganizerProps[] = [
   {
     image: Michal,

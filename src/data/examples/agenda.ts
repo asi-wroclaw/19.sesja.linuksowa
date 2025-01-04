@@ -1,6 +1,6 @@
 import type { SpeechItem } from '@/components/agenda/types';
 
-export const SATURDAY_AGENDA: SpeechItem[] = [
+const SATURDAY_AGENDA: SpeechItem[] = [
   {
     start: 'TBA',
     end: 'TBA',
@@ -12,7 +12,7 @@ export const SATURDAY_AGENDA: SpeechItem[] = [
   },
 ];
 
-export const SUNDAY_AGENDA: SpeechItem[] = [
+const SUNDAY_AGENDA: SpeechItem[] = [
   {
     start: 'TBA',
     end: 'TBA',

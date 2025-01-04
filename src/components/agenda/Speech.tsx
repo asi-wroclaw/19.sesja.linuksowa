@@ -1,5 +1,4 @@
 import DefaultButton from '@/components/common/DefaultButton';
-import type { SpeechItem } from '@/data/agenda';
 import {
   Box,
   Collapsible,
@@ -10,6 +9,7 @@ import {
   Text,
   useDisclosure,
 } from '@chakra-ui/react';
+import { SpeechItem } from './types';
 
 const Speech = ({ speech }: { speech: SpeechItem }) => {
   const { open, onToggle } = useDisclosure();
