@@ -4,6 +4,7 @@ import Kamil from '@/assets/organizers/kamil.webp';
 import Michal from '@/assets/organizers/michal.jpg';
 import Przemek from '@/assets/organizers/przemek.webp';
 import Tomek from '@/assets/organizers/rikardo.webp';
+import Szymon from '@/assets/organizers/szycic.webp';
 import type { OrganizerProps } from '@/components/organizers/types';
 
 // For the best optimization import images instead of using urls
@@ -19,7 +20,7 @@ export const ORGANIZERS: OrganizerProps[] = [
     role: 'team.tomek',
   },
   {
-    image: '',
+    image: Szymon,
     name: 'Szymon Cichy',
     role: 'team.szymon',
   },
