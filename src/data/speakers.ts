@@ -1,7 +1,7 @@
 import Zielinski from '@/assets/speakers/zielinski.jpeg';
 import type { SpeakerProps } from '@/components/speakers/types';
 
-export const SPEAKERS: SpeakerProps[] = [ 
+export const SPEAKERS: SpeakerProps[] = [
   {
     image: Zielinski,
     urls: {

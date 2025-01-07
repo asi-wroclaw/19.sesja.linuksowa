@@ -9,7 +9,7 @@ import {
   Text,
   useDisclosure,
 } from '@chakra-ui/react';
-import { SpeechItem } from './types';
+import type { SpeechItem } from './types';
 
 const Speech = ({ speech }: { speech: SpeechItem }) => {
   const { open, onToggle } = useDisclosure();

@@ -13,7 +13,10 @@ export default function App({ Component, pageProps }: AppProps) {
       <Provider forcedTheme="light">
         <Component {...pageProps} />
       </Provider>
-      <Script data-collect-dnt="true" src="https://scripts.simpleanalyticscdn.com/latest.js" />
+      <Script
+        data-collect-dnt="true"
+        src="https://scripts.simpleanalyticscdn.com/latest.js"
+      />
     </>
   );
 }

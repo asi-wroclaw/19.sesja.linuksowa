@@ -48,4 +48,4 @@ export const ORGANIZATIONS = [
          },*/
     ],
   },
-] as SponsorshipEntity[] ;
+] as SponsorshipEntity[];
