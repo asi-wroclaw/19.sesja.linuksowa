@@ -39,7 +39,7 @@ const Live = () => {
 
 const Navbar = () => {
   const [bg, setBg] = useState<string>('rgba(0,0,0,0)');
-  const { t }: { t: (key: string) => string } = useTranslation('common');
+  const { t }: { t: (key: string) => string } = useTranslation();
   const showLive = ['2025-04-04', '2025-04-05', '2025-04-06'].includes(
     new Date().toISOString().slice(0, 10),
   );

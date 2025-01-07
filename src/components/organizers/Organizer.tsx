@@ -5,8 +5,8 @@ import type { OrganizerProps } from './types';
 import { Avatar } from '../ui/avatar';
 
 export const Organizer = ({ image, name, role }: OrganizerProps) => {
-  const { t } = useTranslation('common');
-  // d
+  const { t } = useTranslation();
+
   return (
     <Flex zIndex="3">
       <Box margin="auto">

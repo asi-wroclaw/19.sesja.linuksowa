@@ -9,7 +9,7 @@ import { YouTubeEmbed } from '@next/third-parties/google';
 import { useTranslation } from 'next-export-i18n';
 
 const PreviousEdition = () => {
-  const { t } = useTranslation('common');
+  const { t } = useTranslation();
 
   const content = {
     text: t('seeLastEdition'),

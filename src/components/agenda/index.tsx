@@ -7,7 +7,7 @@ import Speech from './Speech';
 
 const Agenda = () => {
   const [isSaturday, setSaturday] = useState<boolean>(true);
-  const { t } = useTranslation('common');
+  const { t } = useTranslation();
 
   const content = {
     saturdayOption: t('agendaDay1'),

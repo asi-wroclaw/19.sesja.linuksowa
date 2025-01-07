@@ -2,7 +2,7 @@ import { Center, Link, Text } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 
 const CodeOfConduct = () => {
-  const { t } = useTranslation('common');
+  const { t } = useTranslation();
 
   const content = {
     cocText: t('cocText'),

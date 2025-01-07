@@ -4,7 +4,7 @@ import { useTranslation } from 'next-export-i18n';
 import { Speaker } from './Speaker';
 
 const Speakers = () => {
-  const { t } = useTranslation('common');
+  const { t } = useTranslation();
 
   if (!SPEAKERS.length) return null;
   return (

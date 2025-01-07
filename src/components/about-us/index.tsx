@@ -6,7 +6,7 @@ import { Box, Stack } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 
 const AboutUs = () => {
-  const { t } = useTranslation('common');
+  const { t } = useTranslation();
 
   const content = [
     {

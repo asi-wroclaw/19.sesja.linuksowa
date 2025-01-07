@@ -34,7 +34,7 @@ const Organizers = () => {
       },
     ],
   };
-  const { t } = useTranslation('common');
+  const { t } = useTranslation();
 
   const [slider, setSlider] = React.useState<Slider | null>(null);
 

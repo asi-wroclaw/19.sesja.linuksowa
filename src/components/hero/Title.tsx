@@ -2,7 +2,7 @@ import { Heading, VStack } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 
 export const Title = () => {
-  const { t } = useTranslation('common');
+  const { t } = useTranslation();
 
   return (
     <VStack>

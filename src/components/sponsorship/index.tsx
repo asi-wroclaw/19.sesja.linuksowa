@@ -7,7 +7,7 @@ import ExportedImage from 'next-image-export-optimizer';
 import React from 'react';
 
 const Sponsorship = () => {
-  const { t } = useTranslation('common');
+  const { t } = useTranslation();
   const title = t('sponsorshipTitle');
   const description = t('sponsorshipDescription');
 

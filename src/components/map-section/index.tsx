@@ -5,7 +5,7 @@ import { useMemo } from 'react';
 import { Space } from './Space';
 
 const MapSection = () => {
-  const { t } = useTranslation('common');
+  const { t } = useTranslation();
 
   const LeafletMap = useMemo(
     () =>

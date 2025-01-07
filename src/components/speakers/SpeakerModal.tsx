@@ -6,11 +6,9 @@ import {
   DialogHeader,
   DialogRoot,
 } from '@/components/ui/dialog';
-import { Box, Text, VStack, useMediaQuery } from '@chakra-ui/react';
-import { useTranslation } from 'next-export-i18n';
+import { Box, Text, VStack } from '@chakra-ui/react';
 import ExportedImage from 'next-image-export-optimizer';
 import type { StaticImageData } from 'next/image';
-import { getImageSize } from './utils';
 
 export const SpeakerModal = ({
   open,
@@ -25,17 +23,6 @@ export const SpeakerModal = ({
   image: string | StaticImageData;
   description?: string[];
 }) => {
-  const { t } = useTranslation('common');
-  const [isSmallerThan800] = useMediaQuery(['(max-width: 800px)'], {
-    fallback: [false],
-  });
-  const { height, width } = image as { height: number; width: number };
-  const isLongDescription = (description ?? []).join('').length > 500;
-  const isALotOfContent = isLongDescription && isSmallerThan800;
-  const [imageWidth, imageHeight] = getImageSize(
-    [width, height],
-    isALotOfContent ? [200, 200] : [500, 400],
-  );
   return (
     <DialogRoot
       placement={'center'}

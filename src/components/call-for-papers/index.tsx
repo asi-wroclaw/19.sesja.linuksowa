@@ -5,7 +5,7 @@ import { useTranslation } from 'next-export-i18n';
 import { LuMoveRight } from 'react-icons/lu';
 
 const CallForPapers = () => {
-  const { t } = useTranslation('common');
+  const { t } = useTranslation();
   const content = {
     c4pButtonText: t('c4pButtonText'),
     c4pTitle: t('c4pTitle'),

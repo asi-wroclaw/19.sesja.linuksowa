@@ -5,7 +5,7 @@ import type { JSX } from 'react';
 const DefaultButton = (
   props: ButtonProps & { text: string; rightIcon?: JSX.Element },
 ) => {
-  const { t } = useTranslation('common');
+  const { t } = useTranslation();
   const { text, rightIcon, ...rest } = props;
   const translatedText = t(text);
   const buttonProps: ButtonProps = {

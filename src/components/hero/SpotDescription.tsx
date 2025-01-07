@@ -2,9 +2,9 @@ import { Heading, VStack } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 
 export const SpotDescription = () => {
-  const { t } = useTranslation('common');
+  const { t } = useTranslation();
 
-  const spot: string[] = t('eventLocationDetails', {}, { returnObjects: true });
+  const spot: string[] = t('eventLocationDetails');
   return (
     <VStack>
       {spot.map((text: string) => (

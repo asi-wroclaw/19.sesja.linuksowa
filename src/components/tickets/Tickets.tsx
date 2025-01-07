@@ -4,7 +4,7 @@ import { useTranslation } from 'next-export-i18n';
 import { LuChevronLeft, LuChevronRight } from 'react-icons/lu';
 
 const Tickets = () => {
-  const { t } = useTranslation('common');
+  const { t } = useTranslation();
   const content = {
     text: t('getTickets'),
   };

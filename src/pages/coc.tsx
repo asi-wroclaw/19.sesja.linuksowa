@@ -4,7 +4,7 @@ import { useTranslation } from 'next-export-i18n';
 import Link from 'next/link';
 
 export default function CodeOfConduct() {
-  const { t } = useTranslation('common');
+  const { t } = useTranslation();
 
   return (
     <Box height="100vh" bg="blackAlpha.900">
