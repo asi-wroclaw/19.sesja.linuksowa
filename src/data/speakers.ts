@@ -14,7 +14,7 @@ export const SPEAKERS: SpeakerProps[] = [
       facebook: 'https://www.facebook.com/informatykzakladowy/',
     },
     name: 'Tomasz Zieliński',
-    description: [],
+    description: ['Zawodowy programista od 2003 roku, pasjonat bezpieczeństwa informatycznego, autor bloga Informatyk Zakładowy. Rozwijał systemy finansowe dla NBP, tworzył i weryfikował zabezpieczenia bankowych aplikacji mobilnych, brał udział w pracach nad wyszukiwarką internetową Microsoft Bing. Obecnie pracuje w firmie DeepL'],
   },
   {
     image: '',
