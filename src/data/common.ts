@@ -1,4 +1,4 @@
-export const callForPapersUrl = '';
+export const callForPapersUrl = 'https://forms.gle/SjDg435wR9YXMSkY9';
 
 export const youtubeVideoId = 'J-0oZFlSpcQ';
 export const youtubePlaylistId = 'PLTvZBPQxCI8EWxk9lhgOP8wSg7572N5Up';
