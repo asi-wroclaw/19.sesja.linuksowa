@@ -1,8 +1,8 @@
 import AboutUs from '@/components/about-us';
 import Agenda from '@/components/agenda';
 import CallForPapers from '@/components/call-for-papers';
-import CodeOfConduct from '@/components/code-of-conduct';
 import ParticlesBackground from '@/components/common/ParticlesBackground';
+import Footer from '@/components/footer';
 import Hero from '@/components/hero';
 import MapSection from '@/components/map-section';
 import Navbar from '@/components/navbar';
@@ -27,7 +27,7 @@ export default function Page() {
       <MapSection />
       <Organizers />
       <Sponsorship />
-      <CodeOfConduct />
+      <Footer />
       <ParticlesBackground />
     </main>
   );
