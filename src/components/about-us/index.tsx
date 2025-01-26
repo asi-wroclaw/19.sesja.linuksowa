@@ -35,8 +35,6 @@ const AboutUs = () => {
       width="100%"
       bg={'primary'}
       minHeight="70vh"
-      position="relative"
-      zIndex="2"
     >
       <Stack
         width="95%"

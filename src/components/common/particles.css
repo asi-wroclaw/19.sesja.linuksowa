@@ -1,0 +1,8 @@
+#tsparticles {
+  z-index: -10;
+  position: relative;
+
+  canvas {
+    background-color: rgba(0, 0, 0, 0.92) !important;
+  }
+}

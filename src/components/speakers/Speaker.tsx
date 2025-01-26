@@ -10,11 +10,7 @@ export const Speaker = ({ image, urls, name, description }: SpeakerProps) => {
   const showSocials = Object.values(urls).some((url) => url);
 
   return (
-    <Flex
-      zIndex="3"
-      cursor="pointer"
-      onClick={() => description.length && onOpen()}
-    >
+    <Flex cursor="pointer" onClick={() => description.length && onOpen()}>
       <Box>
         <Box
           w={300}
@@ -52,7 +48,7 @@ export const Speaker = ({ image, urls, name, description }: SpeakerProps) => {
             textAlign="center"
             fontSize="2xl"
             as="h3"
-            color="whiteAlpha.900"
+            color="white"
           >
             {name}
           </Heading>

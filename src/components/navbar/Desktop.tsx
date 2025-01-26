@@ -22,7 +22,7 @@ export const DesktopNavBar = ({ menu }: { menu: MenuProps }) => {
             margin="auto"
             key={text}
             textTransform="capitalize"
-            color="whiteAlpha.900"
+            color="white"
             fontSize={['sm', 'sm', 'lg', 'xl']}
             cursor="pointer"
             _hover={{ color: 'primary' }}

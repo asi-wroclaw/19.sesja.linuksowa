@@ -30,7 +30,7 @@ const Live = () => {
         bg={'red'}
         paddingLeft={{ base: '12px', md: '24px' }}
         paddingRight={{ base: '12px', md: '24px' }}
-        color="whiteAlpha.900"
+        color="white"
         type="submit"
       />
     </Link>
@@ -82,7 +82,7 @@ const Navbar = () => {
       position="fixed"
       top="0"
       width="100%"
-      zIndex="100"
+      zIndex="1100"
       backgroundColor={bg}
     >
       <noscript>

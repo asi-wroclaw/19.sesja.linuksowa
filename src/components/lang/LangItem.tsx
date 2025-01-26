@@ -4,7 +4,7 @@ import { LanguageSwitcher } from 'next-export-i18n';
 export const LangItem = ({
   text,
   locale,
-  textColor = 'whiteAlpha.900',
+  textColor = 'white',
 }: {
   textColor?: string;
   text: string;

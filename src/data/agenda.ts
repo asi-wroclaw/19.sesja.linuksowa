@@ -7,7 +7,9 @@ export const SATURDAY_AGENDA: SpeechItem[] = [
     title: 'Dostałeś z ministerstwa 10 milionów PDF-ów. Co teraz?',
     author: 'Tomasz Zieliński',
     lang: ['pl'],
-    description: ['Gdy Ministerstwo Sprawiedliwości przekaże ci 10 milionów plików PDF z raportami losowego przydziału spraw, wraz z satysfakcją pojawia się wątpliwość - jak wyciągnąć użyteczne dane z takiej masy dokumentów? Opowiem o wyzwaniach związanych z realizacją serwisu https://slps.pl, począwszy od procesu pozyskania dokumentów, przez ekstrakcję tekstu z plików PDF, agregację wartości w bazie danych, aż po generowanie serwisu WWW i jego skrajnie oszczędny hosting. Bonusowo - przykłady błędów i niezgodności otrzymanych raportów ze specyfikacją Systemu Losowego Przydziału Spraw oraz rozważania, jaki sens ma robienie po godzinach takich dziwnych rzeczy.'],
+    description: [
+      'Gdy Ministerstwo Sprawiedliwości przekaże ci 10 milionów plików PDF z raportami losowego przydziału spraw, wraz z satysfakcją pojawia się wątpliwość - jak wyciągnąć użyteczne dane z takiej masy dokumentów? Opowiem o wyzwaniach związanych z realizacją serwisu https://slps.pl, począwszy od procesu pozyskania dokumentów, przez ekstrakcję tekstu z plików PDF, agregację wartości w bazie danych, aż po generowanie serwisu WWW i jego skrajnie oszczędny hosting. Bonusowo - przykłady błędów i niezgodności otrzymanych raportów ze specyfikacją Systemu Losowego Przydziału Spraw oraz rozważania, jaki sens ma robienie po godzinach takich dziwnych rzeczy.',
+    ],
     recording: '',
   },
   {

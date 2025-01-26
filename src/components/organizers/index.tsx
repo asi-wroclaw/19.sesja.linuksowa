@@ -40,15 +40,12 @@ const Organizers = () => {
 
   if (!ORGANIZERS.length) return null;
   return (
-    <Box id="organizers" bg="blackAlpha.900" minH="40vh" overflow="hidden">
+    <Box id="organizers" overflow="hidden">
       <Box
         display="flex"
         justifyContent="center"
         width="100%"
-        //minHeight="30vh"
         opacity="100%"
-        position="relative"
-        zIndex="2"
         alignItems="center"
         overflow="hidden"
         padding="5vh 0vh 0vh 0vh"
@@ -60,17 +57,14 @@ const Organizers = () => {
           background={'primary'}
           color="white"
           borderRadius="full"
-          position="relative"
-          zIndex={2}
           onClick={() => slider?.slickPrev()}
         >
           <BiLeftArrowAlt />
         </IconButton>
         <Heading
           padding="0vh 5vh 0vh 5vh"
-          //margin="auto"
           as="h2"
-          color="whiteAlpha.900"
+          color="white"
           fontSize={['3xl', '5xl', '7xl']}
           lineHeight={1.2}
         >
@@ -83,21 +77,15 @@ const Organizers = () => {
           background={'primary'}
           color="white"
           borderRadius="full"
-          position="relative"
-          zIndex={2}
           onClick={() => slider?.slickNext()}
         >
           <BiRightArrowAlt />
         </IconButton>
       </Box>
       <Box
-        //  display="flex"
         justifyContent="center"
         width="100%"
-        //minHeight="30vh"
         opacity="100%"
-        position="relative"
-        zIndex="2"
         alignItems="center"
         overflow="hidden"
       >

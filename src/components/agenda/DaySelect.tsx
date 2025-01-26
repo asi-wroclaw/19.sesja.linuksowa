@@ -4,7 +4,6 @@ import DayOption, { type DayOptionProps } from './DayOption';
 const DaySelect = ({ days }: { days: DayOptionProps[] }) => {
   return (
     <HStack
-      zIndex="2"
       width={['95%', '85%', '75%', '65%']}
       justifyContent="center"
       gap="5"

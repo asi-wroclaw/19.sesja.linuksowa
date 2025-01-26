@@ -8,22 +8,19 @@ const Speakers = () => {
 
   if (!SPEAKERS.length) return null;
   return (
-    <Box id="speakers" bg="blackAlpha.900" minH="40vh">
+    <Box id="speakers" width={'100%'} minH="40vh" paddingBottom={'100px'}>
       <Box
         display="flex"
         justifyContent="center"
         width="100%"
-        minHeight="30vh"
-        opacity="100%"
-        position="relative"
-        zIndex="2"
+        minHeight={['15vh', '25vh']}
       >
         <Heading
           margin="auto"
           alignSelf="flex-start"
           as="h2"
-          color="whiteAlpha.900"
-          fontSize={['3xl', '5xl', '7xl']}
+          color="white"
+          fontSize={['5xl', '7xl']}
         >
           {t('menu.speakers')}
         </Heading>
@@ -31,7 +28,7 @@ const Speakers = () => {
       <Flex
         margin="auto"
         maxW="1000px"
-        padding="50px 20px 20px 20px"
+        padding="0px 20px 20px 20px"
         flexWrap="wrap"
         justifyContent="center"
         gap="30px 30px"

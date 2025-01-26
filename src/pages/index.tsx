@@ -16,6 +16,12 @@ import config from '@/config';
 export default function Page() {
   return (
     <main>
+      {/* this is needed when we want to mititage FOUC (flash of unstyled content) */}
+      <style>{`
+        body {
+          background-color: rgba(0,0,0,0.92);
+        }
+      `}</style>
       <Navbar />
       <Hero />
       <AboutUs />

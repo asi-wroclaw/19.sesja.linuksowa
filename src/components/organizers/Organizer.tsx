@@ -8,7 +8,7 @@ export const Organizer = ({ image, name, role }: OrganizerProps) => {
   const { t } = useTranslation();
 
   return (
-    <Flex zIndex="3">
+    <Flex>
       <Box margin="auto">
         <VStack padding="2" minH="60vh" gap={8}>
           <Box
@@ -49,12 +49,7 @@ export const Organizer = ({ image, name, role }: OrganizerProps) => {
             )}
           </Box>
           <VStack gap={2}>
-            <Heading
-              textAlign="center"
-              fontSize="2xl"
-              as="h3"
-              color="whiteAlpha.900"
-            >
+            <Heading textAlign="center" fontSize="2xl" as="h3" color="white">
               {name}
             </Heading>
             <Heading
@@ -62,7 +57,7 @@ export const Organizer = ({ image, name, role }: OrganizerProps) => {
               textAlign="center"
               fontSize="xl"
               as="h4"
-              color={'white'}
+              color="white"
             >
               {t(role)}
             </Heading>

@@ -2,11 +2,9 @@ import type { Container, ISourceOptions } from '@tsparticles/engine';
 import { loadLinksPreset } from '@tsparticles/preset-links';
 import Particles, { initParticlesEngine } from '@tsparticles/react';
 import { useEffect, useState } from 'react';
+import './particles.css';
 
 const particlesOptions: ISourceOptions = {
-  background: {
-    opacity: 0,
-  },
   interactivity: {
     detect_on: 'canvas',
     events: {
@@ -67,6 +65,10 @@ const ParticlesBackground = () => {
 
   const particlesLoaded = async (container?: Container): Promise<void> => {
     console.log(container);
+    // FOUC mitigation is a problem when we want to show particles
+    // we need to change the body again
+    // all for the sake of not using z-index everywhere
+    document.body.style.backgroundColor = 'transparent';
   };
 
   if (init) {

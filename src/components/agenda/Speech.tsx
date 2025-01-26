@@ -27,7 +27,6 @@ const Speech = ({ speech }: { speech: SpeechItem }) => {
         '170px 1fr auto',
         '200px 1fr auto',
       ]}
-      //bg={open ? 'blackAlpha.900' : 'blackAlpha.700'}
       paddingBottom={3}
       paddingTop={3}
       borderBottom={'0.25rem solid'}
@@ -38,7 +37,7 @@ const Speech = ({ speech }: { speech: SpeechItem }) => {
         onClick={() => description && onToggle()}
         textAlign="center"
       >
-        <Text fontSize={['sm', 'md', 'xl', '2xl']} color="whiteAlpha.900">
+        <Text fontSize={['sm', 'md', 'xl', '2xl']} color="white">
           {start}-{end}
         </Text>
       </GridItem>
@@ -47,10 +46,10 @@ const Speech = ({ speech }: { speech: SpeechItem }) => {
         {...style}
         onClick={() => description && onToggle()}
       >
-        <Text fontSize={['sm', 'md', 'xl', '2xl']} color="whiteAlpha.900">
+        <Text fontSize={['sm', 'md', 'xl', '2xl']} color="white">
           {title}
           {lang && (
-            <Em fontSize={['xs', 'sm', 'md', 'lg']} color="whiteAlpha.700">
+            <Em fontSize={['xs', 'sm', 'md', 'lg']} color="white">
               {' '}
               [{lang.join('/')}]
             </Em>
@@ -63,7 +62,7 @@ const Speech = ({ speech }: { speech: SpeechItem }) => {
         {...style}
         onClick={() => description && onToggle()}
       >
-        <Text fontSize={['sm', 'md', 'xl', '2xl']} color="whiteAlpha.900">
+        <Text fontSize={['sm', 'md', 'xl', '2xl']} color="white">
           {author}
         </Text>
       </GridItem>
@@ -109,11 +108,7 @@ const Speech = ({ speech }: { speech: SpeechItem }) => {
           </Link>
         </GridItem>
       )}
-      <Collapsible.Root
-        open={open}
-        // animateOpacity
-        style={{ gridColumn: '2/span 3' }}
-      >
+      <Collapsible.Root open={open} style={{ gridColumn: '2/span 3' }}>
         <Collapsible.Content>
           <Box
             gridColumn="2"

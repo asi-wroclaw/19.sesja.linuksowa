@@ -13,12 +13,10 @@ const Tickets = () => {
     <Box
       id="tickets"
       as="section"
-      position="relative"
-      zIndex="2"
       display="flex"
       width="100%"
       bg="white"
-      minHeight="70vh"
+      minHeight={['20vh', '30vh']}
       alignItems="center"
       justifyContent="center"
     >

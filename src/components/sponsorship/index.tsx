@@ -16,48 +16,44 @@ const Sponsorship = () => {
       id="sponsors"
       as="section"
       backgroundColor="white"
-      position="relative"
       width="100%"
       minHeight={['max(50vh,300px)', 'max(40vh,300px)']}
       alignItems="center"
       justifyContent="center"
       margin="0"
-      zIndex="2"
     >
       <Box
         width="100%"
         height={['max(50vh,300px)', 'max(40vh,300px)']}
-        position="absolute"
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
+        position="relative"
+        overflow="hidden"
       >
-        <ExportedImage
-          src={OfertaBackground}
-          alt="sponsorship background"
-          style={{ objectFit: 'cover', objectPosition: 'center' }}
-          fill
-        />
-      </Box>
-      <Center height={['max(50vh,300px)', 'max(40vh,300px)']}>
-        <VStack gap={3}>
+        {/* Background Image */}
+        <Box as="figure" height="100%" overflow="hidden">
+          <ExportedImage
+            src={OfertaBackground}
+            alt="sponsorship background"
+            style={{ objectFit: 'cover', objectPosition: 'center' }}
+            fill
+          />
+        </Box>
+
+        {/* Centered Content */}
+        <VStack gap={3} zIndex={1} textAlign="center" color="white">
           <Heading
-            zIndex="0"
-            color="whiteAlpha.900"
             fontWeight="bold"
             as="h2"
-            textAlign="center"
-            fontSize={['3xl', '5xl']}
+            fontSize={['4xl', '5xl']}
             lineHeight={1.2}
           >
             {title}
           </Heading>
 
-          <Heading
-            fontSize={['md', 'xl']}
-            textAlign="center"
-            zIndex="0"
-            color="whiteAlpha.900"
-          >
-            {description}
-          </Heading>
+          <Heading fontSize={['lg', 'xl']}>{description}</Heading>
+
           <Link
             _hover={{ textDecorationLine: 'none' }}
             href="/oferta.pdf"
@@ -66,11 +62,11 @@ const Sponsorship = () => {
             <DefaultButton
               _hover={{ color: 'black' }}
               text="sponsorshipOffer"
-              size={'xl'}
+              size="xl"
             />
           </Link>
         </VStack>
-      </Center>
+      </Box>
       <Box paddingTop={16}>
         {ORGANIZATIONS.map(({ logos, title }) => (
           <React.Fragment key={title}>
@@ -78,11 +74,10 @@ const Sponsorship = () => {
               <Box paddingBottom="50px" width="100%" minHeight="30vh">
                 <VStack gap={8} display="flex">
                   <Heading
-                    zIndex="0"
                     fontWeight="bold"
                     as="h2"
                     textAlign="center"
-                    fontSize={['xl', '3xl', '5xl']}
+                    fontSize={['3xl', '5xl']}
                     lineHeight={1.2}
                   >
                     {t(title)}
@@ -110,8 +105,8 @@ const Sponsorship = () => {
                           borderWidth="3px"
                           borderRadius="10px"
                           borderColor="black"
-                          width="200px"
-                          height="200px"
+                          width={['150px', '200px']}
+                          height={['150px', '200px']}
                           p="5"
                           display="flex"
                           alignItems="center"

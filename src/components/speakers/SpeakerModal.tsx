@@ -32,11 +32,11 @@ export const SpeakerModal = ({
     >
       <DialogBackdrop />
       <DialogContent className="dark">
-        <DialogHeader color="whiteAlpha.900" textAlign="center" fontSize="2xl">
+        <DialogHeader color="white" textAlign="center" fontSize="2xl">
           {name}
         </DialogHeader>
-        <DialogCloseTrigger color="whiteAlpha.900" />
-        <DialogBody color="whiteAlpha.900">
+        <DialogCloseTrigger color="white" />
+        <DialogBody color="white">
           <VStack gap="3vh">
             <Box w={300} h={300} position="relative">
               <ExportedImage

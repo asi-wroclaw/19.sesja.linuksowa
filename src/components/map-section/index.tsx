@@ -16,14 +16,9 @@ const MapSection = () => {
     [],
   );
   return (
-    <Box as="section" bg="primary" position="relative" zIndex={2}>
+    <Box as="section" bg="primary">
       <Space text={t('eventLocation')} />
-      <Box
-        position="relative"
-        zIndex="2"
-        display="flex"
-        justifyContent="center"
-      >
+      <Box display="flex" justifyContent="center">
         <LeafletMap />
       </Box>
       <Space />

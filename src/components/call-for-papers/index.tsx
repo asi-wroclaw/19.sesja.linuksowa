@@ -13,13 +13,10 @@ const CallForPapers = () => {
   return (
     <Box
       as="section"
-      position="relative"
-      zIndex="2"
       display="flex"
       width="100%"
-      bg="whiteAlpha.900"
+      bg="white"
       minHeight="30vh"
-      opacity="90%"
       alignItems="center"
       justifyContent="center"
     >

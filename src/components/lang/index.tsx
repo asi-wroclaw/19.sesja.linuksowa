@@ -2,13 +2,12 @@ import { Box } from '@chakra-ui/react';
 import { LangItem } from './LangItem';
 
 const Lang = ({
-  textColor = 'whiteAlpha.900',
+  textColor = 'white',
   display = { base: 'none', lg: 'block' },
 }: { textColor?: string; display?: object }) => (
   <Box
     color={textColor}
     display={display}
-    zIndex="4"
     fontSize="lg"
     marginTop="auto"
     marginBottom="auto"

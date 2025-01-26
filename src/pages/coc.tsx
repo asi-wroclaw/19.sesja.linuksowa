@@ -7,7 +7,7 @@ export default function CodeOfConduct() {
   const { t } = useTranslation();
 
   return (
-    <Box height="100vh" bg="blackAlpha.900">
+    <Box height="100vh" bg="black">
       <Center height="100%">
         <VStack>
           <Heading
