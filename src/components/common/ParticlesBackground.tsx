@@ -2,7 +2,6 @@ import type { Container, ISourceOptions } from '@tsparticles/engine';
 import { loadLinksPreset } from '@tsparticles/preset-links';
 import Particles, { initParticlesEngine } from '@tsparticles/react';
 import { useEffect, useState } from 'react';
-import './particles.css';
 
 const particlesOptions: ISourceOptions = {
   interactivity: {
