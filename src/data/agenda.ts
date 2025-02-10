@@ -15,6 +15,19 @@ export const SATURDAY_AGENDA: SpeechItem[] = [
   {
     start: 'TBA',
     end: 'TBA',
+    title:
+      'Wielkie fale, wielkie narzędzia – surfowanie po drodze do skalowalnej infrastruktury',
+    author: 'Szymon Izydorek',
+    lang: ['pl'],
+    description: [
+      'Zarządzanie infrastrukturą jest jak surfowanie – każda fala wymaga odpowiedniej deski, a każde środowisko – odpowiednich narzędzi.',
+      'W tej prezentacji zobaczymy, w jaki sposób narzędzia do zarządzania serwerami dopasowują się do różnych skal infrastruktury. Aby uczynić to bardziej interesującym, porównamy wielkość infrastruktury do fal, a narzędzia – do desek surfingowych.',
+    ],
+    recording: '',
+  },
+  {
+    start: 'TBA',
+    end: 'TBA',
     title: '',
     author: '',
     //lang: [''],
