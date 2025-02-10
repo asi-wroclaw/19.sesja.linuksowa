@@ -16,6 +16,13 @@ export const ORGANIZATIONS = [
     logos: [],
   },
   {
+    title: 'honorary-patrons',
+    logos: [
+      { image: pwr, href: 'https://pwr.edu.pl/' },
+      // { image: wit, href: 'https://wit.pwr.edu.pl/' },
+    ],
+  },
+  {
     title: 'partners',
     logos: [
       { image: clug, href: 'https://clug.space/' },
@@ -24,7 +31,6 @@ export const ORGANIZATIONS = [
         href: 'https://www.hswro.org/',
       },
       { image: plug, href: 'https://linux.org.pl/' },
-      { image: pwr, href: 'https://pwr.edu.pl/' },
       /*{ image: programmers, href: 'https://4programmers.net/' },
       {
           image: programistamag,
