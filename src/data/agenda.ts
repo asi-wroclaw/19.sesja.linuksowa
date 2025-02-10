@@ -28,6 +28,18 @@ export const SATURDAY_AGENDA: SpeechItem[] = [
   {
     start: 'TBA',
     end: 'TBA',
+    title:
+      'Fediwersum: kulisy administracji największych polskich instancji Mastodona, PeerTube, Pixelfed i Mobilizon',
+    author: 'Piotr Sikora',
+    lang: ['pl'],
+    description: [
+      'Zastanawiałeś się kiedyś, czy istnieje życie poza Facebookiem i Twitterem? Okazuje się, że tak – i to całkiem prężne! W trakcie tej prezentacji pokażę Ci, czym jest Fediversum i jak działa ActivityPub, czyli protokół spinający różne serwisy takie jak Mastodon, PeerTube, Pixelfed czy Mobilizon w jedną wielką, wolną sieć. Dowiesz się, z czym musi mierzyć się ktoś, kto utrzymuje duże instancje (i co to w ogóle znaczy „instancje”?). Opowiem, jak radzimy sobie z problemami, które pojawiają się przy rosnącej liczbie użytkowników, a także jak staramy się utrzymać to wszystko niskim kosztem (działając przy tym jako fundacja!). Będzie trochę anegdot, trochę technikaliów i sporo praktycznych porad. ',
+    ],
+    recording: '',
+  },
+  {
+    start: 'TBA',
+    end: 'TBA',
     title: '',
     author: '',
     //lang: [''],
