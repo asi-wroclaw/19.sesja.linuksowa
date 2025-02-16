@@ -1,6 +1,6 @@
-import Sikora from '@/assets/speakers/sikora.jpeg';
-import Izydorek from '@/assets/speakers/izydorek.png';
-import Zielinski from '@/assets/speakers/zielinski.jpeg';
+import Izydorek from '@/assets/speakers/izydorek.webp';
+import Sikora from '@/assets/speakers/sikora.webp';
+import Zielinski from '@/assets/speakers/zielinski.webp';
 import type { SpeakerProps } from '@/components/speakers/types';
 
 export const SPEAKERS: SpeakerProps[] = [
