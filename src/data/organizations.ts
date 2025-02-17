@@ -1,5 +1,6 @@
 import asi from '@/assets/logo/asi-logo-trans.svg';
 import clug from '@/assets/logo/clug.png';
+import ftdl from '@/assets/logo/ftdl.webp';
 import hswro from '@/assets/logo/hswro.svg';
 import manus from '@/assets/logo/manus.png';
 import plug from '@/assets/logo/plug.png';
@@ -25,6 +26,7 @@ export const ORGANIZATIONS = [
   {
     title: 'partners',
     logos: [
+      { image: ftdl, href: 'https://ftdl.pl/' },
       // { image: clug, href: 'https://clug.space/' },
       // {
       //   image: hswro,
