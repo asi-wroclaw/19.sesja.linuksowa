@@ -2,6 +2,11 @@ import type { SpeechItem } from '@/components/agenda/types';
 
 export const SATURDAY_AGENDA: SpeechItem[] = [
   {
+    start: '9:00',
+    end: '',
+    title: 'Rejestracja',
+  },
+  {
     start: 'TBA',
     end: 'TBA',
     title: 'Dostałeś z ministerstwa 10 milionów PDF-ów. Co teraz?',
@@ -11,6 +16,11 @@ export const SATURDAY_AGENDA: SpeechItem[] = [
       'Gdy Ministerstwo Sprawiedliwości przekaże ci 10 milionów plików PDF z raportami losowego przydziału spraw, wraz z satysfakcją pojawia się wątpliwość - jak wyciągnąć użyteczne dane z takiej masy dokumentów? Opowiem o wyzwaniach związanych z realizacją serwisu https://slps.pl, począwszy od procesu pozyskania dokumentów, przez ekstrakcję tekstu z plików PDF, agregację wartości w bazie danych, aż po generowanie serwisu WWW i jego skrajnie oszczędny hosting. Bonusowo - przykłady błędów i niezgodności otrzymanych raportów ze specyfikacją Systemu Losowego Przydziału Spraw oraz rozważania, jaki sens ma robienie po godzinach takich dziwnych rzeczy.',
     ],
     recording: '',
+  },
+  {
+    start: '13:00',
+    end: '14:00',
+    title: 'Przerwa & Networking',
   },
   {
     start: 'TBA',
@@ -65,9 +75,34 @@ export const SATURDAY_AGENDA: SpeechItem[] = [
     description: [''],
     recording: '',
   },
+  {
+    start: '17:50',
+    end: '18:00',
+    title: 'Zamknięcie dnia',
+  },
 ];
 
 export const SUNDAY_AGENDA: SpeechItem[] = [
+  {
+    start: '9:00',
+    end: '',
+    title: 'Rejestracja',
+  },
+  {
+    start: '13:00',
+    end: '14:00',
+    title: 'Przerwa & Networking',
+  },
+  {
+    start: '14:00',
+    end: '14:45',
+    title: 'Lightning talks',
+    lang: ['en', 'pl'],
+    description: [
+      'Chciałbyś poruszyć ważny dla Ciebie temat, lub przekazać myśl do społeczności Open Source? Przyjdź i zrób to!',
+    ],
+    recording: '',
+  },
   {
     start: 'TBA',
     end: 'TBA',
@@ -78,13 +113,8 @@ export const SUNDAY_AGENDA: SpeechItem[] = [
     recording: '',
   },
   {
-    start: 'TBA',
-    end: 'TBA',
-    title: 'Lightning talks',
-    lang: ['en', 'pl'],
-    description: [
-      'Chciałbyś poruszyć ważny dla Ciebie temat, lub przekazać myśl do społeczności Open Source? Przyjdź i zrób to!',
-    ],
-    recording: '',
+    start: '16:50',
+    end: '17:00',
+    title: 'Oficjalne zamknięcie konferencji i wspólne zdjęcie',
   },
 ];
