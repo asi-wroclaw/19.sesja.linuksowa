@@ -1,4 +1,5 @@
 import Izydorek from '@/assets/speakers/izydorek.webp';
+import Przybylski from '@/assets/speakers/przybylski.webp';
 import Sikora from '@/assets/speakers/sikora.webp';
 import Zielinski from '@/assets/speakers/zielinski.webp';
 import type { SpeakerProps } from '@/components/speakers/types';
@@ -52,6 +53,22 @@ export const SPEAKERS: SpeakerProps[] = [
     name: 'Piotr (ViruS) Sikora',
     description: [
       'Z branżą IT związany od ponad 20 lat, specjalizuje się w administracji systemami Linux i budowie rozbudowanych klastrów. Obecnie koncentruje się na innowacjach z zakresu sztucznej inteligencji. Jest fundatorem Fundacji Technologie dla Ludzi, która promuje dostęp do nowoczesnych rozwiązań dla społeczności. Łączy wieloletnią wiedzę techniczną z pasją do innowacji, aby technologia realnie służyła ludziom.',
+    ],
+  },
+  {
+    image: Przybylski,
+    urls: {
+      website: 'https://linuxdev.pl', // https://www.youtube.com/@linuxdev_pl
+      github: '',
+      bluesky: '',
+      mastodon: '',
+      twitter: '',
+      linkedin: 'https://www.linkedin.com/in/karol-przybylski/',
+      facebook: '',
+    },
+    name: 'Karol Przybylski',
+    description: [
+      'Karol Przybylski - Programista Linuxa Embedded, tworzy oraz integruje systemy wbudowane dla różnych branż (telecom, digital TV, networking). Czerpie dużo satysfakcji z poznawania jak rzeczy działają "od środka", swoje eksperymenty i poradniki publikuje na blogu https://linuxdev.pl oraz kanale na youtube (https://www.youtube.com/@linuxdev_pl). W wolnym czasie lubi żeglować a jego ulubiony algorytm to quicksort.',
     ],
   },
   {
