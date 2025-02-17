@@ -6,16 +6,20 @@ import {
   SiGithub,
   SiLinkedin,
   SiMastodon,
+  SiMedium,
   SiX,
+  SiYoutube,
 } from 'react-icons/si';
 import type { SocialUrls } from './types';
 
 const SOCIALS = [
   { key: 'website', IconElement: LuGlobe },
+  { key: 'medium', IconElement: SiMedium },
   { key: 'github', IconElement: SiGithub },
   { key: 'bluesky', IconElement: SiBluesky },
   { key: 'mastodon', IconElement: SiMastodon },
   { key: 'twitter', IconElement: SiX },
+  { key: 'youtube', IconElement: SiYoutube },
   { key: 'linkedin', IconElement: SiLinkedin },
   { key: 'facebook', IconElement: SiFacebook },
 ] as const;
