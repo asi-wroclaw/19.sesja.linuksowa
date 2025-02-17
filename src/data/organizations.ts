@@ -25,12 +25,12 @@ export const ORGANIZATIONS = [
   {
     title: 'partners',
     logos: [
-      { image: clug, href: 'https://clug.space/' },
-      {
-        image: hswro,
-        href: 'https://www.hswro.org/',
-      },
-      { image: plug, href: 'https://linux.org.pl/' },
+      // { image: clug, href: 'https://clug.space/' },
+      // {
+      //   image: hswro,
+      //   href: 'https://www.hswro.org/',
+      // },
+      // { image: plug, href: 'https://linux.org.pl/' },
       /*{ image: programmers, href: 'https://4programmers.net/' },
       {
           image: programistamag,
