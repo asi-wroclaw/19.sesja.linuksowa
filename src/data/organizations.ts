@@ -5,6 +5,7 @@ import hswro from '@/assets/logo/hswro.svg';
 import manus from '@/assets/logo/manus.png';
 import plug from '@/assets/logo/plug.png';
 import pwr from '@/assets/logo/pwr.png';
+import antmicro from '@/assets/logo/antmicro.svg';
 import type { SponsorshipEntity } from '@/components/sponsorship/types';
 
 export const ORGANIZATIONS = [
@@ -14,7 +15,7 @@ export const ORGANIZATIONS = [
   },
   {
     title: 'sponsors',
-    logos: [],
+    logos: [{ image: antmicro, href: 'https://antmicro.com/' }],
   },
   {
     title: 'honorary-patrons',
