@@ -2,6 +2,7 @@ import Izydorek from '@/assets/speakers/izydorek.webp';
 import Przybylski from '@/assets/speakers/przybylski.webp';
 import Sikora from '@/assets/speakers/sikora.webp';
 import Zielinski from '@/assets/speakers/zielinski.webp';
+import Krysinski from '@/assets/speakers/krysinski.webp';
 import type { SpeakerProps } from '@/components/speakers/types';
 
 export const SPEAKERS: SpeakerProps[] = [
@@ -56,6 +57,21 @@ export const SPEAKERS: SpeakerProps[] = [
     },
     description: [
       'Karol Przybylski - Programista Linuxa Embedded, tworzy oraz integruje systemy wbudowane dla różnych branż (telecom, digital TV, networking). Czerpie dużo satysfakcji z poznawania jak rzeczy działają "od środka", swoje eksperymenty i poradniki publikuje na blogu https://linuxdev.pl oraz kanale na youtube (https://www.youtube.com/@linuxdev_pl). W wolnym czasie lubi żeglować a jego ulubiony algorytm to quicksort.',
+    ],
+  },
+  {
+    name: 'Krzysztof Krysiński',
+    image: Krysinski,
+    urls: {
+      website: 'https://krysinski.me/',
+      github: 'https://github.com/flabbet',
+      linkedin: 'https://www.linkedin.com/in/krysinski-dev/',
+      twitter: 'https://x.com/flabbet',
+    },
+    description: [
+      'Jestem programistą z pasji od 9 lat, a od 5 zajmuje się tym zawodowo. W 2018 i 2019 byłem finalistą Google Code-In. Tworzę otwarto-źródłowe oprogramowanie do edycji i tworzenia grafiki 2D - PixiEditor, zajmuje się tym na pełen etat.', 
+      'Specjalizuje się w tworzeniu gier i aplikacji desktopowych, łączę te dwie umiejętności, żeby tworzyć jedyny w swoim rodzaju uniwersalny edytor do 2D, który powstał najpierw jako hobbystyczny projekt po godzinach a przerodził się w pełnoprawną aplikację z ponad 100 000 pobrań.',
+      'Uwielbiam pisać oprogramowanie i udostępniać go jako open-source, bo wierzę, że dzięki temu każdy na tym korzysta i popycham tym, choćby w małym stopniu, rozwój świata do przodu.',
     ],
   },
   {
