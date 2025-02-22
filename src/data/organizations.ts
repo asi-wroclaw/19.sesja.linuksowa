@@ -6,6 +6,7 @@ import manus from '@/assets/logo/manus.png';
 import plug from '@/assets/logo/plug.png';
 import pwr from '@/assets/logo/pwr.png';
 import antmicro from '@/assets/logo/antmicro.svg';
+import hspoz from '@/assets/logo/knyfyrtel_logo_nocircle_lightbg.webp';
 import type { SponsorshipEntity } from '@/components/sponsorship/types';
 
 export const ORGANIZATIONS = [
@@ -28,6 +29,7 @@ export const ORGANIZATIONS = [
     title: 'partners',
     logos: [
       { image: ftdl, href: 'https://ftdl.pl/' },
+      { image: hspoz, href: 'https://hspoz.pl/' },
       // { image: clug, href: 'https://clug.space/' },
       // {
       //   image: hswro,
