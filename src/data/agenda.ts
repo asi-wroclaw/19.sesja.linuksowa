@@ -69,6 +69,19 @@ export const SATURDAY_AGENDA: SpeechItem[] = [
   {
     start: 'TBA',
     end: 'TBA',
+    title:
+      'Mamy Blendera, ale gdzie jest coś do 2D?',
+    author: 'Krzysztof Krysiński',
+    lang: ['pl'],
+    description: [
+      'Prawie każdy słyszał o Blenderze, otwarto-źródłowej aplikacji do tworzenia modeli 3D, która z sukcesem konkuruje z zamknięto-źródłowymi gigantami. Ale dlaczego nie mamy takiego odpowiednika, tylko do 2D?',
+      'W tej prezentacji zobaczymy co może być przyczyną i jak PixiEditor próbuje to rozwiązać.',
+    ],
+    recording: '',
+  },
+  {
+    start: 'TBA',
+    end: 'TBA',
     title: '',
     author: '',
     //lang: [''],
