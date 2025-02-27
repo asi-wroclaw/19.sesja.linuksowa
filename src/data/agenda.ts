@@ -18,6 +18,20 @@ export const SATURDAY_AGENDA: SpeechItem[] = [
     recording: '',
   },
   {
+    start: 'TBA',
+    end: 'TBA',
+    title: 'Zephyr RTOS - A Linux-like approach in the world of microcontrollers',
+    author: 'Patryk Kościk',
+    lang: ['pl'],
+    description: [
+      'Linux has dominated servers and embedded systems for years, but how does this translate to the realm of the smallest devices, such as microcontrollers?',
+      'There are many RTOS options on the market, but Zephyr stands out as one that implements an approach inspired by Linux in terms of a familiar ecosystem and tools for developers, such as Kconfig and Device Tree, which make it easier to configure and develop applications for embedded systems.',
+      'In this presentation, we will not only explore how Zephyr draws inspiration from Linux but also see in practice how a unified hardware description system simplifies configuration and improves the portability of applications developed.',
+      'Finally, we will demonstrate how to set up the environment and build an application for embedded systems based on Zephyr in just a few steps.',
+    ],
+    recording: '',
+  },
+  {
     start: '13:00',
     end: '14:00',
     title: 'Przerwa & Networking',

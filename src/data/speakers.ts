@@ -3,9 +3,19 @@ import Przybylski from '@/assets/speakers/przybylski.webp';
 import Sikora from '@/assets/speakers/sikora.webp';
 import Zielinski from '@/assets/speakers/zielinski.webp';
 import Krysinski from '@/assets/speakers/krysinski.webp';
+import Koscik from '@/assets/speakers/koscik.webp';
 import type { SpeakerProps } from '@/components/speakers/types';
 
 export const SPEAKERS: SpeakerProps[] = [
+  {
+    name: 'Patryk Kościk',
+    image: Koscik,
+    urls: {},
+    description: [
+      'Patryk Kościk is a Software Engineer at Antmicro, where he has been working for the last three years, focusing on developing and extending the capabilities of the Renode open source simulation framework.',
+      'His expertise lies in understanding systems at the lowest level of abstraction, and he is particularly interested in low-level software development.',
+    ],
+  },
   {
     name: 'Tomasz Zieliński',
     image: Zielinski,
