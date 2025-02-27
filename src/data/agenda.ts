@@ -96,6 +96,17 @@ export const SATURDAY_AGENDA: SpeechItem[] = [
   {
     start: 'TBA',
     end: 'TBA',
+    title: 'Sztuka tworzenia koła od nowa',
+    author: 'Kamila Drzewiecka',
+    lang: ['pl'],
+    description: [
+      'Niektórzy narzekają, że "po co to robisz, skoro już istnieje?". Postaram odpowiedzieć się na to pytanie.',
+    ],
+    recording: '',
+  },
+  {
+    start: 'TBA',
+    end: 'TBA',
     title: '',
     author: '',
     //lang: [''],

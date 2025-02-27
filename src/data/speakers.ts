@@ -4,6 +4,7 @@ import Sikora from '@/assets/speakers/sikora.webp';
 import Zielinski from '@/assets/speakers/zielinski.webp';
 import Krysinski from '@/assets/speakers/krysinski.webp';
 import Koscik from '@/assets/speakers/koscik.webp';
+import Drzewiecka from '@/assets/speakers/drzewiecka.webp';
 import type { SpeakerProps } from '@/components/speakers/types';
 
 export const SPEAKERS: SpeakerProps[] = [
@@ -82,6 +83,18 @@ export const SPEAKERS: SpeakerProps[] = [
       'Jestem programistą z pasji od 9 lat, a od 5 zajmuje się tym zawodowo. W 2018 i 2019 byłem finalistą Google Code-In. Tworzę otwarto-źródłowe oprogramowanie do edycji i tworzenia grafiki 2D - PixiEditor, zajmuje się tym na pełen etat.', 
       'Specjalizuje się w tworzeniu gier i aplikacji desktopowych, łączę te dwie umiejętności, żeby tworzyć jedyny w swoim rodzaju uniwersalny edytor do 2D, który powstał najpierw jako hobbystyczny projekt po godzinach a przerodził się w pełnoprawną aplikację z ponad 100 000 pobrań.',
       'Uwielbiam pisać oprogramowanie i udostępniać go jako open-source, bo wierzę, że dzięki temu każdy na tym korzysta i popycham tym, choćby w małym stopniu, rozwój świata do przodu.',
+    ],
+  },
+  {
+    name: 'Kamila Drzewiecka',
+    image: Drzewiecka,
+    urls: {
+      website: 'https://kamila.pet',
+      github: 'https://codeberg.org/MicroPanda123',
+      mastodon: 'https://fedi.fabrykajabo.li/@markasspandi',
+    },
+    description: [
+      'Nerdka lubiąca komputery. Aktualnie uczę się Rusta, poprzednio Python, a moimi zainteresowaniami są m.in. kryptografia oraz administrowanie serwerami.', 
     ],
   },
   {
