@@ -9,7 +9,7 @@ import type { SpeakerProps } from '@/components/speakers/types';
 
 export const SPEAKERS: SpeakerProps[] = [
   {
-    name: 'Patryk Kościk',
+    name: 'Patryk Kościk, Antmicro',
     image: Koscik,
     urls: {},
     description: [
