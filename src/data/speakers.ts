@@ -26,7 +26,6 @@ export const SPEAKERS: SpeakerProps[] = [
     name: 'Piotr (ViruS) Sikora',
     image: Sikora,
     urls: {
-      website: 'https://www.linkedin.com/in/piotr-sikora-37a1096/',
       github: 'https://github.com/piotr-sikora-v',
       mastodon: 'https://pol.social/@piotrsikora',
       linkedin: 'https://www.linkedin.com/in/piotr-sikora-37a1096/',
@@ -61,7 +60,7 @@ export const SPEAKERS: SpeakerProps[] = [
     name: 'Szymon Izydorek',
     image: Izydorek,
     urls: {
-      website: 'https://www.youtube.com/@netcoffee',
+      youtube: 'https://www.youtube.com/@Become-DevOps',
       medium: 'https://medium.com/@becomedevops1',
       github: 'https://github.com/szymonizydorek/',
       linkedin: 'https://www.linkedin.com/in/sizydorek/',
