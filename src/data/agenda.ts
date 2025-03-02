@@ -100,7 +100,7 @@ export const SATURDAY_AGENDA: SpeechItem[] = [
     author: 'Kamila Drzewiecka',
     lang: ['pl'],
     description: [
-      'Niektórzy narzekają, że "po co to robisz, skoro już istnieje?". Postaram odpowiedzieć się na to pytanie.',
+      'Niektórzy narzekają, że "po co to robisz, skoro już istnieje?". Postaram się odpowiedzieć na to pytanie.',
     ],
     recording: '',
   },
