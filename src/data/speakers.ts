@@ -5,18 +5,10 @@ import Zielinski from '@/assets/speakers/zielinski.webp';
 import Krysinski from '@/assets/speakers/krysinski.webp';
 import Koscik from '@/assets/speakers/koscik.webp';
 import Drzewiecka from '@/assets/speakers/drzewiecka.webp';
+import Lasyk from;
 import type { SpeakerProps } from '@/components/speakers/types';
 
 export const SPEAKERS: SpeakerProps[] = [
-  {
-    name: 'Patryk Kościk, Antmicro',
-    image: Koscik,
-    urls: {},
-    description: [
-      'Patryk Kościk is a Software Engineer at Antmicro, where he has been working for the last three years, focusing on developing and extending the capabilities of the Renode open source simulation framework.',
-      'His expertise lies in understanding systems at the lowest level of abstraction, and he is particularly interested in low-level software development.',
-    ],
-  },
   {
     name: 'Tomasz Zieliński',
     image: Zielinski,
@@ -28,21 +20,6 @@ export const SPEAKERS: SpeakerProps[] = [
     },
     description: [
       'Zawodowy programista od 2003 roku, pasjonat bezpieczeństwa informatycznego, autor bloga Informatyk Zakładowy. Rozwijał systemy finansowe dla NBP, tworzył i weryfikował zabezpieczenia bankowych aplikacji mobilnych, brał udział w pracach nad wyszukiwarką internetową Microsoft Bing. Obecnie pracuje w firmie DeepL',
-    ],
-  },
-  {
-    name: 'Szymon Izydorek',
-    image: Izydorek,
-    urls: {
-      website: 'https://www.youtube.com/@netcoffee',
-      medium: 'https://medium.com/@becomedevops1',
-      github: 'https://github.com/szymonizydorek/',
-      linkedin: 'https://www.linkedin.com/in/sizydorek/',
-    },
-    description: [
-      'Jestem inżynierem DevOps z pasją do zarządzania infrastrukturą IT oraz automatyzacji procesów. Specjalizuję się w pracy z systemami Linux oraz narzędziem Ansible, co pozwala mi efektywnie wdrażać rozwiązania DevOps i zarządzać środowiskami on-prem.',
-      'Ukończyłem na pierwszym stopniu Politechnikę Wrocławską (Mechatronikę) a studia magisterskie na Uniwersytecie Aalborg w Kopenhagdze (kierunek IT oraz Przedsiębiorczość). Oprócz pracy tworze materiały edukacyjne dot. DevOps czy Linuxa na kanale NetCoffee',
-      'Mam doświadczenie w prowadzeniu prezentacji, m.in. dla firmy Akamai. Kilka z moich wystąpień dostępnych jest online na kanale: https://www.youtube.com/@Become-DevOps',
     ],
   },
   {
@@ -58,6 +35,43 @@ export const SPEAKERS: SpeakerProps[] = [
       'Z branżą IT związany od ponad 20 lat, specjalizuje się w administracji systemami Linux i budowie rozbudowanych klastrów. Obecnie koncentruje się na innowacjach z zakresu sztucznej inteligencji. Jest fundatorem Fundacji Technologie dla Ludzi, która promuje dostęp do nowoczesnych rozwiązań dla społeczności. Łączy wieloletnią wiedzę techniczną z pasją do innowacji, aby technologia realnie służyła ludziom.',
     ],
   },
+  {
+    name: 'Maciej Lasyk, Elastic',
+    image: Lasyk,
+    urls: {
+        website: 'https://maciej.lasyk.info',
+        github: 'https://github.com/docent-net',
+        mastodon: 'https://n3trunn3r.org/@docent',
+        linkedin: 'https://pl.linkedin.com/in/maciej-lasyk',
+    },
+    description: [
+      'SRE w Elasticu. W wolnym czasie rozwija kilka projektów open - source\'owych (patrz Github). Serce w dużej części oddał Pythonowi (choć obecnie pracuje głównie w Go) oraz Fedorze. Od wielu lat jest w skomplikowanym związku z systemd oraz Selinuxem. Uwielbia hackathony, restartować serwery, których inni się boją dotykać i automatyzuje wszystko co ma sens automatyzować. Na co dzień pracuje we wszystkich popularnych chmurach, ale najlepiej odnajduje się w tej, którą stworzył u siebie w piwnicy. Żyje sportami wytrzymałościowymi, fotografią oraz modelarstwem. Woli biegówki niż zwykłe narty, pływanie z dala od brzegu oraz spoglądać za horyzont, a nie tylko przed siebie.',
+    ],
+  },
+  {
+    name: 'Patryk Kościk, Antmicro',
+    image: Koscik,
+    urls: {},
+    description: [
+      'Patryk Kościk is a Software Engineer at Antmicro, where he has been working for the last three years, focusing on developing and extending the capabilities of the Renode open source simulation framework.',
+      'His expertise lies in understanding systems at the lowest level of abstraction, and he is particularly interested in low-level software development.',
+    ],
+  }, 
+  {
+    name: 'Szymon Izydorek',
+    image: Izydorek,
+    urls: {
+      website: 'https://www.youtube.com/@netcoffee',
+      medium: 'https://medium.com/@becomedevops1',
+      github: 'https://github.com/szymonizydorek/',
+      linkedin: 'https://www.linkedin.com/in/sizydorek/',
+    },
+    description: [
+      'Jestem inżynierem DevOps z pasją do zarządzania infrastrukturą IT oraz automatyzacji procesów. Specjalizuję się w pracy z systemami Linux oraz narzędziem Ansible, co pozwala mi efektywnie wdrażać rozwiązania DevOps i zarządzać środowiskami on-prem.',
+      'Ukończyłem na pierwszym stopniu Politechnikę Wrocławską (Mechatronikę) a studia magisterskie na Uniwersytecie Aalborg w Kopenhagdze (kierunek IT oraz Przedsiębiorczość). Oprócz pracy tworze materiały edukacyjne dot. DevOps czy Linuxa na kanale NetCoffee',
+      'Mam doświadczenie w prowadzeniu prezentacji, m.in. dla firmy Akamai. Kilka z moich wystąpień dostępnych jest online na kanale: https://www.youtube.com/@Become-DevOps',
+    ],
+  }, 
   {
     name: 'Karol Przybylski',
     image: Przybylski,
