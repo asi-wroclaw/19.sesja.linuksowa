@@ -5,7 +5,7 @@ import Zielinski from '@/assets/speakers/zielinski.webp';
 import Krysinski from '@/assets/speakers/krysinski.webp';
 import Koscik from '@/assets/speakers/koscik.webp';
 import Drzewiecka from '@/assets/speakers/drzewiecka.webp';
-import Skrzypczyk from;
+import Skrzypczyk from '@/assets/speakers/skrzypczyk.webp';
 import type { SpeakerProps } from '@/components/speakers/types';
 
 export const SPEAKERS: SpeakerProps[] = [
