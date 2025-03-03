@@ -5,6 +5,7 @@ import Zielinski from '@/assets/speakers/zielinski.webp';
 import Krysinski from '@/assets/speakers/krysinski.webp';
 import Koscik from '@/assets/speakers/koscik.webp';
 import Drzewiecka from '@/assets/speakers/drzewiecka.webp';
+import Skrzypczyk from '@/assets/speakers/skrzypczyk.webp';
 import type { SpeakerProps } from '@/components/speakers/types';
 
 export const SPEAKERS: SpeakerProps[] = [
@@ -95,6 +96,18 @@ export const SPEAKERS: SpeakerProps[] = [
     },
     description: [
       'Nerdka lubiąca komputery. Aktualnie uczę się Rusta, poprzednio Python, a moimi zainteresowaniami są m.in. kryptografia oraz administrowanie serwerami.', 
+    ],
+  },
+  {
+    name: 'Artur Skrzypczyk',
+    image: Skrzypczyk,
+    urls: {
+      linkedin: 'https://www.linkedin.com/in/artur-skrzypczyk-a7231113',
+      github: 'https://github.com/artlin',
+      facebook: 'https://www.facebook.com/artur.skrzypczyk.14',
+    },
+    description: [
+      'Doświadczony inżynier oprogramowania Android. Absolwent Politechniki Wrocławskiej oraz alumni (ex-wiceprezes) ASI. Wieloletni organizator i prelegent Linux Academy oraz konferencji Sesja Linuksowa. Członek GDG. Pasjonat druku 3D oraz budowniczy dronów FPV które stara się roztrzaskać na najbliższym możliwym drzewie. Obecnie głównie skupiający się na rozwiązaniach AI w izolowanym środowisku.', 
     ],
   },
   {
