@@ -107,6 +107,18 @@ export const SATURDAY_AGENDA: SpeechItem[] = [
   {
     start: 'TBA',
     end: 'TBA',
+    title: 'Agent AI na Raspberry Pi',
+    author: 'Artur Skrzypczyk',
+    lang: ['pl'],
+    description: [
+      'Agent AI na Raspberry Pi – lokalne AI w akcji',
+      'Jak stworzyć autonomicznego asystenta AI działającego offline na Raspberry Pi? W tej prelekcji pokażemy, jak wykorzystać Ollama, LLaMA 3.2, LLaVA oraz technologie TTS i Speech-to-Text, by uruchomić model językowy i zintegrować go z systemami IoT. Omówimy kluczowe wyzwania, optymalizację wydajności i praktyczne zastosowania. Jeśli interesuje Cię AI działające bez chmury, zapraszamy!',
+    ],
+    recording: '',
+  },
+  {
+    start: 'TBA',
+    end: 'TBA',
     title: '',
     author: '',
     //lang: [''],
