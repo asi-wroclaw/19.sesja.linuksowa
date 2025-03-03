@@ -6,10 +6,12 @@ import Krysinski from '@/assets/speakers/krysinski.webp';
 import Koscik from '@/assets/speakers/koscik.webp';
 import Drzewiecka from '@/assets/speakers/drzewiecka.webp';
 import Lasyk from '@/assets/speakers/lasyk.webp';
+import Slomka from '@/assets/speakers/slomka.webp';
+import Skrzypczyk from '@/assets/speakers/skrzypczyk.webp';
 import type { SpeakerProps } from '@/components/speakers/types';
 
 export const SPEAKERS: SpeakerProps[] = [
-  {
+   {
     name: 'Tomasz Zieliński',
     image: Zielinski,
     urls: {
@@ -34,6 +36,45 @@ export const SPEAKERS: SpeakerProps[] = [
       'Z branżą IT związany od ponad 20 lat, specjalizuje się w administracji systemami Linux i budowie rozbudowanych klastrów. Obecnie koncentruje się na innowacjach z zakresu sztucznej inteligencji. Jest fundatorem Fundacji Technologie dla Ludzi, która promuje dostęp do nowoczesnych rozwiązań dla społeczności. Łączy wieloletnią wiedzę techniczną z pasją do innowacji, aby technologia realnie służyła ludziom.',
     ],
   },
+  {
+    name: 'Patryk Kościk, Antmicro',
+    image: Koscik,
+    urls: {},
+    description: [
+      'Patryk Kościk is a Software Engineer at Antmicro, where he has been working for the last three years, focusing on developing and extending the capabilities of the Renode open source simulation framework.',
+      'His expertise lies in understanding systems at the lowest level of abstraction, and he is particularly interested in low-level software development.',
+    ],
+  },
+  {
+    name: 'Sebastian Słomka, Nokia',
+    image: Slomka,
+    urls: {
+        linkedin: 'www.linkedin.com/in/sebastian-słomka',
+        github: 'https://github.com/sebastian-slomka',
+    },
+    description: [
+      'Hi, I\'m Sebastian.',
+      'I\'m a passionate software engineer with a deep love for Linux, especially embedded Linux. My journey started early—I installed my first Ubuntu when I was just nine years old, and ever since, I\'ve been fascinated by system architecture and designing complete embedded solutions.',
+      'I\'m also a huge Yocto Project enthusiast and a deep user, both in my work and personal projects. I\'ve been working at Nokia since 2019 as a Technical Leader, where I design and develop in-house embedded Linux distributions for cutting-edge systems.',
+      'Beyond that, I\'m an open-source software enthusiast and an embedded programmer, always striving to build robust, scalable, and secure embedded platforms that stand the test of time.',
+      'When I\'m not immersed in code, I explore the depths as a scuba diver, embracing the challenge and adventure beneath the surface.',
+    ],
+  },
+  {
+    name: 'Szymon Izydorek',
+    image: Izydorek,
+    urls: {
+      youtube: 'https://www.youtube.com/@Become-DevOps',
+      medium: 'https://medium.com/@becomedevops1',
+      github: 'https://github.com/szymonizydorek/',
+      linkedin: 'https://www.linkedin.com/in/sizydorek/',
+    },
+    description: [
+      'Jestem inżynierem DevOps z pasją do zarządzania infrastrukturą IT oraz automatyzacji procesów. Specjalizuję się w pracy z systemami Linux oraz narzędziem Ansible, co pozwala mi efektywnie wdrażać rozwiązania DevOps i zarządzać środowiskami on-prem.',
+      'Ukończyłem na pierwszym stopniu Politechnikę Wrocławską (Mechatronikę) a studia magisterskie na Uniwersytecie Aalborg w Kopenhagdze (kierunek IT oraz Przedsiębiorczość). Oprócz pracy tworze materiały edukacyjne dot. DevOps czy Linuxa na kanale NetCoffee',
+      'Mam doświadczenie w prowadzeniu prezentacji, m.in. dla firmy Akamai. Kilka z moich wystąpień dostępnych jest online na kanale: https://www.youtube.com/@Become-DevOps',
+    ],
+  }, 
   {
     name: 'Maciej Lasyk, Elastic',
     image: Lasyk,
@@ -111,19 +152,15 @@ export const SPEAKERS: SpeakerProps[] = [
     ],
   },
   {
-    name: 'Może ty?',
-    image: '',
+    name: 'Artur Skrzypczyk',
+    image: Skrzypczyk,
     urls: {
-      website: '',
-      medium: '',
-      github: '',
-      bluesky: '',
-      mastodon: '',
-      twitter: '',
-      youtube: '',
-      linkedin: '',
-      facebook: '',
+      linkedin: 'https://www.linkedin.com/in/artur-skrzypczyk-a7231113',
+      github: 'https://github.com/artlin',
+      facebook: 'https://www.facebook.com/artur.skrzypczyk.14',
     },
-    description: [],
-  },
+    description: [
+      'Doświadczony inżynier oprogramowania Android. Absolwent Politechniki Wrocławskiej oraz alumni (ex-wiceprezes) ASI. Wieloletni organizator i prelegent Linux Academy oraz konferencji Sesja Linuksowa. Członek GDG. Pasjonat druku 3D oraz budowniczy dronów FPV które stara się roztrzaskać na najbliższym możliwym drzewie. Obecnie głównie skupiający się na rozwiązaniach AI w izolowanym środowisku.', 
+    ],
+  }, 
 ];

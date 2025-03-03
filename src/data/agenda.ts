@@ -116,6 +116,29 @@ export const SATURDAY_AGENDA: SpeechItem[] = [
       'Postaram się połączyć matematykę z fizyką, IT oraz pragmatyzmem, bazując na doświadczeniach ze startupów, scale-upów oraz dużych firm. A - no i z własnej piwnicy - to najważniejsze! ;)',
     ],
     recording: '',
+   },
+   {
+    start: 'TBA',
+    end: 'TBA',
+    title: 'Beyond Raspbian and Ubuntu: Why Yocto is the Right Tool for Production-Ready Embedded Linux',
+    author: 'Sebastian Słomka',
+    lang: ['en'],
+    description: [
+      'Many developers start their embedded Linux journey using general-purpose distributions like Ubuntu or Raspbian. While these are great for prototyping and development, they fall short when scaling to production-ready, high-performance, and long-term maintainable embedded systems. This talk will explore why Yocto is the preferred tool for professional embedded Linux development and how it addresses key challenges that pre-built distributions cannot.',
+      ],
+    recording: '',
+  },
+  {
+    start: 'TBA',
+    end: 'TBA',
+    title: 'Agent AI na Raspberry Pi',
+    author: 'Artur Skrzypczyk',
+    lang: ['pl'],
+    description: [
+      'Agent AI na Raspberry Pi – lokalne AI w akcji',
+      'Jak stworzyć autonomicznego asystenta AI działającego offline na Raspberry Pi? W tej prelekcji pokażemy, jak wykorzystać Ollama, LLaMA 3.2, LLaVA oraz technologie TTS i Speech-to-Text, by uruchomić model językowy i zintegrować go z systemami IoT. Omówimy kluczowe wyzwania, optymalizację wydajności i praktyczne zastosowania. Jeśli interesuje Cię AI działające bez chmury, zapraszamy!',
+    ],
+    recording: '',
   },
   {
     start: 'TBA',
