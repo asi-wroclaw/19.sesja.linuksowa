@@ -7,6 +7,7 @@ import plug from '@/assets/logo/plug.png';
 import pwr from '@/assets/logo/pwr.png';
 import antmicro from '@/assets/logo/antmicro.svg';
 import hspoz from '@/assets/logo/knyfyrtel_logo_nocircle_lightbg.webp';
+import nokia from '@/assets/logo/nokia.jpg';
 import type { SponsorshipEntity } from '@/components/sponsorship/types';
 
 export const ORGANIZATIONS = [
@@ -16,7 +17,10 @@ export const ORGANIZATIONS = [
   },
   {
     title: 'sponsors',
-    logos: [{ image: antmicro, href: 'https://antmicro.com/' }],
+    logos: [
+        { image: nokia, href: 'https://www.nokia.com/'},
+        { image: antmicro, href: 'https://antmicro.com/' },
+    ],
   },
   {
     title: 'honorary-patrons',
