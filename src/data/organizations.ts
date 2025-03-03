@@ -12,7 +12,10 @@ import type { SponsorshipEntity } from '@/components/sponsorship/types';
 export const ORGANIZATIONS = [
   {
     title: 'organizers',
-    logos: [{ image: asi, href: 'https://www.asi.wroclaw.pl/' }],
+    logos: [
+      { image: asi, href: 'https://www.asi.wroclaw.pl/' },
+      { image: clug, href: 'https://clug.space/' },
+    ],
   },
   {
     title: 'sponsors',
@@ -30,7 +33,10 @@ export const ORGANIZATIONS = [
     logos: [
       { image: ftdl, href: 'https://ftdl.pl/' },
       { image: hspoz, href: 'https://hspoz.pl/' },
-      // { image: clug, href: 'https://clug.space/' },
+      {
+        image: manus,
+        href: 'https://manus.pl/',
+      },
       // {
       //   image: hswro,
       //   href: 'https://www.hswro.org/',
@@ -41,10 +47,6 @@ export const ORGANIZATIONS = [
           image: programistamag,
           href: 'https://programistamag.pl/',
         },*/
-      {
-        image: manus,
-        href: 'https://manus.pl/',
-      },
       /*  {
           image: slido,
           href: 'https://www.slido.com',
