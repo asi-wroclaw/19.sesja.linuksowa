@@ -143,6 +143,17 @@ export const SATURDAY_AGENDA: SpeechItem[] = [
   {
     start: 'TBA',
     end: 'TBA',
+    title: 'Can we boot Linux from just a floppy?',
+    author: 'Kamila Szewczyk',
+    lang: ['en'],
+    description: [
+      'Modern Linux distributions are overwhelming in size. Even the most hard-core ones like TinyCoreLinux are far away from fitting in a shoddy 1.44MB diskette. In this talk I would like to answer the question of how small a truly minimal Linux distribution would be. Outside of tweaking the kernel, we will also develop a custom compression method that helps us accomplish this goal.',
+    ],
+    recording: '',
+  },
+  {
+    start: 'TBA',
+    end: 'TBA',
     title: '',
     author: '',
     //lang: [''],
