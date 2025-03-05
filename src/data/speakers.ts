@@ -12,7 +12,7 @@ import Szewczyk from '@/assets/speakers/szewczyk.webp';
 import type { SpeakerProps } from '@/components/speakers/types';
 
 export const SPEAKERS: SpeakerProps[] = [
-   {
+  {
     name: 'Tomasz Zieliński',
     image: Zielinski,
     urls: {
@@ -36,31 +36,30 @@ export const SPEAKERS: SpeakerProps[] = [
     description: [
       'Z branżą IT związany od ponad 20 lat, specjalizuje się w administracji systemami Linux i budowie rozbudowanych klastrów. Obecnie koncentruje się na innowacjach z zakresu sztucznej inteligencji. Jest fundatorem Fundacji Technologie dla Ludzi, która promuje dostęp do nowoczesnych rozwiązań dla społeczności. Łączy wieloletnią wiedzę techniczną z pasją do innowacji, aby technologia realnie służyła ludziom.',
     ],
-  }, 
+  },
   {
     name: 'Maciej Lasyk, Elastic',
     image: Lasyk,
     urls: {
-        website: 'https://maciej.lasyk.info',
-        github: 'https://github.com/docent-net',
-        mastodon: 'https://n3trunn3r.org/@docent',
-        linkedin: 'https://pl.linkedin.com/in/maciej-lasyk',
+      website: 'https://maciej.lasyk.info',
+      github: 'https://github.com/docent-net',
+      mastodon: 'https://n3trunn3r.org/@docent',
+      linkedin: 'https://pl.linkedin.com/in/maciej-lasyk',
     },
     description: [
-      'SRE w Elasticu. W wolnym czasie rozwija kilka projektów open - source\'owych (patrz Github). Serce w dużej części oddał Pythonowi (choć obecnie pracuje głównie w Go) oraz Fedorze. Od wielu lat jest w skomplikowanym związku z systemd oraz Selinuxem. Uwielbia hackathony, restartować serwery, których inni się boją dotykać i automatyzuje wszystko co ma sens automatyzować. Na co dzień pracuje we wszystkich popularnych chmurach, ale najlepiej odnajduje się w tej, którą stworzył u siebie w piwnicy. Żyje sportami wytrzymałościowymi, fotografią oraz modelarstwem. Woli biegówki niż zwykłe narty, pływanie z dala od brzegu oraz spoglądać za horyzont, a nie tylko przed siebie.',
+      "SRE w Elasticu. W wolnym czasie rozwija kilka projektów open - source'owych (patrz Github). Serce w dużej części oddał Pythonowi (choć obecnie pracuje głównie w Go) oraz Fedorze. Od wielu lat jest w skomplikowanym związku z systemd oraz Selinuxem. Uwielbia hackathony, restartować serwery, których inni się boją dotykać i automatyzuje wszystko co ma sens automatyzować. Na co dzień pracuje we wszystkich popularnych chmurach, ale najlepiej odnajduje się w tej, którą stworzył u siebie w piwnicy. Żyje sportami wytrzymałościowymi, fotografią oraz modelarstwem. Woli biegówki niż zwykłe narty, pływanie z dala od brzegu oraz spoglądać za horyzont, a nie tylko przed siebie.",
     ],
   },
   {
     name: 'Sebastian Słomka, Nokia',
     image: Slomka,
-    urls: {
-    },
+    urls: {},
     description: [
-      'Hi, I\'m Sebastian.',
-      'I\'m a passionate software engineer with a deep love for Linux, especially embedded Linux. My journey started early—I installed my first Ubuntu when I was just nine years old, and ever since, I\'ve been fascinated by system architecture and designing complete embedded solutions.',
-      'I\'m also a huge Yocto Project enthusiast and a deep user, both in my work and personal projects. I\'ve been working at Nokia since 2019 as a Technical Leader, where I design and develop in-house embedded Linux distributions for cutting-edge systems.',
-      'Beyond that, I\'m an open-source software enthusiast and an embedded programmer, always striving to build robust, scalable, and secure embedded platforms that stand the test of time.',
-      'When I\'m not immersed in code, I explore the depths as a scuba diver, embracing the challenge and adventure beneath the surface.',
+      "Hi, I'm Sebastian.",
+      "I'm a passionate software engineer with a deep love for Linux, especially embedded Linux. My journey started early—I installed my first Ubuntu when I was just nine years old, and ever since, I've been fascinated by system architecture and designing complete embedded solutions.",
+      "I'm also a huge Yocto Project enthusiast and a deep user, both in my work and personal projects. I've been working at Nokia since 2019 as a Technical Leader, where I design and develop in-house embedded Linux distributions for cutting-edge systems.",
+      "Beyond that, I'm an open-source software enthusiast and an embedded programmer, always striving to build robust, scalable, and secure embedded platforms that stand the test of time.",
+      "When I'm not immersed in code, I explore the depths as a scuba diver, embracing the challenge and adventure beneath the surface.",
     ],
   },
   {
@@ -86,7 +85,7 @@ export const SPEAKERS: SpeakerProps[] = [
       'Ukończyłem na pierwszym stopniu Politechnikę Wrocławską (Mechatronikę) a studia magisterskie na Uniwersytecie Aalborg w Kopenhagdze (kierunek IT oraz Przedsiębiorczość). Oprócz pracy tworze materiały edukacyjne dot. DevOps czy Linuxa na kanale NetCoffee',
       'Mam doświadczenie w prowadzeniu prezentacji, m.in. dla firmy Akamai. Kilka z moich wystąpień dostępnych jest online na kanale: https://www.youtube.com/@Become-DevOps',
     ],
-  },  
+  },
   {
     name: 'Karol Przybylski',
     image: Przybylski,
@@ -109,7 +108,7 @@ export const SPEAKERS: SpeakerProps[] = [
       twitter: 'https://x.com/flabbet',
     },
     description: [
-      'Jestem programistą z pasji od 9 lat, a od 5 zajmuje się tym zawodowo. W 2018 i 2019 byłem finalistą Google Code-In. Tworzę otwarto-źródłowe oprogramowanie do edycji i tworzenia grafiki 2D - PixiEditor, zajmuje się tym na pełen etat.', 
+      'Jestem programistą z pasji od 9 lat, a od 5 zajmuje się tym zawodowo. W 2018 i 2019 byłem finalistą Google Code-In. Tworzę otwarto-źródłowe oprogramowanie do edycji i tworzenia grafiki 2D - PixiEditor, zajmuje się tym na pełen etat.',
       'Specjalizuje się w tworzeniu gier i aplikacji desktopowych, łączę te dwie umiejętności, żeby tworzyć jedyny w swoim rodzaju uniwersalny edytor do 2D, który powstał najpierw jako hobbystyczny projekt po godzinach a przerodził się w pełnoprawną aplikację z ponad 100 000 pobrań.',
       'Uwielbiam pisać oprogramowanie i udostępniać go jako open-source, bo wierzę, że dzięki temu każdy na tym korzysta i popycham tym, choćby w małym stopniu, rozwój świata do przodu.',
     ],
@@ -123,7 +122,7 @@ export const SPEAKERS: SpeakerProps[] = [
       mastodon: 'https://fedi.fabrykajabo.li/@markasspandi',
     },
     description: [
-      'Nerdka lubiąca komputery. Aktualnie uczę się Rusta, poprzednio Python, a moimi zainteresowaniami są m.in. kryptografia oraz administrowanie serwerami.', 
+      'Nerdka lubiąca komputery. Aktualnie uczę się Rusta, poprzednio Python, a moimi zainteresowaniami są m.in. kryptografia oraz administrowanie serwerami.',
     ],
   },
   {
@@ -135,9 +134,9 @@ export const SPEAKERS: SpeakerProps[] = [
       facebook: 'https://www.facebook.com/artur.skrzypczyk.14',
     },
     description: [
-      'Doświadczony inżynier oprogramowania Android. Absolwent Politechniki Wrocławskiej oraz alumni (ex-wiceprezes) ASI. Wieloletni organizator i prelegent Linux Academy oraz konferencji Sesja Linuksowa. Członek GDG. Pasjonat druku 3D oraz budowniczy dronów FPV które stara się roztrzaskać na najbliższym możliwym drzewie. Obecnie głównie skupiający się na rozwiązaniach AI w izolowanym środowisku.', 
+      'Doświadczony inżynier oprogramowania Android. Absolwent Politechniki Wrocławskiej oraz alumni (ex-wiceprezes) ASI. Wieloletni organizator i prelegent Linux Academy oraz konferencji Sesja Linuksowa. Członek GDG. Pasjonat druku 3D oraz budowniczy dronów FPV które stara się roztrzaskać na najbliższym możliwym drzewie. Obecnie głównie skupiający się na rozwiązaniach AI w izolowanym środowisku.',
     ],
-  }, 
+  },
   {
     name: 'Kamila Szewczyk',
     image: Szewczyk,
@@ -147,8 +146,7 @@ export const SPEAKERS: SpeakerProps[] = [
       bluesky: 'https://bsky.app/profile/palaiologos.rocks',
     },
     description: [
-      'I am a 20 years old final year full-time student based in Germany, an expert programmer and aspiring mathematician, primarily interested in compiler construction, data compression, esoteric languages, statistics and numerical algorithms.', 
+      'I am a 20 years old final year full-time student based in Germany, an expert programmer and aspiring mathematician, primarily interested in compiler construction, data compression, esoteric languages, statistics and numerical algorithms.',
     ],
-  }, 
-
+  },
 ];
