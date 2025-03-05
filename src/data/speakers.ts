@@ -54,8 +54,6 @@ export const SPEAKERS: SpeakerProps[] = [
     name: 'Sebastian Słomka, Nokia',
     image: Slomka,
     urls: {
-        linkedin: 'www.linkedin.com/in/sebastian-słomka',
-        github: 'https://github.com/sebastian-slomka',
     },
     description: [
       'Hi, I\'m Sebastian.',
