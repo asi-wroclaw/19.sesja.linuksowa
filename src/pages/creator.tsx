@@ -1,11 +1,22 @@
 import { Button } from '@/components/ui/button';
+import { Slider } from '@/components/ui/slider';
 import config from '@/config';
 import { Box, Flex, Input } from '@chakra-ui/react';
 import { useCallback, useEffect, useRef, useState } from 'react';
 
 const Home: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
-  const [userImage, setUserImage] = useState<string | null>(null);
+  const [userImage, setUserImage] = useState<HTMLImageElement | null>(null);
+  const [foregroundImage, setForegroundImage] =
+    useState<HTMLImageElement | null>(null);
+  const [offsetX, setOffsetX] = useState([0]);
+  const [offsetY, setOffsetY] = useState([0]);
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = '/creator-foreground.png';
+    img.onload = () => setForegroundImage(img);
+  }, []);
 
   const handleImageUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
@@ -14,14 +25,16 @@ const Home: React.FC = () => {
     const reader = new FileReader();
     reader.onload = (e) => {
       if (e.target?.result) {
-        setUserImage(e.target.result as string);
+        const img = new Image();
+        img.src = e.target.result as string;
+        img.onload = () => setUserImage(img);
       }
     };
     reader.readAsDataURL(file);
   };
 
   const drawCanvas = useCallback(() => {
-    if (!canvasRef.current) return;
+    if (!canvasRef.current || !foregroundImage) return;
 
     const canvas = canvasRef.current;
     const ctx = canvas.getContext('2d');
@@ -29,35 +42,29 @@ const Home: React.FC = () => {
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    const foregroundImage = new Image();
-    foregroundImage.src = '/creator-foreground.png';
-    foregroundImage.onload = () => {
-      if (userImage) {
-        const img = new Image();
-        img.src = userImage;
-        img.onload = () => {
-          const imgWidth = img.width;
-          const imgHeight = img.height;
-          
-          const scale = Math.min(canvas.width * 0.5 / imgWidth, canvas.height * 0.5 / imgHeight);
-          const newWidth = imgWidth * scale;
-          const newHeight = imgHeight * scale;
-          
-          const x = (canvas.width - newWidth) / 2;
-          const y = (canvas.height - newHeight) / 2 - 3;
-          
-          ctx.drawImage(img, x, y, newWidth, newHeight);
-          ctx.drawImage(foregroundImage, 0, 0, canvas.width, canvas.height);
-        };
-      } else {
-        ctx.drawImage(foregroundImage, 0, 0, canvas.width, canvas.height);
-      }
-    };
-  }, [userImage]);
+    if (userImage) {
+      const imgWidth = userImage.width;
+      const imgHeight = userImage.height;
+      const scale = Math.min(
+        (canvas.width * 0.5) / imgWidth,
+        (canvas.height * 0.5) / imgHeight,
+      );
+      const newWidth = imgWidth * scale;
+      const newHeight = imgHeight * scale;
+      const x = (canvas.width - newWidth) / 2 + offsetX[0];
+      const y = (canvas.height - newHeight) / 2 + offsetY[0] - 3;
+      ctx.drawImage(userImage, x, y, newWidth, newHeight);
+    }
+
+    ctx.drawImage(foregroundImage, 0, 0, canvas.width, canvas.height);
+  }, [userImage, foregroundImage, offsetX, offsetY]);
+
+  useEffect(() => {
+    drawCanvas();
+  }, [drawCanvas]);
 
   const handleDownload = () => {
     if (!canvasRef.current) return;
-
     const canvas = canvasRef.current;
     const link = document.createElement('a');
     link.download = 'bede-na-sesji.png';
@@ -66,10 +73,6 @@ const Home: React.FC = () => {
   };
 
   if (!config.ENABLE_CREATOR) return null;
-
-  useEffect(() => {
-    drawCanvas();
-  }, [drawCanvas]);
 
   return (
     <Flex direction="column" align="center" p={4} height="100vh">
@@ -81,11 +84,34 @@ const Home: React.FC = () => {
           onChange={handleImageUpload}
         />
       </Box>
+      {/* <Box width="300px" mb={2}>
+        <Slider
+          min={-150}
+          max={150}
+          value={offsetX}
+          onValueChange={(details) => setOffsetX(details.value)}
+        >
+          X Offset
+        </Slider>
+        <Slider
+          min={-150}
+          max={150}
+          value={offsetY}
+          onValueChange={(details) => setOffsetY(details.value)}
+        >
+          Y Offset
+        </Slider>
+      </Box> */}
       <canvas
         ref={canvasRef}
         width={600}
         height={600}
-        style={{ border: '1px solid black', marginBottom: '20px' }}
+        style={{
+          border: '1px solid black',
+          marginBottom: '20px',
+          maxWidth: '100%',
+          height: 'auto',
+        }}
       />
       <Button colorPalette="blue" onClick={handleDownload}>
         Download
