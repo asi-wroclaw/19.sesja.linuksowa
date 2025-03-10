@@ -148,6 +148,17 @@ export const SATURDAY_AGENDA: SpeechItem[] = [
     lang: ['pl'],
     description: [
       'A journey through configuring networks in containers from scratch. What CNI is, what it can do, and how to write your own plugins.',
+       ],
+    recording: '',
+   },
+   {
+    start: 'TBA',
+    end: 'TBA',
+    title: 'Can we boot Linux from just a floppy?',
+    author: 'Kamila Szewczyk',
+    lang: ['en'],
+    description: [
+      'Modern Linux distributions are overwhelming in size. Even the most hard-core ones like TinyCoreLinux are far away from fitting in a shoddy 1.44MB diskette. In this talk I would like to answer the question of how small a truly minimal Linux distribution would be. Outside of tweaking the kernel, we will also develop a custom compression method that helps us accomplish this goal.',
     ],
     recording: '',
   },
