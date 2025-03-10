@@ -10,6 +10,8 @@ import hspoz from '@/assets/logo/knyfyrtel_logo_nocircle_lightbg.webp';
 import nokia from '@/assets/logo/nokia.jpg';
 import programistamag from '@/assets/logo/programistamag.jpg';
 import mikrus from '@/assets/logo/mikrus.png';
+import LPI from '@/assets/logo/LPI_Logo-Colour.svg';
+import Zaufana from '@/assets/logo/z3s.png';
 import type { SponsorshipEntity } from '@/components/sponsorship/types';
 
 export const ORGANIZATIONS = [
@@ -43,6 +45,8 @@ export const ORGANIZATIONS = [
       { image: mikrus, href: 'https://mikr.us' },
       { image: programistamag, href: 'https://programistamag.pl/'},
       { image: manus, href: 'https://manus.pl/' },
+      { image: LPI, href: 'https://www.lpi.org/' },
+      { image: Zaufana, href: 'https://zaufanatrzeciastrona.pl/' },
     ],
   },
 ] as SponsorshipEntity[];
