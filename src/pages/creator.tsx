@@ -5,7 +5,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 
 const Home: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
-  const [image, setImage] = useState<string | null>(null);
+  const [userImage, setUserImage] = useState<string | null>(null);
 
   const handleImageUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
@@ -14,7 +14,7 @@ const Home: React.FC = () => {
     const reader = new FileReader();
     reader.onload = (e) => {
       if (e.target?.result) {
-        setImage(e.target.result as string);
+        setUserImage(e.target.result as string);
       }
     };
     reader.readAsDataURL(file);
@@ -29,20 +29,31 @@ const Home: React.FC = () => {
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    const backgroundImage = new Image();
-    backgroundImage.src = '/creator-background.png';
-    backgroundImage.onload = () => {
-      ctx.drawImage(backgroundImage, 0, 0, canvas.width, canvas.height);
-
-      if (image) {
-        const userImage = new Image();
-        userImage.src = image;
-        userImage.onload = () => {
-          ctx.drawImage(userImage, 63, 144, 276, 276);
+    const foregroundImage = new Image();
+    foregroundImage.src = '/creator-foreground.png';
+    foregroundImage.onload = () => {
+      if (userImage) {
+        const img = new Image();
+        img.src = userImage;
+        img.onload = () => {
+          const imgWidth = img.width;
+          const imgHeight = img.height;
+          
+          const scale = Math.min(canvas.width * 0.5 / imgWidth, canvas.height * 0.5 / imgHeight);
+          const newWidth = imgWidth * scale;
+          const newHeight = imgHeight * scale;
+          
+          const x = (canvas.width - newWidth) / 2;
+          const y = (canvas.height - newHeight) / 2 - 3;
+          
+          ctx.drawImage(img, x, y, newWidth, newHeight);
+          ctx.drawImage(foregroundImage, 0, 0, canvas.width, canvas.height);
         };
+      } else {
+        ctx.drawImage(foregroundImage, 0, 0, canvas.width, canvas.height);
       }
     };
-  }, [image]);
+  }, [userImage]);
 
   const handleDownload = () => {
     if (!canvasRef.current) return;
