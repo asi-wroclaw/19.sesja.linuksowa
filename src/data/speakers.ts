@@ -8,6 +8,8 @@ import Drzewiecka from '@/assets/speakers/drzewiecka.webp';
 import Lasyk from '@/assets/speakers/lasyk.webp';
 import Slomka from '@/assets/speakers/slomka.webp';
 import Skrzypczyk from '@/assets/speakers/skrzypczyk.webp';
+import Pyton from '@/assets/speakers/pyton.webp';
+import Vovcia from '@/assets/speakers/vovcia.webp';
 import type { SpeakerProps } from '@/components/speakers/types';
 
 export const SPEAKERS: SpeakerProps[] = [
@@ -139,4 +141,28 @@ export const SPEAKERS: SpeakerProps[] = [
       'Doświadczony inżynier oprogramowania Android. Absolwent Politechniki Wrocławskiej oraz alumni (ex-wiceprezes) ASI. Wieloletni organizator i prelegent Linux Academy oraz konferencji Sesja Linuksowa. Członek GDG. Pasjonat druku 3D oraz budowniczy dronów FPV które stara się roztrzaskać na najbliższym możliwym drzewie. Obecnie głównie skupiający się na rozwiązaniach AI w izolowanym środowisku.', 
     ],
   }, 
+  {
+    name: 'Vladimir Mitiouchev',
+    image: Vovcia,
+    urls: {
+      website: 'https://clug.space',
+      github: 'https://github.com/vovcia-clug/',
+      linkedin: 'https://www.linkedin.com/in/vovcia/',
+    },
+    description: [
+      'Sysadmin / Programmer', 
+    ],
+  },
+  {
+    name: 'Piotr Pyciński',
+    image: Pyton,
+    urls: {
+      website: 'https://www.pyton.systems/',
+      linkedin: 'https://www.linkedin.com/in/pyton/',
+      mastodon: 'https://infosec.exchange/@pyton',
+    },
+    description: [
+      '15-letnie doświadczenie jako administrator systemów. Moje początki miały miejsce w czasach, gdy praca przy konsoli i fizycznych serwerach było standardem, a szum wentylatorów towarzyszył codziennym czynnościom. Obecnie staram się odnaleźć w świecie bujającym w chmurach i często podkreślam, że nie jest to uniwersalne rozwiązanie dla wszystkich problemów. Poza pracą lubię żeglować po morzach i oceanach oraz pracuję jako ratownik medyczny w Krakowskim Pogotowiu Ratunkowym.', 
+    ],
+  },
 ];

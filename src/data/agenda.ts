@@ -143,10 +143,24 @@ export const SATURDAY_AGENDA: SpeechItem[] = [
   {
     start: 'TBA',
     end: 'TBA',
-    title: '',
-    author: '',
-    //lang: [''],
-    description: [''],
+    title: 'Kubernetes CNI - Deep dive',
+    author: 'Vladimir Mitiouchev',
+    lang: ['pl'],
+    description: [
+      'A journey through configuring networks in containers from scratch. What CNI is, what it can do, and how to write your own plugins.',
+    ],
+    recording: '',
+  },
+  {
+    start: 'TBA',
+    end: 'TBA',
+    title: 'Infrastruktura nie/domowa dla *nixiarzy',
+    author: 'Piotr Pyciński',
+    lang: ['pl'],
+    description: [
+      'Postaram się Wam opowiedzieć historię admina, który od 10 lat buduje i utrzymuje swojego LABa oraz mały hosting. Znacie to? Wszak posiadanie własych serwerów to wręcz obowiązek każdego admina. Ale czy na pewno to dobry pomysł? ',
+      'Podczas tej prelekcji podzielę się z Wami moimi doświadczeniami, w tym błędami, które popełniłem, oraz dobrymi decyzjami, które podjąłem.',
+    ],
     recording: '',
   },
   {
