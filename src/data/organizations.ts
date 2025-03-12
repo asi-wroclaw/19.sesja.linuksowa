@@ -10,7 +10,7 @@ import nokia from '@/assets/logo/nokia.jpg';
 import plug from '@/assets/logo/plugo-cienie-url.svg';
 import programistamag from '@/assets/logo/programistamag.jpg';
 import pwr from '@/assets/logo/pwr.png';
-import sekurak from '@/assets/logo/sekurak1.png';
+import sekurak from '@/assets/logo/sekurak.png';
 import wit from '@/assets/logo/wit.png';
 import zaufana from '@/assets/logo/z3s.png';
 import type { SponsorshipEntity } from '@/components/sponsorship/types';
