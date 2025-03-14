@@ -210,7 +210,7 @@ export const SUNDAY_AGENDA: SpeechItem[] = [
     title: 'Lightning talks',
     lang: ['en', 'pl'],
     description: [
-      'Chciałbyś poruszyć ważny dla Ciebie temat, lub przekazać myśl do społeczności Open Source? Przyjdź i zrób to!',
+      'Do you want to say something to people? We will give you 5 to 10 minutes and try your best!',
     ],
     recording: '',
   },
