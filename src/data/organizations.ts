@@ -13,6 +13,7 @@ import programistamag from '@/assets/logo/programistamag.jpg';
 import pwr from '@/assets/logo/pwr.png';
 import reszka from '@/assets/logo/reszka.png';
 import sekurak from '@/assets/logo/sekurak.png';
+import slido from '@/assets/logo/slido.svg';
 import wit from '@/assets/logo/wit.png';
 import zaufana from '@/assets/logo/z3s.png';
 import type { SponsorshipEntity } from '@/components/sponsorship/types';
@@ -53,6 +54,7 @@ export const ORGANIZATIONS = [
       { image: sekurak, href: 'https://sekurak.pl/' },
       { image: futureconf, href: 'https://futureconf.tech/' },
       { image: reszka, href: 'https://reszka.org/' },
+      { image: slido, href: 'https://www.slido.com/' },
     ],
   },
 ] as SponsorshipEntity[];
