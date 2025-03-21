@@ -1,6 +1,7 @@
 import antmicro from '@/assets/logo/antmicro.svg';
 import asi from '@/assets/logo/asi-logo-trans.svg';
 import clug from '@/assets/logo/clug.png';
+import fossgralnia from '@/assets/logo/fossgralnia.png';
 import ftdl from '@/assets/logo/ftdl.webp';
 import futureconf from '@/assets/logo/futureconf.svg';
 import hspoz from '@/assets/logo/knyfyrtel_logo_nocircle_lightbg.webp';
@@ -55,6 +56,7 @@ export const ORGANIZATIONS = [
       { image: futureconf, href: 'https://futureconf.tech/' },
       { image: reszka, href: 'https://reszka.org/' },
       { image: slido, href: 'https://www.slido.com/' },
+      { image: fossgralnia, href: 'https://fossgralnia.pl/' },
     ],
   },
 ] as SponsorshipEntity[];
