@@ -66,7 +66,7 @@ export const SATURDAY_AGENDA: SpeechItem[] = [
     start: '15:00',
     end: '15:45',
     title: 'Wiele oblicz skalowalności, czyli o różnych twarzach optymalizacji',
-    author: 'Maciel Lasyk',
+    author: 'Maciej Lasyk',
     lang: ['pl'],
     description: [
       'Na co dzień pracuję w Elasticu, w zespole Platform Capacity (część SRE). Głównym produktem jest baza danych (Elasticsearch z całą nadbudówką) w scenariuszu SaaS. Głównymi zadaniami naszego zespołu jest m.inn. upewnienie się, że nie zabraknie nam przestrzeni w chmurze (może się wydawać mało prawdopodobne, ale w cloudzie, jak w każdej serwerowni, ilość sprzętu jest skończona!) Dodatkowo musimy być pewni, iż te maszyny, które mamy, są optymalnie wykorzystane (czyli ani za mało, żeby nie przepłacać, ani za dużo, coby aplikacje tego nie odczuły). Ostatecznie, klient po kliknięciu "powiększ moją bazę danych" powinien w krótkim czasie (bliżej zera niż nieskończoności) uzyskać to, o co prosi.',
