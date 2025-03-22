@@ -7,6 +7,12 @@ export const SATURDAY_AGENDA: SpeechItem[] = [
     title: 'Rejestracja',
   },
   {
+    start: '9:50',
+    end: '10:00',
+    title: 'Opening talk',
+    lang: ['pl'],
+  },
+  {
     start: '10:00',
     end: '10:45',
     title:
