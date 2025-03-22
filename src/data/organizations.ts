@@ -7,6 +7,7 @@ import futureconf from '@/assets/logo/futureconf.svg';
 import hspoz from '@/assets/logo/knyfyrtel_logo_nocircle_lightbg.webp';
 import lpi from '@/assets/logo/LPI_Logo-Colour.svg';
 import manus from '@/assets/logo/manus.png';
+import meetjs from '@/assets/logo/meetjs.png';
 import mikrus from '@/assets/logo/mikrus.png';
 import nokia from '@/assets/logo/nokia.jpg';
 import plug from '@/assets/logo/plugo-cienie-url.svg';
@@ -57,6 +58,7 @@ export const ORGANIZATIONS = [
       { image: reszka, href: 'https://reszka.org/' },
       { image: slido, href: 'https://www.slido.com/' },
       { image: fossgralnia, href: 'https://fossgralnia.pl/' },
+      { image: meetjs, href: 'https://meetjs.pl/' },
     ],
   },
 ] as SponsorshipEntity[];
