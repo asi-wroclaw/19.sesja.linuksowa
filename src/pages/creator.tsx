@@ -3,6 +3,7 @@ import { Slider } from '@/components/ui/slider';
 import config from '@/config';
 import {
   Box,
+  Clipboard,
   Dialog,
   Flex,
   HStack,
@@ -12,6 +13,7 @@ import {
   Text,
 } from '@chakra-ui/react';
 import { useCallback, useEffect, useRef, useState } from 'react';
+import { GoCopy } from 'react-icons/go';
 import {
   SiBluesky,
   SiFacebook,
@@ -47,6 +49,10 @@ const SOCIALS = [
   },
   { key: 'pixelfed', IconElement: SiPixelfed, url: 'https://pixelfed.org/' },
 ];
+
+const INVITE_TEXT = `🚀 Będę na 19. Sesji Linuksowej! 
+Dołącz do mnie na darmowej konferencji dla pasjonatów Linuksa i Open Source. 
+Sprawdź szczegóły: https://sesja.linuksowa.pl`;
 
 const Home: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -214,19 +220,37 @@ const Home: React.FC = () => {
             </Dialog.Header>
             <Dialog.Body>
               <Text fontSize="lg" textAlign="center">
-                Będę na <b>19. Sesji Linuksowej</b> – dołącz do mnie!
+                🚀 Będę na <b>19. Sesji Linuksowej</b> – dołącz do mnie na{' '}
+                <b>darmową konferencję</b> dla pasjonatów Linuksa i Open Source!
               </Text>
               <Text mt={4} textAlign="center">
-                Sprawdź nasze sociale:{' '}
+                Więcej informacji:{' '}
                 <Link
-                  href="https://links.linuksowa.pl/"
+                  href="https://sesja.linuksowa.pl"
                   target="_blank"
                   color="blue.300"
                   fontWeight="bold"
                 >
-                  links.linuksowa.pl
+                  sesja.linuksowa.pl
                 </Link>
               </Text>
+
+              <Flex justify="center" mt={4}>
+                <Clipboard.Root value={INVITE_TEXT}>
+                  <Clipboard.Trigger asChild>
+                    <Button variant="surface" size="sm">
+                      <Clipboard.Indicator />
+                      Skopiuj tekst
+                      <Icon as={GoCopy} w={8} h={8} color="blue.400" />
+                    </Button>
+                  </Clipboard.Trigger>
+                </Clipboard.Root>
+              </Flex>
+
+              <Text mt={4} textAlign="center">
+                Użyj ulubionej platformy:
+              </Text>
+
               <HStack mt={6} gap={4} justify="center">
                 {SOCIALS.map(({ key, IconElement, url }) => (
                   <Link
@@ -239,6 +263,18 @@ const Home: React.FC = () => {
                   </Link>
                 ))}
               </HStack>
+
+              <Text mt={8} textAlign="center">
+                Sprawdź też nasze sociale:{' '}
+                <Link
+                  href="https://links.linuksowa.pl/"
+                  target="_blank"
+                  color="blue.300"
+                  fontWeight="bold"
+                >
+                  links.linuksowa.pl
+                </Link>
+              </Text>
             </Dialog.Body>
             <Dialog.Footer justifyContent="center">
               <Button colorScheme="blue" onClick={() => setIsDialogOpen(false)}>
