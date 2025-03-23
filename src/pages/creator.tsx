@@ -198,6 +198,7 @@ const Home: React.FC = () => {
       <Dialog.Root
         open={isDialogOpen}
         onOpenChange={(e) => setIsDialogOpen(e.open)}
+        size={['xs', 'md']}
       >
         <Dialog.Backdrop bg="blackAlpha.600" />
         <Dialog.Positioner>
