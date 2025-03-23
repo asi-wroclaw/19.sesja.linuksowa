@@ -27,7 +27,7 @@ export const ORGANIZATIONS = [
   {
     title: 'organizers',
     logos: [
-      { image: asi, href: 'https://www.asi.wroclaw.pl/' },
+      { image: asi, href: 'https://asi.wroclaw.pl/' },
       { image: clug, href: 'https://clug.space/' },
     ],
   },
