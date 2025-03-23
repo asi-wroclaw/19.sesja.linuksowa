@@ -215,6 +215,17 @@ const Home: React.FC = () => {
               <Text fontSize="lg" textAlign="center">
                 Będę na <b>19. Sesji Linuksowej</b> – dołącz do mnie!
               </Text>
+              <Text mt={4} textAlign="center">
+                Sprawdź nasze sociale:{' '}
+                <Link
+                  href="https://links.linuksowa.pl/"
+                  target="_blank"
+                  color="blue.300"
+                  fontWeight="bold"
+                >
+                  links.linuksowa.pl
+                </Link>
+              </Text>
               <HStack mt={6} gap={4} justify="center">
                 {SOCIALS.map(({ key, IconElement, url }) => (
                   <Link
