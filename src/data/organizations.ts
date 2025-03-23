@@ -4,6 +4,7 @@ import clug from '@/assets/logo/clug.png';
 import fossgralnia from '@/assets/logo/fossgralnia.png';
 import ftdl from '@/assets/logo/ftdl.webp';
 import futureconf from '@/assets/logo/futureconf.svg';
+import gynvael from '@/assets/logo/gynvael.png';
 import hspoz from '@/assets/logo/knyfyrtel_logo_nocircle_lightbg.webp';
 import lpi from '@/assets/logo/LPI_Logo-Colour.svg';
 import manus from '@/assets/logo/manus.png';
@@ -31,8 +32,8 @@ export const ORGANIZATIONS = [
   {
     title: 'sponsors',
     logos: [
-        { image: nokia, href: 'https://www.nokia.com/' },
-        { image: antmicro, href: 'https://antmicro.com/' },
+      { image: nokia, href: 'https://www.nokia.com/' },
+      { image: antmicro, href: 'https://antmicro.com/' },
     ],
   },
   {
@@ -49,7 +50,7 @@ export const ORGANIZATIONS = [
       { image: hspoz, href: 'https://hspoz.pl/' },
       { image: plug, href: 'https://linux.org.pl/' },
       { image: mikrus, href: 'https://mikr.us' },
-      { image: programistamag, href: 'https://programistamag.pl/'},
+      { image: programistamag, href: 'https://programistamag.pl/' },
       { image: manus, href: 'https://manus.pl/' },
       { image: lpi, href: 'https://www.lpi.org/' },
       { image: zaufana, href: 'https://zaufanatrzeciastrona.pl/' },
@@ -59,6 +60,7 @@ export const ORGANIZATIONS = [
       { image: slido, href: 'https://www.slido.com/' },
       { image: fossgralnia, href: 'https://fossgralnia.pl/' },
       { image: meetjs, href: 'https://meetjs.pl/' },
+      { image: gynvael, href: 'https://gynvael.coldwind.pl/' },
     ],
   },
 ] as SponsorshipEntity[];
