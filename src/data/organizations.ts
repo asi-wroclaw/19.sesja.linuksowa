@@ -18,6 +18,7 @@ import reszka from '@/assets/logo/reszka.png';
 import sekurak from '@/assets/logo/sekurak.png';
 import slido from '@/assets/logo/slido.svg';
 import strefalinux from '@/assets/logo/strefa-linux.png';
+import tryit from '@/assets/logo/tryit.png';
 import wit from '@/assets/logo/wit.png';
 import zaufana from '@/assets/logo/z3s.png';
 import type { SponsorshipEntity } from '@/components/sponsorship/types';
@@ -63,6 +64,7 @@ export const ORGANIZATIONS = [
       { image: meetjs, href: 'https://meetjs.pl/' },
       { image: gynvael, href: 'https://gynvael.coldwind.pl/' },
       { image: strefalinux, href: 'https://strefalinux.pl/' },
+      { image: tryit, href: 'https://www.tryit.org.pl/' },
     ],
   },
 ] as SponsorshipEntity[];
