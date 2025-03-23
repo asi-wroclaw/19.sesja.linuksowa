@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Slider } from '@/components/ui/slider';
 import config from '@/config';
-import { Box, Flex, Input } from '@chakra-ui/react';
+import { Box, Flex, Input, Text } from '@chakra-ui/react';
 import { useCallback, useEffect, useRef, useState } from 'react';
 
 const Home: React.FC = () => {
@@ -11,6 +11,7 @@ const Home: React.FC = () => {
     useState<HTMLImageElement | null>(null);
   const [offsetX, setOffsetX] = useState([0]);
   const [offsetY, setOffsetY] = useState([0]);
+  const [zoom, setZoom] = useState([100]);
 
   useEffect(() => {
     const img = new Image();
@@ -45,10 +46,12 @@ const Home: React.FC = () => {
     if (userImage) {
       const imgWidth = userImage.width;
       const imgHeight = userImage.height;
-      const scale = Math.min(
-        (canvas.width * 0.5) / imgWidth,
-        (canvas.height * 0.5) / imgHeight,
-      );
+      const scale =
+        (zoom[0] / 100) *
+        Math.min(
+          (canvas.width * 0.5) / imgWidth,
+          (canvas.height * 0.5) / imgHeight,
+        );
       const newWidth = imgWidth * scale;
       const newHeight = imgHeight * scale;
       const x = (canvas.width - newWidth) / 2 + offsetX[0];
@@ -57,7 +60,7 @@ const Home: React.FC = () => {
     }
 
     ctx.drawImage(foregroundImage, 0, 0, canvas.width, canvas.height);
-  }, [userImage, foregroundImage, offsetX, offsetY]);
+  }, [userImage, foregroundImage, offsetX, offsetY, zoom]);
 
   useEffect(() => {
     drawCanvas();
@@ -84,24 +87,51 @@ const Home: React.FC = () => {
           onChange={handleImageUpload}
         />
       </Box>
-      {/* <Box width="300px" mb={2}>
-        <Slider
-          min={-150}
-          max={150}
-          value={offsetX}
-          onValueChange={(details) => setOffsetX(details.value)}
-        >
-          X Offset
-        </Slider>
-        <Slider
-          min={-150}
-          max={150}
-          value={offsetY}
-          onValueChange={(details) => setOffsetY(details.value)}
-        >
-          Y Offset
-        </Slider>
-      </Box> */}
+      <Box width="300px" mb={2}>
+        <Text mb={1}>X Offset</Text>
+        <Flex align="center">
+          <Slider
+            flex={1}
+            min={-150}
+            max={150}
+            value={offsetX}
+            onValueChange={(details) => setOffsetX(details.value)}
+          />
+          <Button ml={2} size="sm" onClick={() => setOffsetX([0])}>
+            Reset
+          </Button>
+        </Flex>
+      </Box>
+      <Box width="300px" mb={2}>
+        <Text mb={1}>Y Offset</Text>
+        <Flex align="center">
+          <Slider
+            flex={1}
+            min={-150}
+            max={150}
+            value={offsetY}
+            onValueChange={(details) => setOffsetY(details.value)}
+          />
+          <Button ml={2} size="sm" onClick={() => setOffsetY([0])}>
+            Reset
+          </Button>
+        </Flex>
+      </Box>
+      <Box width="300px" mb={2}>
+        <Text mb={1}>Zoom</Text>
+        <Flex align="center">
+          <Slider
+            flex={1}
+            min={50}
+            max={200}
+            value={zoom}
+            onValueChange={(details) => setZoom(details.value)}
+          />
+          <Button ml={2} size="sm" onClick={() => setZoom([100])}>
+            Reset
+          </Button>
+        </Flex>
+      </Box>
       <canvas
         ref={canvasRef}
         width={600}
