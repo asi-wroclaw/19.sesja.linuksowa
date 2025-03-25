@@ -1,6 +1,7 @@
 import antmicro from '@/assets/logo/antmicro.svg';
 import asi from '@/assets/logo/asi-logo-trans.svg';
 import clug from '@/assets/logo/clug.png';
+import elastic from '@/assets/logo/elastic.svg';
 import fossgralnia from '@/assets/logo/fossgralnia.png';
 import ftdl from '@/assets/logo/ftdl.webp';
 import futureconf from '@/assets/logo/futureconf.svg';
@@ -17,6 +18,7 @@ import pwr from '@/assets/logo/pwr.png';
 import reszka from '@/assets/logo/reszka.png';
 import sekurak from '@/assets/logo/sekurak.png';
 import slido from '@/assets/logo/slido.svg';
+import softserve from '@/assets/logo/softserve.svg';
 import strefalinux from '@/assets/logo/strefa-linux.png';
 import tryit from '@/assets/logo/tryit.png';
 import wit from '@/assets/logo/wit.png';
@@ -36,6 +38,8 @@ export const ORGANIZATIONS = [
     logos: [
       { image: nokia, href: 'https://www.nokia.com/' },
       { image: antmicro, href: 'https://antmicro.com/' },
+      { image: elastic, href: 'https://elastic.co/' },
+      { image: softserve, href: 'https://www.softserveinc.com/' },
     ],
   },
   {
