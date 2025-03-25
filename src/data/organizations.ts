@@ -6,6 +6,7 @@ import fossgralnia from '@/assets/logo/fossgralnia.png';
 import ftdl from '@/assets/logo/ftdl.webp';
 import futureconf from '@/assets/logo/futureconf.svg';
 import gynvael from '@/assets/logo/gynvael.png';
+import helion from '@/assets/logo/helion.png';
 import hspoz from '@/assets/logo/knyfyrtel_logo_nocircle_lightbg.webp';
 import lpi from '@/assets/logo/LPI_Logo-Colour.svg';
 import manus from '@/assets/logo/manus.png';
@@ -73,6 +74,7 @@ export const ORGANIZATIONS = [
       { image: tryit, href: 'https://www.tryit.org.pl/' },
       { image: polskieprogramistki, href: 'https://polskieprogramistki.pl/' },
       { image: swiatlinuksa, href: 'https://www.youtube.com/@SwiatLinuksa/' },
+      { image: helion, href: 'https://helion.pl/' },
     ],
   },
 ] as SponsorshipEntity[];
