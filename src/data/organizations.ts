@@ -13,6 +13,7 @@ import meetjs from '@/assets/logo/meetjs.png';
 import mikrus from '@/assets/logo/mikrus.png';
 import nokia from '@/assets/logo/nokia.jpg';
 import plug from '@/assets/logo/plugo-cienie-url.svg';
+import polskieprogramistki from '@/assets/logo/polskie-programistki.png';
 import programistamag from '@/assets/logo/programistamag.jpg';
 import pwr from '@/assets/logo/pwr.png';
 import reszka from '@/assets/logo/reszka.png';
@@ -20,6 +21,7 @@ import sekurak from '@/assets/logo/sekurak.png';
 import slido from '@/assets/logo/slido.svg';
 import softserve from '@/assets/logo/softserve.svg';
 import strefalinux from '@/assets/logo/strefa-linux.png';
+import swiatlinuksa from '@/assets/logo/swiat-linuksa.png';
 import tryit from '@/assets/logo/tryit.png';
 import wit from '@/assets/logo/wit.png';
 import zaufana from '@/assets/logo/z3s.png';
@@ -69,6 +71,8 @@ export const ORGANIZATIONS = [
       { image: gynvael, href: 'https://gynvael.coldwind.pl/' },
       { image: strefalinux, href: 'https://strefalinux.pl/' },
       { image: tryit, href: 'https://www.tryit.org.pl/' },
+      { image: polskieprogramistki, href: 'https://polskieprogramistki.pl/' },
+      { image: swiatlinuksa, href: 'https://www.youtube.com/@SwiatLinuksa/' },
     ],
   },
 ] as SponsorshipEntity[];
