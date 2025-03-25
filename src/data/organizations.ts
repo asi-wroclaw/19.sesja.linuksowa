@@ -8,6 +8,7 @@ import futureconf from '@/assets/logo/futureconf.svg';
 import gynvael from '@/assets/logo/gynvael.png';
 import helion from '@/assets/logo/helion.png';
 import hspoz from '@/assets/logo/knyfyrtel_logo_nocircle_lightbg.webp';
+import justjoin from '@/assets/logo/justjoin.png';
 import lpi from '@/assets/logo/LPI_Logo-Colour.svg';
 import manus from '@/assets/logo/manus.png';
 import meetjs from '@/assets/logo/meetjs.png';
@@ -75,6 +76,7 @@ export const ORGANIZATIONS = [
       { image: polskieprogramistki, href: 'https://polskieprogramistki.pl/' },
       { image: swiatlinuksa, href: 'https://www.youtube.com/@SwiatLinuksa/' },
       { image: helion, href: 'https://helion.pl/' },
+      { image: justjoin, href: 'https://justjoin.it/' },
     ],
   },
 ] as SponsorshipEntity[];
