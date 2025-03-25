@@ -1,6 +1,7 @@
 import antmicro from '@/assets/logo/antmicro.svg';
 import asi from '@/assets/logo/asi-logo-trans.svg';
 import clug from '@/assets/logo/clug.png';
+import devopsdays from '@/assets/logo/devopsdays.png';
 import elastic from '@/assets/logo/elastic.svg';
 import fossgralnia from '@/assets/logo/fossgralnia.png';
 import ftdl from '@/assets/logo/ftdl.webp';
@@ -77,6 +78,7 @@ export const ORGANIZATIONS = [
       { image: swiatlinuksa, href: 'https://www.youtube.com/@SwiatLinuksa/' },
       { image: helion, href: 'https://helion.pl/' },
       { image: justjoin, href: 'https://justjoin.it/' },
+      { image: devopsdays, href: 'https://devopsdays.pl/' },
     ],
   },
 ] as SponsorshipEntity[];
