@@ -50,9 +50,14 @@ const SOCIALS = [
   { key: 'pixelfed', IconElement: SiPixelfed, url: 'https://pixelfed.org/' },
 ];
 
-const INVITE_TEXT = `🚀 Będę na 19. Sesji Linuksowej! 
-Dołącz do mnie na darmowej konferencji dla pasjonatów Linuksa i Open Source. 
-Sprawdź szczegóły: https://sesja.linuksowa.pl`;
+const INVITE_TEXT = `🚀 Będę na 19. Sesji Linuksowej!
+
+Dołącz do mnie na darmowej konferencji dla pasjonatów Linuksa i Open Source.
+
+Sprawdź szczegóły: https://sesja.linuksowa.pl
+
+#SesjaLinuksowa #OpenSource #Linux
+`;
 
 const Home: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
