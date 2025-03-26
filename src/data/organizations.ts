@@ -18,6 +18,7 @@ import nokia from '@/assets/logo/nokia.jpg';
 import plug from '@/assets/logo/plugo-cienie-url.svg';
 import polskieprogramistki from '@/assets/logo/polskie-programistki.png';
 import programistamag from '@/assets/logo/programistamag.jpg';
+import pti from '@/assets/logo/pti.jpg';
 import pwr from '@/assets/logo/pwr.png';
 import reszka from '@/assets/logo/reszka.png';
 import sekurak from '@/assets/logo/sekurak.png';
@@ -52,6 +53,7 @@ export const ORGANIZATIONS = [
     logos: [
       { image: pwr, href: 'https://pwr.edu.pl/' },
       { image: wit, href: 'https://wit.pwr.edu.pl/' },
+      { image: pti, href: 'https://pti.org.pl/' },
     ],
   },
   {
