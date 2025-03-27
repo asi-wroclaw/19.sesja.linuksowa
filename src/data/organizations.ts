@@ -1,8 +1,10 @@
 import antmicro from '@/assets/logo/antmicro.svg';
 import asi from '@/assets/logo/asi-logo-trans.svg';
 import clug from '@/assets/logo/clug.png';
+import crossweb from '@/assets/logo/crossweb.svg';
 import devopsdays from '@/assets/logo/devopsdays.png';
 import elastic from '@/assets/logo/elastic.svg';
+import fossevents from '@/assets/logo/foss-events.png';
 import fossgralnia from '@/assets/logo/fossgralnia.png';
 import ftdl from '@/assets/logo/ftdl.webp';
 import futureconf from '@/assets/logo/futureconf.svg';
@@ -15,11 +17,12 @@ import manus from '@/assets/logo/manus.png';
 import meetjs from '@/assets/logo/meetjs.png';
 import mikrus from '@/assets/logo/mikrus.png';
 import nokia from '@/assets/logo/nokia.jpg';
+import piit from '@/assets/logo/piit.png';
 import plug from '@/assets/logo/plugo-cienie-url.svg';
 import polskieprogramistki from '@/assets/logo/polskie-programistki.png';
 import programistamag from '@/assets/logo/programistamag.jpg';
-import piit from '@/assets/logo/piit.png';
 import pti from '@/assets/logo/pti.jpg';
+import pwn from '@/assets/logo/pwn.png';
 import pwr from '@/assets/logo/pwr.png';
 import reszka from '@/assets/logo/reszka.png';
 import sekurak from '@/assets/logo/sekurak.png';
@@ -83,6 +86,9 @@ export const ORGANIZATIONS = [
       { image: helion, href: 'https://helion.pl/' },
       { image: justjoin, href: 'https://justjoin.it/' },
       { image: devopsdays, href: 'https://devopsdays.pl/' },
+      { image: crossweb, href: 'https://crossweb.pl/' },
+      { image: fossevents, href: 'https://foss.events/' },
+      { image: pwn, href: 'https://ksiegarnia.pwn.pl/' },
     ],
   },
 ] as SponsorshipEntity[];
