@@ -26,6 +26,7 @@ import pwn from '@/assets/logo/pwn.png';
 import pwr from '@/assets/logo/pwr.png';
 import reszka from '@/assets/logo/reszka.png';
 import sekurak from '@/assets/logo/sekurak.png';
+import sfi from '@/assets/logo/sfi.webp';
 import slido from '@/assets/logo/slido.svg';
 import softserve from '@/assets/logo/softserve.svg';
 import strefalinux from '@/assets/logo/strefa-linux.png';
@@ -73,6 +74,7 @@ export const ORGANIZATIONS = [
       { image: lpi, href: 'https://www.lpi.org/' },
       { image: zaufana, href: 'https://zaufanatrzeciastrona.pl/' },
       { image: sekurak, href: 'https://sekurak.pl/' },
+      { image: sfi, href: 'https://sfi.pl/' },
       { image: futureconf, href: 'https://futureconf.tech/' },
       { image: reszka, href: 'https://reszka.org/' },
       { image: slido, href: 'https://www.slido.com/' },
