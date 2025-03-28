@@ -4,6 +4,7 @@ import clug from '@/assets/logo/clug.png';
 import crossweb from '@/assets/logo/crossweb.svg';
 import devopsdays from '@/assets/logo/devopsdays.png';
 import elastic from '@/assets/logo/elastic.svg';
+import forbot from '@/assets/logo/forbot.svg';
 import fossevents from '@/assets/logo/foss-events.png';
 import fossgralnia from '@/assets/logo/fossgralnia.png';
 import ftdl from '@/assets/logo/ftdl.webp';
@@ -91,6 +92,7 @@ export const ORGANIZATIONS = [
       { image: crossweb, href: 'https://crossweb.pl/' },
       { image: fossevents, href: 'https://foss.events/' },
       { image: pwn, href: 'https://ksiegarnia.pwn.pl/' },
+      { image: forbot, href: 'https://forbot.pl/' },
     ],
   },
 ] as SponsorshipEntity[];
