@@ -3,7 +3,7 @@ import type { SpeechItem } from '@/components/agenda/types';
 export const SATURDAY_AGENDA: SpeechItem[] = [
   {
     start: '9:00',
-    end: '',
+    end: '\u221e',
     title: 'Rejestracja',
   },
   {
@@ -122,7 +122,7 @@ export const SATURDAY_AGENDA: SpeechItem[] = [
 export const SUNDAY_AGENDA: SpeechItem[] = [
   {
     start: '9:00',
-    end: '',
+    end: '\u221e',
     title: 'Rejestracja',
   },
   {
