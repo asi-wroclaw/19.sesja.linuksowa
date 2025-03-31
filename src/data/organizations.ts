@@ -47,11 +47,16 @@ export const ORGANIZATIONS = [
     ],
   },
   {
-    title: 'sponsors',
+    title: 'silver-sponsors',
     logos: [
-      { image: nokia, href: 'https://www.nokia.com/' },
-      { image: antmicro, href: 'https://antmicro.com/' },
       { image: elastic, href: 'https://elastic.co/' },
+      { image: nokia, href: 'https://www.nokia.com/' },
+    ],
+  },
+  {
+    title: 'bronze-sponsors',
+    logos: [
+      { image: antmicro, href: 'https://antmicro.com/' },
       { image: softserve, href: 'https://www.softserveinc.com/' },
     ],
   },
