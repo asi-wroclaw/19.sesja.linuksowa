@@ -1,3 +1,4 @@
+import androidcompl from '@/assets/logo/androidcompl.png';
 import antmicro from '@/assets/logo/antmicro.svg';
 import asi from '@/assets/logo/asi-logo-trans.svg';
 import clug from '@/assets/logo/clug.png';
@@ -93,6 +94,7 @@ export const ORGANIZATIONS = [
       { image: fossevents, href: 'https://foss.events/' },
       { image: pwn, href: 'https://ksiegarnia.pwn.pl/' },
       { image: forbot, href: 'https://forbot.pl/' },
+      { image: androidcompl, href: 'https://android.com.pl/' },
     ],
   },
 ] as SponsorshipEntity[];
