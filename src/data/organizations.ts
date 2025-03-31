@@ -1,4 +1,4 @@
-import androidcompl from '@/assets/logo/androidcompl.png';
+import androidcompl from '@/assets/logo/androidcompl.svg';
 import antmicro from '@/assets/logo/antmicro.svg';
 import asi from '@/assets/logo/asi-logo-trans.svg';
 import clug from '@/assets/logo/clug.png';
