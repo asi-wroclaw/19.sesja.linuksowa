@@ -13,7 +13,9 @@ import futureconf from '@/assets/logo/futureconf.svg';
 import gynvael from '@/assets/logo/gynvael.png';
 import helion from '@/assets/logo/helion.png';
 import hspoz from '@/assets/logo/knyfyrtel_logo_nocircle_lightbg.webp';
+import icd from '@/assets/logo/icd.svg';
 import justjoin from '@/assets/logo/justjoin.png';
+import kuzniardzeni from '@/assets/logo/kuzniardzeni.svg';
 import lpi from '@/assets/logo/LPI_Logo-Colour.svg';
 import manus from '@/assets/logo/manus.png';
 import meetjs from '@/assets/logo/meetjs.png';
@@ -107,6 +109,8 @@ export const ORGANIZATIONS = [
       { image: forbot, href: 'https://forbot.pl/' },
       { image: androidcompl, href: 'https://android.com.pl/' },
       { image: uwolnijzlomka, href: 'https://uwolnijzlomka.org/' },
+      { image: kuzniardzeni, href: 'https://kuznia-rdzeni.org/' },
+      { image: icd, href: 'https://www.internet-czas-dzialac.pl/' },
     ],
   },
 ] as SponsorshipEntity[];
