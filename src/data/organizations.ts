@@ -34,6 +34,7 @@ import softserve from '@/assets/logo/softserve.svg';
 import strefalinux from '@/assets/logo/strefa-linux.png';
 import swiatlinuksa from '@/assets/logo/swiat-linuksa.png';
 import tryit from '@/assets/logo/tryit.png';
+import uwolnijzlomka from '@/assets/logo/uwolnijzlomka.png';
 import wit from '@/assets/logo/wit.png';
 import zaufana from '@/assets/logo/z3s.png';
 import type { SponsorshipEntity } from '@/components/sponsorship/types';
@@ -105,6 +106,7 @@ export const ORGANIZATIONS = [
       { image: fossevents, href: 'https://foss.events/' },
       { image: forbot, href: 'https://forbot.pl/' },
       { image: androidcompl, href: 'https://android.com.pl/' },
+      { image: uwolnijzlomka, href: 'https://uwolnijzlomka.org/' },
     ],
   },
 ] as SponsorshipEntity[];
