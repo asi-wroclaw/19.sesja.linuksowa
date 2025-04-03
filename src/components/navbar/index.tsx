@@ -118,8 +118,9 @@ const Navbar = () => {
               />
             </Box>
           </a>
-          {showLive && <Live />}
         </Box>
+
+        {showLive && <Live />}
 
         <DesktopNavBar menu={menu} />
 
