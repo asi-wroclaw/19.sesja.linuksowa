@@ -37,6 +37,7 @@ import strefalinux from '@/assets/logo/strefa-linux.png';
 import swiatlinuksa from '@/assets/logo/swiat-linuksa.png';
 import tryit from '@/assets/logo/tryit.png';
 import uwolnijzlomka from '@/assets/logo/uwolnijzlomka.png';
+import wecamo from '@/assets/logo/wecamo.svg';
 import wit from '@/assets/logo/wit.png';
 import zaufana from '@/assets/logo/z3s.png';
 import type { SponsorshipEntity } from '@/components/sponsorship/types';
@@ -111,6 +112,7 @@ export const ORGANIZATIONS = [
       { image: uwolnijzlomka, href: 'https://uwolnijzlomka.org/' },
       { image: kuzniardzeni, href: 'https://kuznia-rdzeni.org/' },
       { image: icd, href: 'https://www.internet-czas-dzialac.pl/' },
+      { image: wecamo, href: 'https://www.wecamo.io/' },
     ],
   },
 ] as SponsorshipEntity[];
