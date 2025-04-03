@@ -57,7 +57,8 @@ export const HeadDescription = () => {
               fontSize={'18px'}
               lineHeight="1.2"
               size={'xl'}
-              _hover={{ color: 'red' }}
+              bg={'red'}
+              _hover={{ color: 'black' }}
             />
           </a>
         )}
