@@ -1,7 +1,8 @@
 import DefaultButton from '@/components/common/DefaultButton';
 import { Button } from '@/components/ui/button';
 import config from '@/config';
-import { ticketsUrl } from '@/data/common';
+import { liveUrl, ticketsUrl } from '@/data/common';
+import { showLive } from '@/lib/utils';
 import { Stack, VStack } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 import { SpotDescription } from './SpotDescription';
@@ -38,7 +39,7 @@ export const HeadDescription = () => {
             </Button>
           </a>
         )}
-        {config.SHOW_TICKETS && (
+        {config.SHOW_TICKETS && !showLive && (
           <a href={ticketsUrl} target="_blank" rel="noreferrer noopener">
             <DefaultButton
               text={t('getTicketsCaps')}
@@ -46,6 +47,17 @@ export const HeadDescription = () => {
               lineHeight="1.2"
               size={'xl'}
               _hover={{ color: 'black' }}
+            />
+          </a>
+        )}
+        {showLive && (
+          <a href={liveUrl} target="_blank" rel="noreferrer noopener">
+            <DefaultButton
+              text={t('watchLiveCaps')}
+              fontSize={'18px'}
+              lineHeight="1.2"
+              size={'xl'}
+              _hover={{ color: 'red' }}
             />
           </a>
         )}

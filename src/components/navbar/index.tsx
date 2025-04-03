@@ -1,6 +1,8 @@
 import Logo from '@/assets/images/sesja_logo_jasne_biale.webp';
 import DefaultButton from '@/components/common/DefaultButton';
 import config from '@/config';
+import { liveUrl } from '@/data/common';
+import { showLive } from '@/lib/utils';
 import { Box, Flex, Link } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 import ExportedImage from 'next-image-export-optimizer';
@@ -14,7 +16,7 @@ export const HEADER_HEIGHT = 70;
 const Live = () => {
   return (
     <Link
-      href={'https://www.youtube.com/live/insert-link'}
+      href={liveUrl}
       target="_blank"
       rel="noreferrer noopener"
       margin="auto"
@@ -40,9 +42,6 @@ const Live = () => {
 const Navbar = () => {
   const [bg, setBg] = useState<string>('rgba(0,0,0,0)');
   const { t }: { t: (key: string) => string } = useTranslation();
-  const showLive = ['2025-04-04', '2025-04-05', '2025-04-06'].includes(
-    new Date().toISOString().slice(0, 10),
-  );
 
   const menu: MenuProps = [
     { text: t('menu.about'), sectionId: 'about' },
@@ -119,6 +118,7 @@ const Navbar = () => {
               />
             </Box>
           </a>
+          {showLive && <Live />}
         </Box>
 
         <DesktopNavBar menu={menu} />

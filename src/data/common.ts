@@ -1,5 +1,7 @@
 export const callForPapersUrl = 'https://forms.gle/SjDg435wR9YXMSkY9';
 
+export const liveUrl = 'https://youtube.com/live/X1mP3yqL-IM';
+
 export const youtubeVideoId = 'CsCnZ7DKQQ4';
 export const youtubePlaylistId = 'PLTvZBPQxCI8EWxk9lhgOP8wSg7572N5Up';
 export const youtubePlaylistUrl = `https://www.youtube.com/watch?v=${youtubeVideoId}&list=${youtubePlaylistId}`;
