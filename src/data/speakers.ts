@@ -105,7 +105,6 @@ export const SPEAKERS: SpeakerProps[] = [
     name: 'Krzysztof Krysiński',
     image: Krysinski,
     urls: {
-      website: 'https://krysinski.me/',
       github: 'https://github.com/flabbet',
       linkedin: 'https://www.linkedin.com/in/krysinski-dev/',
       twitter: 'https://x.com/flabbet',
