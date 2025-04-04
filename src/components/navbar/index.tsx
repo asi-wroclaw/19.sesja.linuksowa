@@ -58,6 +58,7 @@ const Navbar = () => {
       }),
     },
     { text: t('menu.previous'), sectionId: 'previous' },
+    { text: t('menu.tickets'), sectionId: 'tickets' },
     { text: t('menu.sponsors'), sectionId: 'sponsors' },
   ].filter(({ text }) => text) as MenuProps;
 
