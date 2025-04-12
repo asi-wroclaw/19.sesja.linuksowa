@@ -21,6 +21,7 @@ const PreviousEdition = () => {
     <Box
       id="previous"
       as="section"
+      pb={'4em'}
       display="flex"
       width="100%"
       bg="white"
