@@ -33,7 +33,7 @@ const Agenda = () => {
       width="100%"
       minHeight="100vh"
       paddingBottom="100px"
-      background='black'
+      background="black"
     >
       <Box
         display="flex"

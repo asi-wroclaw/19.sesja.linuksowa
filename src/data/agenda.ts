@@ -111,7 +111,7 @@ export const SATURDAY_AGENDA: SpeechItem[] = [
       'Na koniec pokażę, w jaki sposób można skonfigurować i zbudować swój pierwszy dedykowany system za pomocą Buildroota.',
     ],
     recording: '',
-  },  
+  },
   {
     start: '18:00',
     end: '',
