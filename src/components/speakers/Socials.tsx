@@ -42,6 +42,7 @@ export const Socials = ({ urls }: { urls: SocialUrls }) => (
           <Link
             key={key}
             href={urls[key]}
+            target="_blank"
             color="white"
             _hover={{ color: 'gray.200' }}
           >

@@ -10,7 +10,7 @@ export const Speaker = ({ image, urls, name, description }: SpeakerProps) => {
   const showSocials = Object.values(urls).some((url) => url);
 
   return (
-    <Flex cursor="pointer" onClick={() => description.length && onOpen()}>
+    <Flex>
       <Box>
         <Box
           w={300}
@@ -20,6 +20,8 @@ export const Speaker = ({ image, urls, name, description }: SpeakerProps) => {
           display={'flex'}
           justifyContent="center"
           alignItems="center"
+          cursor="pointer"
+          onClick={() => description.length && onOpen()}
         >
           {image ? (
             <ExportedImage
