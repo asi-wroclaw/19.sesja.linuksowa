@@ -53,7 +53,7 @@ export const SPEAKERS: SpeakerProps[] = [
     ],
   },
   {
-    name: 'Patryk Kościk, Antmicro',
+    name: 'Patryk Kościk',
     image: Koscik,
     urls: {},
     description: [
@@ -74,7 +74,7 @@ export const SPEAKERS: SpeakerProps[] = [
     ],
   },
   {
-    name: 'Maciej Lasyk, Elastic',
+    name: 'Maciej Lasyk',
     image: Lasyk,
     urls: {
       website: 'https://maciej.lasyk.info',
@@ -140,9 +140,12 @@ export const SPEAKERS: SpeakerProps[] = [
     ],
   },
   {
-    name: 'Sebastian Słomka, Nokia',
+    name: 'Sebastian Słomka',
     image: Slomka,
-    urls: {},
+    urls: {
+      linkedin: 'www.linkedin.com/in/sebastian-słomka',
+      github: 'https://github.com/sebastian-slomka',
+    },
     description: [
       "Hi, I'm Sebastian.",
       "I'm a passionate software engineer with a deep love for Linux, especially embedded Linux. My journey started early—I installed my first Ubuntu when I was just nine years old, and ever since, I've been fascinated by system architecture and designing complete embedded solutions.",
