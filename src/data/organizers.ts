@@ -1,7 +1,7 @@
 import Felix from '@/assets/organizers/felix.webp';
 import Jacek from '@/assets/organizers/jacek.webp';
 import Kamil from '@/assets/organizers/kamil.webp';
-import Michal from '@/assets/organizers/michal.jpg';
+import Michal from '@/assets/organizers/michal.webp';
 import Tomek from '@/assets/organizers/rikardo.webp';
 import Szymon from '@/assets/organizers/szycic.webp';
 import type { OrganizerProps } from '@/components/organizers/types';

@@ -4,8 +4,8 @@ module.exports = {
   output: 'export',
   images: {
     loader: 'custom',
-    imageSizes: [16, 48, 96, 256, 384],
-    deviceSizes: [640, 828, 1080, 1200, 1920],
+    imageSizes: [16, 48, 96, 384],
+    deviceSizes: [640, 1080, 1200],
   },
   transpilePackages: ['next-image-export-optimizer'],
   experimental: {
