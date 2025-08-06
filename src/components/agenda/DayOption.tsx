@@ -11,8 +11,8 @@ const DayOption = ({ selected = false, text, select }: DayOptionProps) => {
     ? { borderBottom: '0.25rem {colors.primary} solid' }
     : {};
   return (
+    // biome-ignore lint/a11y/useSemanticElements: ignore
     <Box
-      // biome-ignore lint/a11y/useSemanticElements: <explanation>
       role="group"
       cursor="pointer"
       onClick={select}

@@ -1,10 +1,10 @@
-import OfertaBackground from '@/assets/images/bg_oferta.webp';
-import DefaultButton from '@/components/common/DefaultButton';
-import { ORGANIZATIONS } from '@/data/organizations';
-import { Box, Center, Heading, Link, Stack, VStack } from '@chakra-ui/react';
+import { Box, Heading, Link, Stack, VStack } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 import ExportedImage from 'next-image-export-optimizer';
 import React from 'react';
+import OfertaBackground from '@/assets/images/bg_oferta.webp';
+import DefaultButton from '@/components/common/DefaultButton';
+import { ORGANIZATIONS } from '@/data/organizations';
 
 const Sponsorship = () => {
   const { t } = useTranslation();

@@ -1,12 +1,12 @@
+import { Box, Flex, Link } from '@chakra-ui/react';
+import { useTranslation } from 'next-export-i18n';
+import ExportedImage from 'next-image-export-optimizer';
+import { useEffect, useState } from 'react';
 import Logo from '@/assets/images/sesja_logo_jasne_biale.webp';
 import DefaultButton from '@/components/common/DefaultButton';
 import config from '@/config';
 import { liveUrl } from '@/data/common';
 import { showLive } from '@/lib/utils';
-import { Box, Flex, Link } from '@chakra-ui/react';
-import { useTranslation } from 'next-export-i18n';
-import ExportedImage from 'next-image-export-optimizer';
-import { useEffect, useState } from 'react';
 import { DesktopNavBar } from './Desktop';
 import { MobileNavBar } from './Mobile';
 import type { MenuProps } from './types';
@@ -58,7 +58,12 @@ const Navbar = () => {
       }),
     },
     { text: t('menu.previous'), sectionId: 'previous' },
-    { text: t('menu.tickets'), sectionId: 'tickets' },
+    {
+      ...(config.SHOW_TICKETS && {
+        text: t('menu.tickets'),
+        sectionId: 'tickets',
+      }),
+    },
     { text: t('menu.sponsors'), sectionId: 'sponsors' },
   ].filter(({ text }) => text) as MenuProps;
 

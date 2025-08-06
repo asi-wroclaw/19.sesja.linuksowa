@@ -1,3 +1,4 @@
+/** biome-ignore-all lint/correctness/noUnusedVariables: false positive because example */
 import type { OrganizerProps } from '@/components/organizers/types';
 
 // For the best optimization import images instead of using urls

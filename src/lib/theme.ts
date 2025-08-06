@@ -1,5 +1,5 @@
-import { HEADER_HEIGHT } from '@/components/navbar';
 import { createSystem, defaultConfig } from '@chakra-ui/react';
+import { HEADER_HEIGHT } from '@/components/navbar';
 import { fonts } from './fonts';
 
 export const system = createSystem(defaultConfig, {

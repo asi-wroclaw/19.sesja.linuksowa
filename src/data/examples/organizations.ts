@@ -1,3 +1,4 @@
+/** biome-ignore-all lint/correctness/noUnusedVariables: false positive because example */
 import asi from '@/assets/logo/asi-logo-trans.svg';
 import type { SponsorshipEntity } from '@/components/sponsorship/types';
 

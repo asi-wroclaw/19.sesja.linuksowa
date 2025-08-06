@@ -122,7 +122,7 @@ const Speech = ({ speech }: { speech: SpeechItem }) => {
               <Text
                 fontSize={['sm', 'sm', 'lg', 'xl']}
                 key={`${descriptionText}-${
-                  // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+                  // biome-ignore lint/suspicious/noArrayIndexKey: false positive
                   index
                 }`}
                 minH="15px"

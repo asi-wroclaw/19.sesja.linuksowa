@@ -1,3 +1,4 @@
+/** biome-ignore-all lint/correctness/noUnusedVariables: false positive because example */
 import type { SpeakerProps } from '@/components/speakers/types';
 
 const SPEAKERS: SpeakerProps[] = [

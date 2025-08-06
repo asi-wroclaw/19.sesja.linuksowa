@@ -1,3 +1,4 @@
+/** biome-ignore-all lint/correctness/noUnusedVariables: false positive because example */
 import type { SpeechItem } from '@/components/agenda/types';
 
 const SATURDAY_AGENDA: SpeechItem[] = [

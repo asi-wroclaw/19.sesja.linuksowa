@@ -80,7 +80,7 @@ const ParticlesBackground = () => {
     );
   }
 
-  return <></>;
+  return null;
 };
 
 export default ParticlesBackground;

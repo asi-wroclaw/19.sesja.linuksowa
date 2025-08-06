@@ -4,7 +4,10 @@ import { LangItem } from './LangItem';
 const Lang = ({
   textColor = 'white',
   display = { base: 'none', lg: 'block' },
-}: { textColor?: string; display?: object }) => (
+}: {
+  textColor?: string;
+  display?: object;
+}) => (
   <Box
     color={textColor}
     display={display}
