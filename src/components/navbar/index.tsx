@@ -1,7 +1,7 @@
 import { Box, Flex, Link } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 import ExportedImage from 'next-image-export-optimizer';
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import Logo from '@/assets/images/sesja_logo_jasne_biale.webp';
 import DefaultButton from '@/components/common/DefaultButton';
 import config from '@/config';
@@ -67,18 +67,23 @@ const Navbar = () => {
     { text: t('menu.sponsors'), sectionId: 'sponsors' },
   ].filter(({ text }) => text) as MenuProps;
 
-  const changeBackground = () => {
+  const changeBackground = useCallback(() => {
     if (window.scrollY >= 60) {
       setBg('rgba(0,0,0,1)');
     } else {
       setBg('rgba(0,0,0,0)');
     }
-  };
+  }, []);
 
   useEffect(() => {
     changeBackground();
-    window.addEventListener('scroll', changeBackground);
-  });
+
+    window.addEventListener('scroll', changeBackground, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', changeBackground);
+    };
+  }, [changeBackground]);
 
   return (
     <Box

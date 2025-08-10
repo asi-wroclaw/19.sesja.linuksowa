@@ -36,6 +36,7 @@ export default function Home() {
         />
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="me" href="https://fosstodon.org/@ASI" />
+        <link rel="preconnect" href="https://scripts.simpleanalyticscdn.com" />
       </Head>
       <body>
         <Main />

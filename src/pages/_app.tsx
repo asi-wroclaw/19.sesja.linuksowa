@@ -1,7 +1,7 @@
-import { Provider } from '@/components/ui/provider';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import Script from 'next/script';
+import { Provider } from '@/components/ui/provider';
 import './particles.css';
 
 export default function App({ Component, pageProps }: AppProps) {
