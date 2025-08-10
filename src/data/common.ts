@@ -1,6 +1,6 @@
-export const callForPapersUrl = 'https://forms.gle/SjDg435wR9YXMSkY9';
+export const callForPapersUrl = '';
 
-export const liveUrl = 'https://youtube.com/live/-0vw7621IwM';
+export const liveUrl = 'https://youtube.com/live/#';
 
 export const youtubeVideoId = 'KoZKrcoX-eA';
 export const youtubePlaylistId = 'PLTvZBPQxCI8EWxk9lhgOP8wSg7572N5Up';
