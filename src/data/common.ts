@@ -4,6 +4,7 @@ export const liveUrl = 'https://youtube.com/live/#';
 
 export const youtubeVideoId = 'KoZKrcoX-eA';
 export const youtubePlaylistId = 'PLTvZBPQxCI8EWxk9lhgOP8wSg7572N5Up';
+// edit previous-edition/index.tsx when this is uncommented
 // export const youtubePlaylistUrl = `https://www.youtube.com/watch?v=${youtubeVideoId}&list=${youtubePlaylistId}`;
 export const youtubePlaylistUrl = `https://www.youtube.com/watch?v=${youtubeVideoId}`;
 

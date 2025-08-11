@@ -1,12 +1,12 @@
+import { Box, Center, Flex, Heading, Link, VStack } from '@chakra-ui/react';
+import { YouTubeEmbed } from '@next/third-parties/google';
+import { useTranslation } from 'next-export-i18n';
 import DefaultButton from '@/components/common/DefaultButton';
 import {
   youtubePlaylistId,
   youtubePlaylistUrl,
   youtubeVideoId,
 } from '@/data/common';
-import { Box, Center, Flex, Heading, Link, VStack } from '@chakra-ui/react';
-import { YouTubeEmbed } from '@next/third-parties/google';
-import { useTranslation } from 'next-export-i18n';
 
 const PreviousEdition = () => {
   const { t } = useTranslation();
@@ -65,7 +65,7 @@ const PreviousEdition = () => {
           <Box maxW={'1200px'} width="100%" height="100%">
             <YouTubeEmbed
               videoid={youtubeVideoId}
-              params={`list=${youtubePlaylistId}`}
+              // params={`list=${youtubePlaylistId}`}
               style="max-width: 1200px"
             />
           </Box>
